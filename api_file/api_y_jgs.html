@@ -1,0 +1,1636 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh" dir="ltr" lang="zh"><head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>mobile_api</title>
+<meta name="robots" content="noindex,nofollow">
+<meta name="date" content="2014-03-07T07:01:16+0000">
+<meta name="keywords" content="dqw,shopnc,mobile_api">
+<link rel="stylesheet" media="screen" type="text/css" href="api_files/css_003.css">
+<link rel="stylesheet" media="all" type="text/css" href="api_files/css.css">
+<link rel="stylesheet" media="print" type="text/css" href="api_files/css_002.css">
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+var NS='dqw:shopnc';var SIG=' --- //[[admin@dqw.me|dqw]] 2014/03/07 07:02//';var JSINFO = {"id":"dqw:shopnc:mobile_api","namespace":"dqw:shopnc"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="api_files/js.php"></script>
+<script type="text/javascript" charset="utf-8" src="api_files/admmenu.js"></script>
+<script type="text/javascript" charset="utf-8" src="api_files/indexmenu.js"></script>
+<script src="source/jquery.min.js"></script>
+<script type="text/javascript" charset="utf-8"><!--//--><![CDATA[//><!--
+var indexmenu_ID='dqw:shopnc:mobile_api'
+//--><!]]></script>
+<style>
+	#wrapper {
+	width: 980px;
+	margin: 18px auto;
+	line-height: 22px;
+	}
+a {
+	color: #000;
+	text-decoration: none;
+	}
+a:hover {
+	color: #0196e3;
+	text-decoration: none;
+	}
+a:active {
+	}
+ul.scroll {
+	width: 15px;
+	float: right;
+	display:block;
+	position:fixed;
+	top:60%;
+	right:0;
+	_position:absolute;
+	_margin-top:300px;
+	_top:expression(eval(document.documentElement.scrollTop));
+	z-index: 6;
+	}
+.sct {background: url(source/images/scroll.png);}
+.scb {background: url(source/images/scroll.png) 0 40px;}
+.scc {background: url(source/images/scroll.png) 0 80px;}
+.scroll_t,.scroll_c,.scroll_b{
+	width: 80px;
+	height:40px;
+	line-height:40px;
+	text-align:center;
+	cursor: pointer;
+	border-radius: 20px 0 0 20px;
+	}
+.scroll_t{
+	background: #d03f42;
+	}
+.scroll_b{
+	background: #383838;
+	}
+.scroll_c{
+	background: #467ebd;
+	}
+ul.scroll li {
+	position: relative; 
+	height:40px;
+	float: right;
+	}
+ul.scroll li a{
+	display: block;
+	color:#fff;
+	}
+ul.scroll li div {
+	display: none;
+	position: absolute;
+	top: 0;
+	right: 0;
+	}
+</style>
+</head>
+<body>
+
+<ul class="scroll">
+  <li class="sct" ><a href="#"><font color="red"> 顶部</font></a>
+    <div><a class="scroll_t">转到顶部</a></div>
+  </li>
+  <li class="scb"> <a href="#"><font color="black">底部</font></a>
+    <div><a class="scroll_b">转到底部</a></div>
+  </li>
+</ul>
+
+<div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc"  style="position:absolute;margin-left:82%;">
+<div style="cursor: pointer;" class="tocheader toctoggle" id="toc__header"><span class="toc_close" id="toc__toggle"><span>−</span></span>目录</div>
+<div id="toc__inside" >
+
+<ul class="toc">
+<li class="level1"><div class="li"><span class="li"><a href="#%E6%89%8B%E6%9C%BA%E6%8E%A5%E5%8F%A3" class="toc">手机接口</a></span></div>
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="#%E5%BC%80%E5%8F%91%E8%BF%9B%E5%BA%A6" class="toc">开发进度</a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="#%E4%B8%80%E6%9C%9F" class="toc">一期</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="#%E4%BA%8C%E6%9C%9F" class="toc">二期</a></span></div></li>
+</ul>
+</li>
+<li class="level2"><div class="li"><span class="li"><a href="#%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F%E7%BA%A6%E5%AE%9A" class="toc">数据格式约定</a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="#%E8%BF%94%E5%9B%9E%E5%80%BC" class="toc">返回值</a></span></div></li>
+</ul>
+</li>
+<li class="level2"><div class="li"><span class="li"><a href="#api" class="toc">API</a></span></div>
+<ul class="toc"><span class="li"><a href="#%E9%A6%96%E9%A1%B5" class="toc">客户端</a></span>
+<!-- 登录接口-->
+<li class="level3"><div class="li"><span class="li"><a href="#用户登录" class="toc"><font color="#FF7F27">用户登录</font></a></span></div></li>
+
+</ul>
+<ul class="toc"><span class="li"><a href="#%E9%A6%96%E9%A1%B5" class="toc">服务端</a></span>
+<!-- 登录接口-->
+<li class="level3"><div class="li"><span class="li"><a href="#服务端登录" class="toc"><font color="#FF7F27">服务端登录</font></a></span></div></li>
+
+</ul>
+</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<h1 class="sectionedit1"><a name="手机接口" id="手机接口">手机接口</a></h1>
+<div class="level1">
+
+</div>
+<!-- EDIT1 SECTION "手机接口" [1-28] -->
+<h2 class="sectionedit2"><a name="开发进度" id="开发进度">开发进度</a></h2>
+<div class="level2">
+
+</div>
+<!-- EDIT2 SECTION "开发进度" [29-54] -->
+<h3 class="sectionedit3"><a name="一期" id="一期">一期</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li">  </div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT3 SECTION "一期" [55-318] -->
+<h3 class="sectionedit4"><a name="二期" id="二期">二期</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> </div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT4 SECTION "二期" [319-719] -->
+<h2 class="sectionedit5"><a name="数据格式约定" id="数据格式约定">数据格式约定</a></h2>
+<div class="level2">
+
+<p>
+返回数据为json格式
+</p>
+<pre class="code">{tip: "success", info: {}}</pre>
+
+</div>
+<!-- EDIT5 SECTION "数据格式约定" [720-859] -->
+<h3 class="sectionedit6"><a name="返回值" id="返回值">返回值</a></h3>
+<div class="level3">
+
+</div>
+
+<h4><a name="获取数据" id="获取数据">获取数据</a></h4>
+<div class="level4">
+<pre class="code"></pre>
+
+</div>
+
+<h4><a name="操作成功" id="操作成功">操作成功</a></h4>
+<div class="level4">
+<pre class="code">//操作成功返回"success"
+{"tip":"success","info":"\u767b\u5f55\u6210\u529f"}</pre>
+
+</div>
+
+<h4><a name="错误" id="错误">错误</a></h4>
+<div class="level4">
+<pre class="code">//操作失败返回"error"
+{"tip":"error","info":"\u767b\u5f55\u5931\u8d25"}</pre>
+
+</div>
+<!-- EDIT6 SECTION "返回值" [860-1335] -->
+<h2 class="sectionedit7"><a name="api" id="api">API</a></h2>
+<div class="level2">
+
+</div>
+
+<!-- EDIT8 SECTION "陪诊" [1353-1427] -->
+<h3 class="sectionedit9"><a name="商品分类" id="商品分类">陪诊<span style="color:red">（已有）</span></a></h3>
+<div class="level3">
+</div>
+<!-- 从这里开始 -->
+<!-- 普通登录 -->
+<h4><a name="用户登录" id="用户登录"><font color="#FF7F27"><b>用户登录</b></font></a></h4>
+<div class="level4">
+	<pre class="code">http://192.168.0.66:8090/api.php?m=api&c=Index&a=userlogin【&user_id=admin&pwd=admin&machine_id=4306396571321180222&machine_type=android】</pre>
+</div>
+<h4><a name="请求参数" id="请求参数">请求参数[POST]</a></h4>
+<div class="level4">
+<pre class="code">  
+	user_id=admin ---- 用户名；pwd=admin ----- 登录密码； machine_id=4306396571321180222 ----- 机器码； machine_type=android ----- 机器类型； 
+</pre>
+</div>
+<h4><a name="返回数据" id="返回数据">返回数据</a></h4>
+<div class="level4">
+<pre class="code">
+成功：
+	{
+	    "tip": "success",
+	    "info": "登录成功"
+	}
+	
+失败：
+	{
+	    "tip": "error",
+	    "info": "登录失败"
+	}
+</pre>
+</div>
+
+<!-- 修改密码 -->
+<h4><a name="修改密码" id="修改密码"><font color="#FF7F27"><b>修改密码</b></font></a></h4>
+<div class="level4">
+	<pre class="code">http://192.168.0.66:8090/api.php?m=api&c=Index&a=changepwd【&user_id=111&pwd=admin】</pre>
+</div>
+<h4><a name="请求参数" id="请求参数">请求参数[POST]</a></h4>
+<div class="level4">
+<pre class="code">  
+	user_id=111 ---- 用户名；pwd=admin ----- 要修改的密码； 
+</pre>
+</div>
+<h4><a name="返回数据" id="返回数据">返回数据</a></h4>
+<div class="level4">
+<pre class="code">
+成功：
+	{
+	    "tip": "success",
+	    "info": "修改成功"
+	}
+失败：
+	{
+	    "tip": "error",
+	    "info": "修改失败"
+	}
+</pre>
+</div>
+
+
+<!-- 首页排程列表 -->
+<h4><a name="首页排程列表" id="首页排程列表"><font color="#FF7F27"><b>首页排程列表</b></font></a></h4>
+<div class="level4">
+	<pre class="code">http://192.168.0.66:8090/api.php?m=api&c=Schedule&a=getlist【&user_id=admin&time=2015-03-03】</pre>
+</div>
+<h4><a name="请求参数" id="请求参数">请求参数[POST]</a></h4>
+<div class="level4">
+<pre class="code">  
+	user_id=111 ---- 用户名；time=2015-03-03 ----- 需查看的日期(若不传则认为是当天时间)； page=1:第几页（若不传就是第一页） time：需查看的时间（若不传就是当前日期）
+</pre>
+</div>
+<h4><a name="返回数据" id="返回数据">返回数据</a></h4>
+<div class="level4">
+<pre class="code">
+	{
+	    "tip": "no",
+	    "info": [
+	        {
+	            "id": "9",						排程id
+	            "user_id": "vv",					用户名
+	            "acc_start_time": "1450076590",			开始时间
+	            "acc_end_time": null,				结束时间
+	            "hospital": null,					医院
+	            "create_time": "1450075622"
+	            "place": null					会面地点
+	            "time": "1425398300 ",
+                "head": "http://192.168.0.66:8090/Uploads/2015-12-15/566fc9a37187a.png" 头像
+	        }
+	    ]
+	}
+</pre>
+</div>
+
+
+<!-- 亲友管理 -->
+<h4><a name="亲友列表" id="亲友列表"><font color="#FF7F27"><b>亲友列表</b></font></a></h4>
+<div class="level4">
+	<pre class="code">http://192.168.0.66:8090/api.php?m=api&c=Friends&a=getfriends【&user_id=111】</pre>
+</div>
+<h4><a name="请求参数" id="请求参数">请求参数[POST]</a></h4>
+<div class="level4">
+<pre class="code">  
+	user_id=111 ---- 用户名；
+</pre>
+</div>
+<h4><a name="返回数据" id="返回数据">返回数据</a></h4>
+<div class="level4">
+<pre class="code">
+{
+    "tip": "success",							操作成功
+    "info": [
+        {
+            "id": "131",						用户id
+            "truename": "21",
+            "head": "/Uploads/2015-12-14/566e61c4b1ff3.jpg",		头像
+            "mobile": "21"						电话
+        }
+    ]
+}
+</pre>
+</div>
+
+<h4><a name="亲友详情" id="亲友详情"><font color="#FF7F27"><b>亲友详情</b></font></a></h4>
+<div class="level4">
+	<pre class="code">http://192.168.0.66:8090/api.php?m=api&c=Friends&a=friend_info【&user_id=111】</pre>
+</div>
+<h4><a name="请求参数" id="请求参数">请求参数[POST]</a></h4>
+<div class="level4">
+<pre class="code">  
+	user_id=111 ---- 亲友user_ id；
+</pre>
+</div>
+<h4><a name="返回数据" id="返回数据">返回数据</a></h4>
+<div class="level4">
+<pre class="code">
+{
+    "tip": "success",						操作成功
+    "info": {
+        "id": "131",						用户id
+        "truename": "21",					真实姓名
+        "sex": "1",						性别
+        "head": "/Uploads/2015-12-14/566e61c4b1ff3.jpg",	头像
+        "mobile": "21",						电话
+        "birthday": "1990-04-03"				出生日期
+    }
+}
+</pre>
+</div>
+
+
+<h4><a name="亲友资料修改" id="亲友资料修改"><font color="#FF7F27"><b>亲友资料修改</b></font></a></h4>
+<div class="level4">
+	<pre class="code">http://192.168.0.66:8090/api.php?m=api&c=Friends&a=update_friends【&user_id=21&sex=1&birthday=19900403&ill=12,13】</pre>
+</div>
+<h4><a name="请求参数" id="请求参数">请求参数[POST]</a></h4>
+<div class="level4">
+<pre class="code">  
+	user_id=111 ---- 亲友user_ id；sex=1 --- 亲友性别（0：未知 1：男 2：女） ill=12,13(病史id)
+</pre>
+</div>
+<h4><a name="返回数据" id="返回数据">返回数据</a></h4>
+<div class="level4">
+<pre class="code">
+{
+    "tip": "success",
+    "info": "修改成功"
+}
+</pre>
+</div>
+
+
+<h4><a name="随机选取陪护" id="随机选取陪护"><font color="#FF7F27"><b>随机选取陪护</b></font></a></h4>
+<div class="level4">
+	<pre class="code">http://192.168.0.66:8090/api.php?m=api&c=Request&a=random_acc</pre>
+</div>
+<h4><a name="请求参数" id="请求参数">请求参数[POST]</a></h4>
+<div class="level4">
+<pre class="code">  
+	无
+</pre>
+</div>
+<h4><a name="返回数据" id="返回数据">返回数据</a></h4>
+<div class="level4">
+<pre class="code">
+{
+    "tip": "success",
+    "info": 
+        {
+            "id": "39",			陪护id
+            "head": null,		陪护头像
+            "sex": "2",			性别
+            "state": "1",		陪护状态
+            "addtime": "1448939729",	添加时间
+            "updatetime": null,		修改时间
+            "acc_id": "ceshi",		陪护用户名
+            "name": "测试1",		真实姓名
+            "mobile": "18853813072",	手机号
+            "birthtime": "1233676800",	生日		
+        }
+}
+</pre>
+</div>
+
+
+<h4><a name="客户端发起请求" id="客户端发起请求"><font color="#FF7F27"><b>客户端发起请求</b></font></a></h4>
+<div class="level4">
+	<pre class="code">http://192.168.0.66:8090/api.php?m=api&c=Request&a=creat_request【&user_id=vv&acc_id=ceshi】</pre>
+</div>
+<h4><a name="请求参数" id="请求参数">请求参数[POST]</a></h4>
+<div class="level4">
+<pre class="code">  
+	user_id=vv ---- 用户名；acc_id=111 ---- 陪护人员用户名；
+</pre>
+</div>
+<h4><a name="返回数据" id="返回数据">返回数据</a></h4>
+<div class="level4">
+<pre class="code">
+{
+    "tip": "success",
+    "info": "请求成功"
+}
+</pre>
+</div>
+
+<h4><a name="病史记录列表" id="病史记录列表"><font color="#FF7F27"><b>病史记录列表</b></font></a></h4>
+<div class="level4">
+	<pre class="code">http://192.168.0.66:8090/api.php?m=api&c=Management&a=ill_list【&user_id=3&s_date=2015-05】</pre>
+</div>
+<h4><a name="请求参数" id="请求参数">请求参数[POST]</a></h4>
+<div class="level4">
+<pre class="code">  
+	user_id=3 ---- 用户名；s_date=2015-05 --- 需查看时间(若不传代表是本月) page=1 :当前页数（不传默认第一页）
+</pre>
+</div>
+<h4><a name="返回数据" id="返回数据">返回数据</a></h4>
+<div class="level4">
+<pre class="code">
+{
+    "tip": "no",				无下一页
+    "info": [
+        {
+            "date": "2015-05",
+            "count": "3",
+            "list": {
+            			"id": "7",				排程id
+			            "user_id": "vv",			用户名
+			            "acc_start_time": "1430755200",	开始时间
+			            "acc_end_time": null,		结束时间
+			            "time":null					看诊当天日期
+			            "hospital": null,			医院
+			            "place": null			预约地方
+            		},
+            		{
+            			"id": "7",				排程id
+			            "user_id": "vv",			用户名
+			            "acc_start_time": "1430755200",	开始时间
+			            "acc_end_time": null,		结束时间
+			            "time":null					看诊当天日期
+			            "hospital": null,			医院
+			            "place": null			预约地方
+            		}
+        },
+        {
+            "date": "2015-05",
+            "count": "3",
+            "list": {
+            			"id": "7",				排程id
+			            "user_id": "vv",			用户名
+			            "acc_start_time": "1430755200",	开始时间
+			            "acc_end_time": null,		结束时间
+			            "time":null					看诊当天日期
+			            "hospital": null,			医院
+			            "place": null			预约地方
+            		},
+            		{
+            			"id": "7",				排程id
+			            "user_id": "vv",			用户名
+			            "acc_start_time": "1430755200",	开始时间
+			            "acc_end_time": null,		结束时间
+			            "time":null					看诊当天日期
+			            "hospital": null,			医院
+			            "place": null			预约地方
+            		}
+        }
+    ]
+}
+</pre>
+</div>
+
+
+<h4><a name="病史记录详情" id="病史记录详情"><font color="#FF7F27"><b>病史记录详情</b></font></a></h4>
+<div class="level4">
+	<pre class="code">http://192.168.0.66:8090/api.php?m=api&c=Management&a=ill_info&id=3</pre>
+</div>
+<h4><a name="请求参数" id="请求参数">请求参数[POST]</a></h4>
+<div class="level4">
+<pre class="code">  
+	id=3 ---- 病史id；
+</pre>
+</div>
+<h4><a name="返回数据" id="返回数据">返回数据</a></h4>
+<div class="level4">
+<pre class="code">
+{
+    "tip": "",
+    "info": {
+        "id": "7",			排程id
+        "type": null,			诊断类型
+        "is_evaluation": "0",		是否评价
+        "is_time": null,		是否及时响应
+        "user_id": "vv",		用户名
+        "state": "3",			排程状态
+        "user_name": null,		用户真实姓名
+        "acc_id": "ceshi",		陪护名
+        "acc_start_time": "1430755200",	开始时间
+        "acc_end_time": null,		结束时间
+        "create_time": "1450075622",	创建时间
+        "hospital": null,		医院
+        "expert": null,			专家
+        "place": null,			地方
+        "time": null,			预约时间
+        "note": null,			排程备注
+        "user_sex": "1",		用户性别
+        "birthday": "1990-04-03",	用户出生日
+        "ill": null,			病史
+        "info_visit": "",		就诊信息
+        "info_diagnosis": "",		诊断信息
+        "illness": "",			基本病情
+        "memo": "",			备注
+        "price": ""			费用（挂号费等
+    }
+}
+</pre>
+</div>
+
+
+<h4><a name="任务查看接口" id="任务查看接口"><font color="#FF7F27"><b>任务查看接口</b></font></a></h4>
+<div class="level4">
+	<pre class="code">http://192.168.0.66:8090/api.php?m=api&c=Management&a=task【&schedule_id=3&user_id=admin】</pre>
+</div>
+<h4><a name="请求参数" id="请求参数">请求参数[POST]</a></h4>
+<div class="level4">
+<pre class="code">  
+	user_id=3 ---- 用户名；schedule_id=3 ---排程id 
+	备注：两者每个情况下只能传一个，若都传会以排程id优先
+</pre>
+</div>
+<h4><a name="返回数据" id="返回数据">返回数据</a></h4>
+<div class="level4">
+<pre class="code">
+{
+    "tip": "no",
+    "info": {
+        "head": "/Uploads/2015-12-14/566e61c4b1ff3.jpg",	头像
+        "truename": "21",					真实姓名
+        "type": "",						类型
+        "place": "",						预约地点
+        "acc_time": "",						开始时间
+        "expert": "",						专家
+        "state": ""						状态
+    }
+}
+</pre>
+</div>
+
+
+<h4><a name="评价接口" id="评价接口"><font color="#FF7F27"><b>评价接口</b></font></a></h4>
+<div class="level4">
+	<pre class="code">http://192.168.0.66:8090/api.php?m=api&c=Request&a=evaluation【&order_id=2&content=%E6%89%93%E5%8F%91%E6%89%93%E5%8F%91&type=1】</pre>
+</div>
+<h4><a name="请求参数" id="请求参数">请求参数[POST]</a></h4>
+<div class="level4">
+<pre class="code">  
+	order_id=2 ---- 排程编号；type=1 --- 1.好评 2.差评
+</pre>
+</div>
+<h4><a name="返回数据" id="返回数据">返回数据</a></h4>
+<div class="level4">
+<pre class="code">
+{
+    "tip": "success",
+    "info": "评价成功"
+}
+</pre>
+</div>
+
+
+<h4><a name="对陪诊人员的评价首页" id="对陪诊人员的评价首页"><font color="#FF7F27"><b>对陪诊人员的评价首页</b></font></a></h4>
+<div class="level4">
+	<pre class="code">http://192.168.0.66:8090/api.php?m=api&c=Request&a=evaluation_index【&order_id=1】</pre>
+</div>
+<h4><a name="请求参数" id="请求参数">请求参数[POST]</a></h4>
+<div class="level4">
+<pre class="code">
+	order_id=2 ---- 排程编号；
+</pre>
+</div>
+<h4><a name="返回数据" id="返回数据">返回数据</a></h4>
+<div class="level4">
+<pre class="code">
+{
+    "tip": "",
+    "info": {
+        "acc_id": "ceshi",		陪诊人员名
+        "user_id": null,		用户名
+        "head": null,			头像
+        "name": "测试1",		姓名
+        "type": "1",			类型
+        "score": "1.1",			平均评价分
+        "good_reputation": "会面准时"	好评理由
+    }
+}
+</pre>
+</div>
+
+<h4><a name="投诉页面" id="投诉页面"><font color="#FF7F27"><b>投诉页面</b></font></a></h4>
+<div class="level4">
+	<pre class="code">http://192.168.0.66:8090/api.php?m=api&c=Request&a=evaluation_bad</pre>
+</div>
+<h4><a name="请求参数" id="请求参数">请求参数[POST]</a></h4>
+<div class="level4">
+<pre class="code">  
+
+</pre>
+</div>
+<h4><a name="返回数据" id="返回数据">返回数据</a></h4>
+<div class="level4">
+<pre class="code">
+{
+    "tip": "",
+    "info": {
+        "bad1": "dsfdsfds", 	差评理由1
+        "bad2": "dfsfdsf"	差评理由2
+    }
+}
+</pre>
+</div>
+
+
+<h4><a name="服务提醒接口" id="服务提醒接口"><font color="#FF7F27"><b>服务提醒接口</b></font></a></h4>
+<div class="level4">
+	<pre class="code">http://192.168.0.66:8090/api.php?m=api&c=Management&a=server_warn【&user_id=admin】</pre>
+</div>
+<h4><a name="请求参数" id="请求参数">请求参数[POST]</a></h4>
+<div class="level4">
+<pre class="code">  
+		user_id=admin ---- 用户名；$page = 1 页数
+</pre>
+</div>
+<h4><a name="返回数据" id="返回数据">返回数据</a></h4>
+<div class="level4">
+<pre class="code">
+{
+    "tip": "no",
+    "info": {
+        "read_count": 3,											未读条数
+        "list": [
+            {
+                "id": "20",
+                "type": "2",
+                "is_evaluation": "0",
+                "is_time": null,
+                "is_read": "0",
+                "user_id": "admin",
+                "state": "3",
+                "user_name": null,
+                "acc_id": "ceshi",
+                "acc_start_time": "1425340800",
+                "acc_end_time": "1425344400",
+                "create_time": "1450670481",
+                "hospital": "1",
+                "expert": "dfd",
+                "place": "dfdfd",
+                "time": "1425312000",
+                "note": "",
+                "live_number": null,
+                "title": "请您对本次服务人员进行评价",
+                "status": "eva"
+            }
+        ]
+    }
+}
+</pre>
+</div>
+
+<h4><a name="修改提醒已/未读" id="修改提醒已/未读"><font color="#FF7F27"><b>修改提醒已/未读</b></font></a></h4>
+<div class="level4">
+	<pre class="code">http://192.168.0.66:8090/api.php?m=api&c=Management&a=change_read【&order_id=5】</pre>
+</div>
+<h4><a name="请求参数" id="请求参数">请求参数[POST]</a></h4>
+<div class="level4">
+<pre class="code">  
+		order_id=5 ---- 订单id
+</pre>
+</div>
+<h4><a name="返回数据" id="返回数据">返回数据</a></h4>
+<div class="level4">
+<pre class="code">
+{
+    "tip": "success",
+    "info": "修改成功"
+}
+</pre>
+</div>
+
+
+
+<h4><a name="服务端登录" id="服务端登录"><font color="#FF7F27"><b>服务端登录</b></font></a></h4>
+<div class="level4">
+	<pre class="code">http://192.168.0.66:8090/api.php?m=api&c=Serverlogin&a=serverlogin【&servername=ceshi&pwd=admin】</pre>
+</div>
+<h4><a name="请求参数" id="请求参数">请求参数[POST]</a></h4>
+<div class="level4">
+<pre class="code">  
+		servername=ceshi ---- 陪护用户名；pwd=登录密码 ---- 陪护密码；
+</pre>
+</div>
+<h4><a name="返回数据" id="返回数据">返回数据</a></h4>
+<div class="level4">
+<pre class="code">
+{
+    "tip": "success",
+    "info": {
+        "head": "http://192.168.0.66:8090/Uploads/2015-12-15/566fc9a37187a.png",
+        "state": "2"
+    }
+}
+</pre>
+</div>
+
+
+
+<h4><a name="服务端登录后首页" id="服务端登录后首页"><font color="#FF7F27"><b>服务端登录后首页</b></font></a></h4>
+<div class="level4">
+	<pre class="code">http://192.168.0.66:8090/api.php?m=api&c=Serverindex&a=index【&acc_id=ceshi&page=1】</pre>
+</div>
+<h4><a name="请求参数" id="请求参数">请求参数[POST]</a></h4>
+<div class="level4">
+<pre class="code">  
+		acc_id=ceshi ---- 陪护用户名；page=1 ---- 页码；
+</pre>
+</div>
+<h4><a name="返回数据" id="返回数据">返回数据</a></h4>
+<div class="level4">
+<pre class="code">
+{
+    "tip": "have",
+    "info": {
+        "responsivity": "0.09",					响应率
+        "online": "10281",						在线时长
+        "orders": "20",							接单量
+        "sum": "11",							陪诊量
+        "list": [								评价列表
+            {
+                "id": "1",
+                "score": "3",
+                "order_id": "3",
+                "user_id": null,
+                "acc_id": "ceshi",
+                "memo": "打发打发dfdf666",
+                "type": "1"
+            }
+        ]
+    }
+}
+</pre>
+</div>
+
+
+
+<h4><a name="修改密码" id="修改密码"><font color="#FF7F27"><b>修改密码</b></font></a></h4>
+<div class="level4">
+	<pre class="code">http://192.168.0.66:8090/api.php?m=api&c=Serverlogin&a=changepwd【&servername=ceshi&pwd=admin】</pre>
+</div>
+<h4><a name="请求参数" id="请求参数">请求参数[POST]</a></h4>
+<div class="level4">
+<pre class="code">  
+		servername=ceshi ---- 陪护用户名；pwd=登录密码 ---- 陪护密码；
+</pre>
+</div>
+<h4><a name="返回数据" id="返回数据">返回数据</a></h4>
+<div class="level4">
+<pre class="code">
+{
+    "tip": "success",
+    "info": "更改成功"
+}
+</pre>
+</div>
+
+
+<h4><a name="服务端上班后首页" id="服务端上班后首页"><font color="#FF7F27"><b>服务端上班后首页</b></font></a></h4>
+<div class="level4">
+	<pre class="code">http://192.168.0.66:8090/api.php?m=api&c=Serverlogin&a=onindex【&acc_id=ceshi】</pre>
+</div>
+<h4><a name="请求参数" id="请求参数">请求参数[POST]</a></h4>
+<div class="level4">
+<pre class="code">  
+		acc_id=ceshi ---- 陪护用户名；
+</pre>
+</div>
+<h4><a name="返回数据" id="返回数据">返回数据</a></h4>
+<div class="level4">
+<pre class="code">
+{
+    "tip": "success",
+    "info": {
+        "acc_login_id": "5",									上班记录id（需下班返回）
+        "member_info": {										陪护信息
+            "head": "/Uploads/2015-12-15/566fc9a37187a.png",	头像
+            "sex": "2",											性别
+            "name": "测试1"										姓名
+        },
+        "over_orders": "5",										完成单量
+        "evaluation": "0.0",									评价
+        "wait_sum": "9",										待处理服务请求
+        "make_sum": "0",										待制定方案
+        "go_sum": "4",											待陪诊客户
+        "today_plan": [
+            {
+                "id": "9",
+                "user_id": "132",
+                "acc_id": "ceshi",
+                "acc_start_time": "1451836801",
+                "acc_end_time": "1451923100",
+                "time": "1451922100",
+                "hospital": null,
+                "place": null
+            }
+    }
+}
+</pre>
+</div>
+
+
+<h4><a name="我的页面" id="我的页面"><font color="#FF7F27"><b>我的页面</b></font></a></h4>
+<div class="level4">
+	<pre class="code">http://192.168.0.66:8090/api.php?m=api&c=Serverindex&a=myindex【&acc_id=ceshi&page=2】</pre>
+</div>
+<h4><a name="请求参数" id="请求参数">请求参数[POST]</a></h4>
+<div class="level4">
+<pre class="code">  
+		acc_id=ceshi ---- 陪护用户名；page=2 页数
+</pre>
+</div>
+<h4><a name="返回数据" id="返回数据">返回数据</a></h4>
+<div class="level4">
+<pre class="code">
+{
+    "tip": "no",											是否还有翻页
+    "info": {
+    	"acc_head": "http://192.168.0.66:8090/Uploads/2015-12-15/566fc9a37187a.png",  	陪护人员头像
+        "sex": "女",																	陪护人员姓名
+        "mobile": "18853813072",														陪护电话
+        "name": "测试1",																陪护真是姓名
+        "responsivity": "0.09",								响应率
+        "online": "10281",
+        "orders": "20",
+        "sum": "11",
+        "eva_score": "1.2",								平均得分
+        "bad_sum": "0",									差评数
+        "list": [
+            {
+                "id": "11",
+                "user_id": "admin",
+                "acc_id": "ceshi",
+                "acc_start_time": "08:00",
+                "acc_end_time": "08:00",
+                "hospital": null,
+                "create_time": "1450147257",
+                "place": null,
+                "time": "1450425605",														会面时间
+                "head": "http://192.168.0.66:8090/Uploads/2015-12-15/566fad0565128.jpg"  	头像
+            }
+        ]
+    }
+}
+</pre>
+</div>
+
+
+<h4><a name="我的资料详情" id="我的资料详情"><font color="#FF7F27"><b>我的资料详情</b></font></a></h4>
+<div class="level4">
+	<pre class="code">http://192.168.0.66:8090/api.php?m=api&c=Serverindex&a=accinfo【&acc_id=ceshi】</pre>
+</div>
+<h4><a name="请求参数" id="请求参数">请求参数[POST]</a></h4>
+<div class="level4">
+<pre class="code">  
+		acc_id=ceshi ---- 陪护用户名；
+</pre>
+</div>
+<h4><a name="返回数据" id="返回数据">返回数据</a></h4>
+<div class="level4">
+<pre class="code">
+{
+    "tip": "success",
+    "info": {
+        "head": "http://192.168.0.66:8090/Uploads/2015-12-15/566fc9a37187a.png",	头像
+        "sex": "女",																性别
+        "name": "测试1",															真是姓名
+        "mobile": "18853813072"														电话
+    }
+}
+</pre>
+</div>
+
+
+<h4><a name="服务端修改资料" id="服务端修改资料"><font color="#FF7F27"><b>服务端修改资料</b></font></a></h4>
+<div class="level4">
+	<pre class="code">http://192.168.0.66:8090/api.php?m=api&c=Serverset&a=acc_update【&acc_id=ceshi&sex=2&birthday=dfdfdfdf】</pre>
+</div>
+<h4><a name="请求参数" id="请求参数">请求参数[POST]</a></h4>
+<div class="level4">
+<pre class="code">  
+		acc_id=ceshi ---- 陪护用户名；sex=2  性别  birthday=dfdfdfdf 生日
+</pre>
+</div>
+<h4><a name="返回数据" id="返回数据">返回数据</a></h4>
+<div class="level4">
+<pre class="code">
+{
+    "tip": "success",
+    "info": "修改成功"
+}
+</pre>
+</div>
+
+
+
+<h4><a name="服务端我要下班接口" id="服务端我要下班接口"><font color="#FF7F27"><b>服务端我要下班接口</b></font></a></h4>
+<div class="level4">
+	<pre class="code">http://192.168.0.66:8090/api.php?m=api&c=Serverlogin&a=outwork【&acc_id=ceshi&login_id=1】</pre>
+</div>
+<h4><a name="请求参数" id="请求参数">请求参数[POST]</a></h4>
+<div class="level4">
+<pre class="code">  
+		acc_id=ceshi ---- 陪护用户名；
+</pre>
+</div>
+<h4><a name="返回数据" id="返回数据">返回数据</a></h4>
+<div class="level4">
+<pre class="code">
+{
+    "tip": "success",
+    "info": "下班成功"
+}
+</pre>
+</div>
+
+
+<!-- 首页排程列表 -->
+<h4><a name="服务端首页排程列表" id="服务端首页排程列表"><font color="#FF7F27"><b>服务端首页排程列表</b></font></a></h4>
+<div class="level4">
+	<pre class="code">http://192.168.0.66:8090/api.php?m=api&c=Serverplan&a=serverschedule【&acc_id=ceshi&time=2015-03-03】</pre>
+</div>
+<h4><a name="请求参数" id="请求参数">请求参数[POST]</a></h4>
+<div class="level4">
+<pre class="code">  
+	user_id=111 ---- 用户名；time=2015-03-03 ----- 需查看的日期(若不传则认为是当天时间)； page=1:第几页（若不传就是第一页） time：需查看的时间（若不传就是当前日期）
+</pre>
+</div>
+<h4><a name="返回数据" id="返回数据">返回数据</a></h4>
+<div class="level4">
+<pre class="code">
+{
+    "tip": "no",
+    "info": {
+        "pretime": [
+            false,
+            "2015-05-05",
+            "2015-12-18",
+            "2015-12-18"
+        ],
+        "list": [
+            {
+                "id": "8",
+                "user_id": "admin",
+                "acc_id": "ceshi",
+                "acc_start_time": "00:00",
+                "acc_end_time": "08:00",
+                "hospital": "黄岛医院1222",
+                "type":null
+                "create_time": "1450075622",
+                "place": null,
+                "time": "1425398300 ",
+                "user_head": "http://192.168.0.66:8090/Uploads/2015-12-15/566fad0565128.jpg"
+            }
+        ]
+    }
+}
+</pre>
+</div>
+
+
+<h4><a name="客服" id="客服"><font color="#FF7F27"><b>客服</b></font></a></h4>
+<div class="level4">
+	<pre class="code">http://192.168.0.66:8090/api.php?m=api&c=Serverset&a=custom</pre>
+</div>
+<h4><a name="请求参数" id="请求参数">请求参数[POST]</a></h4>
+<div class="level4">
+<pre class="code">  
+</pre>
+</div>
+<h4><a name="返回数据" id="返回数据">返回数据</a></h4>
+<div class="level4">
+<pre class="code">
+{
+    "tip": "success",
+    "info": {
+        "phone1": "0532-88881987",
+        "phone2": "110"
+    }
+}
+</pre>
+</div>
+
+
+<h4><a name="服务请求列表" id="服务请求列表"><font color="#FF7F27"><b>服务请求列表</b></font></a></h4>
+<div class="level4">
+	<pre class="code">http://192.168.0.66:8090/api.php?m=api&c=Request&a=serve_request【&acc_id=ceshi】</pre>
+</div>
+<h4><a name="请求参数" id="请求参数">请求参数[POST]</a></h4>
+<div class="level4">
+<pre class="code">  
+		acc_id=ceshi --- 陪护名
+</pre>
+</div>
+<h4><a name="返回数据" id="返回数据">返回数据</a></h4>
+<div class="level4">
+<pre class="code">
+{
+    "tip": "success",
+    "info": [
+        {
+            "id": "12",
+            "type": null,
+            "is_evaluation": "0",
+            "is_time": null,
+            "user_id": "admin",
+            "state": "0",
+            "user_name": null,
+            "acc_id": "ceshi",
+            "acc_start_time": null,
+            "acc_end_time": null,
+            "create_time": "1450339866",
+            "hospital": null,
+            "expert": null,
+            "place": null,
+            "time": null,
+            "note": null,
+            "live_number": null,
+            "user_age": "",
+            "user_head": "http://192.168.0.66:8090/Uploads/2015-12-15/566fad0565128.jpg",
+            "sex": "女",
+            "user_truename": "21",
+            "user_mobile": "21"
+        }
+    ]
+}
+</pre>
+</div>
+
+
+<h4><a name="服务端确定后页面" id="服务端确定后页面"><font color="#FF7F27"><b>服务端确定后页面</b></font></a></h4>
+<div class="level4">
+	<pre class="code">http://192.168.0.66:8090/api.php?m=api&c=Request&a=confirm【&order_id=3,4】</pre>
+</div>
+<h4><a name="请求参数" id="请求参数">请求参数[POST]</a></h4>
+<div class="level4">
+<pre class="code">  
+		order_id=3,4,  ---排程id   
+</pre>
+</div>
+<h4><a name="返回数据" id="返回数据">返回数据</a></h4>
+<div class="level4">
+<pre class="code">
+{
+    "tip": "no",
+    "info": [
+        {
+            "id": "3",
+            "user_id": "admin",
+            "acc_id": "ceshi",
+            "hospital": "",
+            "create_time": null,
+            "place": "dfdf",
+            "type": "1",
+            "time": "1450410000",
+            "user_head": "",
+            "user_truename": "",
+            "user_mobile": "",
+            "user_age": ""
+        },
+        {
+            "id": "4",
+            "user_id": "admin",
+            "acc_id": "ceshi",
+            "hospital": "黄岛医院1222",
+            "create_time": "1449651139",
+            "place": "",
+            "type": "1",
+            "time": "1450195209",
+            "user_head": "",
+            "user_truename": "",
+            "user_mobile": "",
+            "user_age": ""
+        }
+    ]
+}
+</pre>
+</div>
+
+
+<h4><a name="进方案定制页面" id="进方案定制页面"><font color="#FF7F27"><b>进方案定制页面</b></font></a></h4>
+<div class="level4">
+	<pre class="code">http://192.168.0.66:8090/api.php?m=api&c=Serverplan&a=planinfo</pre>
+</div>
+<h4><a name="请求参数" id="请求参数">请求参数[POST]</a></h4>
+<div class="level4">
+<pre class="code">  
+</pre>
+</div>
+<h4><a name="返回数据" id="返回数据">返回数据</a></h4>
+<div class="level4">
+<pre class="code">
+{
+    "tip": "success",
+    "info": {
+        "hospital": [
+            {
+                "id": "1",
+                "name": "黄岛医院1222",
+                "status": "1",
+                "sort": "1",
+                "date": "1449638009",
+                "h_thumb": null
+            }
+        ],
+        "diagnose_type": [
+            {
+                "id": "4",
+                "name": "儿童科222",
+                "status": "1",
+                "sort": "2",
+                "date": "1450079452"
+            }
+        ]
+    }
+}
+</pre>
+</div>
+
+
+<h4><a name="制定方案" id="制定方案"><font color="#FF7F27"><b>制定方案</b></font></a></h4>
+<div class="level4">
+	<pre class="code">http://192.168.0.66:8090/api.php?m=api&c=Serverplan&a=plandown【&order_id=20&hospital=1&type=2&expert=dfd&place=dfdfd&timed=2015-03-03&time_dur=2015-03-03 08:00,2015-03-03 09:00&memo=ddfd】</pre>
+</div>
+<h4><a name="请求参数" id="请求参数">请求参数[POST]</a></h4>
+<div class="level4">
+<pre class="code">  
+	order_id=20 ---排程id ； hospital=1 ---医院id ；type=2  ---看诊类型id； expert=dfd ---专家姓名 ；place=dfdfd ---会面地点； timed=2015-03-03 ---会面时间 ；time_dur=2015-03-03 08:00,2015-03-03 09:00 ---会面时间段  memo:ddfd --注意事项
+</pre>
+</div>
+<h4><a name="返回数据" id="返回数据">返回数据</a></h4>
+<div class="level4">
+<pre class="code">
+{
+    "tip": "success",
+    "info": "制定成功"
+}
+</pre>
+</div>
+
+
+<h4><a name="方案制定列表接口" id="方案制定列表接口"><font color="#FF7F27"><b>方案制定列表接口</b></font></a></h4>
+<div class="level4">
+	<pre class="code">http://192.168.0.66:8090/api.php?m=api&c=Request&a=planset_list【&acc_id=ceshi&page=1】</pre>
+</div>
+<h4><a name="请求参数" id="请求参数">请求参数[POST]</a></h4>
+<div class="level4">
+<pre class="code">  
+	acc_id=ceshi 陪护名   page=1 页数
+</pre>
+</div>
+<h4><a name="返回数据" id="返回数据">返回数据</a></h4>
+<div class="level4">
+<pre class="code">
+{
+    "tip": "no",
+    "info": [
+        {
+            "id": "3",
+            "user_id": "admin",
+            "acc_id": "ceshi",
+            "hospital": "",
+            "create_time": null,
+            "place": "dfdf",
+            "type": "1",
+            "time": "1450410000",
+            "user_age": "",
+            "user_head": "http://192.168.0.66:8090/Uploads/2015-12-15/566fad0565128.jpg",
+            "sex": "女",
+            "user_truename": "21",
+            "user_mobile": "21"
+        }
+    ]
+}
+</pre>
+</div>
+
+
+<h4><a name="陪诊服务列表" id="陪诊服务列表"><font color="#FF7F27"><b>陪诊服务列表</b></font></a></h4>
+<div class="level4">
+	<pre class="code">http://192.168.0.66:8090/api.php?m=api&c=Request&a=diagnosis_server【&acc_id=ceshi】</pre>
+</div>
+<h4><a name="请求参数" id="请求参数">请求参数[POST]</a></h4>
+<div class="level4">
+<pre class="code">  
+	acc_id=ceshi 陪护名   page=1 页数
+</pre>
+</div>
+<h4><a name="返回数据" id="返回数据">返回数据</a></h4>
+<div class="level4">
+<pre class="code">
+{
+    "tip": "no",
+    "info": [
+        {
+            "id": "2",
+            "user_id": "vv",
+            "acc_id": "ceshi",
+            "acc_start_time": "",
+            "acc_end_time": "08:00",
+            "hospital": "",
+            "create_time": "5",
+            "place": "",
+            "type": "1",
+            "time": "",
+            "user_age": "",
+            "user_head": "",
+            "sex": "女",
+            "user_truename": "",
+            "user_mobile": ""
+        },
+    ]
+}
+</pre>
+</div>
+
+
+<h4><a name="滑动开始服务页的方案定制信息" id="滑动开始服务页的方案定制信息"><font color="#FF7F27"><b>滑动开始服务页的方案定制信息</b></font></a></h4>
+<div class="level4">
+	<pre class="code">http://192.168.0.66:8090/api.php?m=api&c=Serverplan&a=serverinfo【&id=20】</pre>
+</div>
+<h4><a name="请求参数" id="请求参数">请求参数[POST]</a></h4>
+<div class="level4">
+<pre class="code">  
+	id=20 排程id   
+</pre>
+</div>
+<h4><a name="返回数据" id="返回数据">返回数据</a></h4>
+<div class="level4">
+<pre class="code">
+{
+    "tip": "success",
+    "info": {
+        "id": "20",
+        "user_id": "admin",
+        "user_age": "",
+        "user_truename": "21",
+        "user_head": "http://192.168.0.66:8090/Uploads/2015-12-15/566fad0565128.jpg",
+        "user_mobile": "21",
+        "hospital": "黄岛医院1222",
+        "type": "2",
+        "expert": "dfd",
+        "place": "dfdfd",
+        "time": "2015-03-03",
+        "time_dur": "08:00~09:00",
+        "note": ""
+    }
+}
+</pre>
+</div>
+
+
+
+<h4><a name="滑动按钮触发后" id="滑动按钮触发后"><font color="#FF7F27"><b>滑动按钮触发后</b></font></a></h4>
+<div class="level4">
+	<pre class="code">http://192.168.0.66:8090/api.php?m=api&c=Serverplan&a=slide_begin【&id=20】</pre>
+</div>
+<h4><a name="请求参数" id="请求参数">请求参数[POST]</a></h4>
+<div class="level4">
+<pre class="code">  
+	id=20 排程id   
+</pre>
+</div>
+<h4><a name="返回数据" id="返回数据">返回数据</a></h4>
+<div class="level4">
+<pre class="code">
+{
+    "tip": "success",
+    "info": {
+        "user_head": "http://192.168.0.66:8090/Uploads/2015-12-15/566fad0565128.jpg",
+        "user_name": "21",
+        "user_sex": "女",
+        "user_age": "",
+        "user_mobile": "21",
+        "user_ill": "23456789765432,1112222221rrr",
+        "hospital": "黄岛医院1222",
+        "time": "2015-03-03"
+    }
+}
+</pre>
+</div>
+
+
+<h4><a name="文字图片或者账单" id="文字图片或者账单"><font color="#FF7F27"><b>文字图片或者账单</b></font></a></h4>
+<div class="level4">
+	<pre class="code">http://192.168.0.66:8090/api.php?m=api&c=Serverplan&a=submit_txt&order_id=20&memo=admin</pre>
+</div>
+<h4><a name="请求参数" id="请求参数">请求参数[POST]</a></h4>
+<div class="level4">
+<pre class="code">  
+	order_id=20 排程id   $type = 1文字 （2：账单） 
+</pre>
+</div>
+<h4><a name="返回数据" id="返回数据">返回数据</a></h4>
+<div class="level4">
+<pre class="code">
+{
+    "tip": "success",
+    "info": "提交成功"
+}
+</pre>
+</div>
+
+
+<h4><a name="完成订单" id="完成订单"><font color="#FF7F27"><b>完成订单</b></font></a></h4>
+<div class="level4">
+	<pre class="code">http://192.168.0.66:8090/api.php?m=api&c=Serverplan&a=end_schdule&order_id=20</pre>
+</div>
+<h4><a name="请求参数" id="请求参数">请求参数[POST]</a></h4>
+<div class="level4">
+<pre class="code">  
+	order_id=20 排程id   
+</pre>
+</div>
+<h4><a name="返回数据" id="返回数据">返回数据</a></h4>
+<div class="level4">
+<pre class="code">
+{
+    "tip": "success",
+    "info": "结束成功"
+}
+</pre>
+</div>
+
+
+<h4><a name="获取验证码" id="获取验证码"><font color="#FF7F27"><b>获取验证码</b></font></a></h4>
+<div class="level4">
+	<pre class="code">http://192.168.0.66:8090/api.php?m=api&c=Code&a=getcode【&name_id=18765218752】</pre>
+</div>
+<h4><a name="请求参数" id="请求参数">请求参数[POST]</a></h4>
+<div class="level4">
+<pre class="code">  
+	name_id=18765218752 用户名
+</pre>
+</div>
+<h4><a name="返回数据" id="返回数据">返回数据</a></h4>
+<div class="level4">
+<pre class="code">
+{
+    "tip": "success",
+    "info": "发送成功"
+}
+</pre>
+</div>
+
+
+<h4><a name="验证验证码" id="验证验证码"><font color="#FF7F27"><b>验证验证码</b></font></a></h4>
+<div class="level4">
+	<pre class="code">http://192.168.0.66:8090/api.php?m=api&c=Code&a=test_code【&name_id=18765218752&code=957164】</pre>
+</div>
+<h4><a name="请求参数" id="请求参数">请求参数[POST]</a></h4>
+<div class="level4">
+<pre class="code">  
+	name_id=18765218752 用户名 code=957164 验证码
+</pre>
+</div>
+<h4><a name="返回数据" id="返回数据">返回数据</a></h4>
+<div class="level4">
+<pre class="code">
+{
+    "tip": "success",
+    "info": "验证成功"
+}
+</pre>
+</div>
+
+
+<h4><a name="设备信息接口" id="设备信息接口"><font color="#FF7F27"><b>设备信息接口</b></font></a></h4>
+<div class="level4">
+	<pre class="code">http://192.168.0.66:8090/api.php?m=api&c=Index&a=machineinfo【&user_id=admin&machine_id=4306396571321180222&machine_type=ios】</pre>
+</div>
+<h4><a name="请求参数" id="请求参数">请求参数[POST]</a></h4>
+<div class="level4">
+<pre class="code">  
+	user_id=admin	用户名	machine_id=4306396571321180222	设备channalid	machine_type=ios 机器类型
+</pre>
+</div>
+<h4><a name="返回数据" id="返回数据">返回数据</a></h4>
+<div class="level4">
+<pre class="code">
+{
+    "tip": "success",
+    "info": "成功"
+}
+</pre>
+</div>
+
+
+<h4><a name="随机点击进入的陪诊服务页面" id="随机点击进入的陪诊服务页面"><font color="#FF7F27"><b>随机点击进入的陪诊服务页面</b></font></a></h4>
+<div class="level4">
+	<pre class="code">http://192.168.0.66:8090/api.php?m=api&c=Serverplan&a=random_acc【&id=20】</pre>
+</div>
+<h4><a name="请求参数" id="请求参数">请求参数[POST]</a></h4>
+<div class="level4">
+<pre class="code">  
+	id=20 排程id
+</pre>
+</div>
+<h4><a name="返回数据" id="返回数据">返回数据</a></h4>
+<div class="level4">
+<pre class="code">
+{
+    "tip": "success",
+    "info": {
+        "user_head": "http://192.168.0.66:8090/Uploads/2016-01-06/568c7c6fd5304.jpg",
+        "user_name": "",
+        "user_sex": "女",
+        "user_age": "",
+        "user_mobile": "",
+        "user_ill": "",
+        "hospital": "黄岛医院1222",
+        "time": "2015-03-03",
+        "ill_info": null,											诊断信息
+        "base_info": null,											基本病情
+        "price": "",												价格
+        "t_imgs": "/Uploads/2015-12-22/567912b761b67.jpg,/Uploads/2015-12-22/567912b761b67.jpg,",		文字图片
+        "p_imgs": "/Uploads/2015-12-22/567912b761b67.jpg,/Uploads/2015-12-22/567912b761b67.jpg,"		账单图片
+    }
+}
+</pre>
+</div>
+
+
+<h4><a name="扩展信息接口" id="扩展信息接口"><font color="#FF7F27"><b>扩展信息接口</b></font></a></h4>
+<div class="level4">
+	<pre class="code">http://192.168.0.66:8090/api.php?m=api&c=Serverplan&a=oper_extend【&id=20】</pre>
+</div>
+<h4><a name="请求参数" id="请求参数">请求参数[POST]</a></h4>
+<div class="level4">
+<pre class="code">  
+	id=20 排程id
+</pre>
+</div>
+<h4><a name="返回数据" id="返回数据">返回数据</a></h4>
+<div class="level4">
+<pre class="code">
+{
+    "tip": "success",
+    "info": {
+        "memo": "admin",
+        "price": "",
+        "t_imgs": [
+            "http://192.168.0.66:8090/Uploads/2015-12-22/567912b761b67.jpg"
+        ],
+        "p_imgs": [
+            "http://192.168.0.66:8090/Uploads/2015-12-22/567912b761b67.jpg",
+            "http://192.168.0.66:8090/Uploads/2015-12-22/567912b761b67.jpg"
+        ]
+    }
+}
+</pre>
+</div>
+
+<h4><a name="文字页面数据接口" id="文字页面数据接口"><font color="#FF7F27"><b>文字页面数据接口</b></font></a></h4>
+<div class="level4">
+	<pre class="code">http://192.168.0.66:8090/api.php?m=api&c=Serverplan&a=txt_info【&id=20】</pre>
+</div>
+<h4><a name="请求参数" id="请求参数">请求参数[POST]</a></h4>
+<div class="level4">
+<pre class="code">  
+	id=20 排程id   
+</pre>
+</div>
+<h4><a name="返回数据" id="返回数据">返回数据</a></h4>
+<div class="level4">
+<pre class="code">
+{
+    "tip": "success",
+    "info": {
+        "memo": "dfdsf",
+        "t_imgs": [
+            "http://192.168.0.66:8090/Uploads/2016-01-08/568f560207397.jpg",
+            "http://192.168.0.66:8090/Uploads/2016-01-08/568f560208651.jpg"
+        ]
+    }
+}
+</pre>
+</div>
+
+
+
+<h4><a name="文字提交" id="文字提交"><font color="#FF7F27"><b>文字提交</b></font></a></h4>
+<div class="level4">
+	<pre class="code">http://192.168.0.66:8090/api.php?m=api&c=Serverplan&a=submit_txt【&order_id=20&memo=dfdsf】</pre>
+</div>
+<h4><a name="请求参数" id="请求参数">请求参数[POST]</a></h4>
+<div class="level4">
+<pre class="code">  
+	id=20 排程id  memo=6 备注  图片表单提交
+</pre>
+</div>
+<h4><a name="返回数据" id="返回数据">返回数据</a></h4>
+<div class="level4">
+<pre class="code">
+{
+    "tip": "success",
+    "info": "提交成功"
+}
+</pre>
+</div>
+
+
+<h4><a name="费用页面" id="费用页面"><font color="#FF7F27"><b>费用页面</b></font></a></h4>
+<div class="level4">
+	<pre class="code">http://192.168.0.66:8090/api.php?m=api&c=Serverplan&a=price_info【&id=20】</pre>
+</div>
+<h4><a name="请求参数" id="请求参数">请求参数[POST]</a></h4>
+<div class="level4">
+<pre class="code">  
+	id=20 排程id  
+</pre>
+</div>
+<h4><a name="返回数据" id="返回数据">返回数据</a></h4>
+<div class="level4">
+<pre class="code">
+{
+    "tip": "success",
+    "info": [
+        {
+            "id": 4,
+            "type_name": "挂号费",
+            "price": "3",
+            "img": [
+                "http://192.168.0.66:8090/Uploads/2016-01-08/568f560204ea3.jpg,/Uploads/2016-01-08/568f5602061b1.jpg",
+                "http://192.168.0.66:8090/Uploads/2016-01-08/568f560204ea3.jpg,/Uploads/2016-01-08/568f5602061b1.jpg"
+            ]
+        },
+        {
+            "id": 5,
+            "type_name": "门诊费",
+            "price": "50",
+            "img": [
+                "http://192.168.0.66:8090/Uploads/2016-01-08/568f560207397.jpg,/Uploads/2016-01-08/568f560208651.jpg",
+                "http://192.168.0.66:8090/Uploads/2016-01-08/568f560207397.jpg,/Uploads/2016-01-08/568f560208651.jpg"
+            ]
+        }
+    ]
+}
+</pre>
+</div>
+
+
+
+<h4><a name="费用信息提交" id="费用信息提交"><font color="#FF7F27"><b>费用信息提交</b></font></a></h4>
+<div class="level4">
+	<pre class="code">http://192.168.0.66:8090/api.php?m=api&c=Serverplan&a=price_submit【&id=20&type=6&money=50】</pre>
+</div>
+<h4><a name="请求参数" id="请求参数">请求参数[POST]</a></h4>
+<div class="level4">
+<pre class="code">  
+	id=20 排程id  type=6 就诊类型  money=50金钱  图片表单提交
+</pre>
+</div>
+<h4><a name="返回数据" id="返回数据">返回数据</a></h4>
+<div class="level4">
+<pre class="code">
+{
+    "tip": "success",
+    "info": "提交成功"
+}
+</pre>
+</div>
+
+
+
+<h4><a name="PHP注意事项" id="返回数据">PHP注意事项</a></h4>
+<div class="level4">
+<pre class="code">
+	如有不合适，请与Y联系
+</pre>
+</div>
+<div aria-labelledby="ui-dialog-title-media__popup_content" role="dialog" tabindex="-1" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-draggable" style="display: none; z-index: 1000; outline: 0px none;"><div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix"><span id="ui-dialog-title-media__popup_content" class="ui-dialog-title">链接设置</span><a role="button" class="ui-dialog-titlebar-close ui-corner-all" href="#"><span class="ui-icon ui-icon-closethick">close</span></a></div><div class="ui-dialog-content ui-widget-content" id="media__popup_content"><p id="media__link"><label>链接目标</label><button title="到详细页面的链接" id="media__linkbtn1" class="button"><img src="api_files/media_link_lnk.png"></button><button title="到原始文件的直接链接" id="media__linkbtn2" class="button"><img src="api_files/media_link_direct.png"></button><button title="没有链接" id="media__linkbtn3" class="button"><img src="api_files/media_link_nolnk.png"></button><button title="仅显示链接。" id="media__linkbtn4" class="button"><img src="api_files/media_link_displaylnk.png"></button></p><p id="media__align"><label>对齐</label><button title="不使用对齐。" id="media__alignbtn1" class="button"><img src="api_files/media_align_noalign.png"></button><button title="左对齐图片。" id="media__alignbtn2" class="button"><img src="api_files/media_align_left.png"></button><button title="居中对齐图片。" id="media__alignbtn3" class="button"><img src="api_files/media_align_center.png"></button><button title="右对齐图片。" id="media__alignbtn4" class="button"><img src="api_files/media_align_right.png"></button></p><p id="media__size"><label>图片大小</label><button title="小尺寸" id="media__sizebtn1" class="button"><img src="api_files/media_size_small.png"></button><button title="中等尺寸" id="media__sizebtn2" class="button"><img src="api_files/media_size_medium.png"></button><button title="大尺寸" id="media__sizebtn3" class="button"><img src="api_files/media_size_large.png"></button><button title="原始版本" id="media__sizebtn4" class="button"><img src="api_files/media_size_original.png"></button></p><p><input value="插入" class="button" id="media__sendbtn" type="button"></p></div></div></body>
+<script>
+	jQuery(document).ready(function($){
+$('.scroll_t').click(function(){$('html,body').animate({scrollTop: '0px'}, 800);}); 
+$('.scroll_b').click(function(){$('html,body').animate({scrollTop: document.body.clientHeight+'px'}, 800);});
+});
+
+$(document).ready(function(){ 
+    $("ul.scroll li").hover(function() {
+        $(this).find("div").stop()
+        .animate({right: "0", opacity:1}, "fast")
+        .css("display","block")
+    }, function() {
+        $(this).find("div").stop()
+        .animate({right: "0", opacity: 0}, "fast")
+    });  
+	$("#toc__header").click(function(){
+		if($("#toc__inside").is(":hidden")){
+				$("#toc__inside").slideDown("normal");
+				var h = $("#toc__header").offset().top - 33; 
+				$("#toc__header").parent(".toc").attr("style","position:absolute;margin-left:82%;padding-top:"+h+"px;");
+			}else{
+				$("#toc__header").parent(".toc").attr("style","margin-left:82%; position:fixed;");
+				$("#toc__inside").slideUp("normal");
+			}
+	});
+});
+</script>
+</html>

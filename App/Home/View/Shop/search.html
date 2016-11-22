@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<!-- saved from url=(0072)http://jf.vhot119.com/mobile/index.php?m=default&c=category&a=index&id=1 -->
+<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="Keywords" content="九万内部积分商城">
+<meta name="Description" content="九万内部积分商城">
+<title>手机类型_九万内部积分商城 触屏版</title>
+<link rel="stylesheet" href="__PUBLIC__/Home/shop/bootstrap.min.css">
+<link rel="stylesheet" href="__PUBLIC__/Home/shop/font-awesome.min.css">
+<link rel="stylesheet" href="__PUBLIC__/Home/shop/ectouch_red.css">
+<link rel="stylesheet" href="__PUBLIC__/Home/shop/photoswipe.css">
+<link rel="stylesheet" href="http://cdn.bootcss.com/twitter-bootstrap/3.0.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="__PUBLIC__/Font-Awesome-3.2.1/css/font-awesome.css">
+</head><body   style="margin: auto;"><div class="con">
+  <div style="height:7.2em;"></div>
+  <header>
+    <nav class="ect-nav ect-bg icon-write"> <ul class="ect-diaplay-box text-center">
+  <li class="ect-box-flex"><a href="{:u(CONTROLLER_NAME.'/index',array('username'=>$_GET['username'],'encry'=>$_GET['encry']))}"><i class="ect-icon ect-icon-home"></i>首页</a></li>
+  <li class="ect-box-flex"><a href="{:u(CONTROLLER_NAME.'/exchange',array('username'=>$_GET['username'],'encry'=>$_GET['encry']))}"><i class="glyphicon glyphicon-gift" style="font-size:1.9em;width:100%;"></i><span style="margin-top:-1.9em;display: block;">积分兑换</span></a></li>
+  <li class="ect-box-flex"><a href="{:u(CONTROLLER_NAME.'/capital',array('username'=>$_GET['username'],'encry'=>$_GET['encry']))}"><i class="glyphicon glyphicon-usd" style="font-size:1.9em;width:100%;"></i><span style="margin-top:-1.9em;display: block;">资金管理</span></a></li>
+  <li class="ect-box-flex"><a href="{:u(CONTROLLER_NAME.'/order_list',array('username'=>$_GET['username'],'encry'=>$_GET['encry']))}"><i class="" style="font-size:1.9em;width:100%;"><img src="__PUBLIC__/Home/shop/nav_1.png" style="width:1em;margin-top:-0.5em;"></i><span style="margin-top:-1.9em;display: block;">我的订单</span></a></li>
+</ul>
+ </nav>
+  </header>
+  <div class="ect-wrapper text-center">
+  <form method="GET" class="sort" name="listform">
+    <div> <a class="ect-colory" href="{:u(CONTROLLER_NAME.'/search',array('cid'=>$_GET['cid'],'sort'=>'id','order'=>'DESC','price_min'=>$_GET['price_min'],'price_max'=>$_GET['price_max'],'username'=>$_GET['username'],'encry'=>$_GET['encry']))}">默认</a>
+    <a class="" href="{:u(CONTROLLER_NAME.'/search',array('cid'=>$_GET['cid'],'sort'=>'sale','order'=>'DESC','price_min'=>$_GET['price_min'],'price_max'=>$_GET['price_max'],'username'=>$_GET['username'],'encry'=>$_GET['encry']))}">销量 <i class="glyphicon glyphicon-arrow-up"></i></a>
+    <a class="" href="{:u(CONTROLLER_NAME.'/search',array('cid'=>$_GET['cid'],'sort'=>'likes','order'=>'DESC','price_min'=>$_GET['price_min'],'price_max'=>$_GET['price_max'],'username'=>$_GET['username'],'encry'=>$_GET['encry']))}">人气 <i class="glyphicon glyphicon-arrow-up"></i></a>
+    <a class="" href="{:u(CONTROLLER_NAME.'/search',array('cid'=>$_GET['cid'],'sort'=>'shop_price','order'=>'DESC','price_min'=>$_GET['price_min'],'price_max'=>$_GET['price_max'],'username'=>$_GET['username'],'encry'=>$_GET['encry']))}">价格<i class="glyphicon glyphicon-arrow-up"></i></a> <a class="category-list"><i class="ect-icon ect-icon2 ect-icon-cate3"></i>筛选</a> </div>
+  </form>
+</div>
+
+<div class="ect-margin-tb ect-pro-list ect-margin-bottom0 ect-border-bottom0">
+  <ul id="J_ItemList">
+
+      <volist name="list" id="vo">
+    <div style=""><li class="single_item">
+<a href="{:u(CONTROLLER_NAME.'/detail',array('id'=>$vo['id'],'username'=>$_GET['username'],'encry'=>$_GET['encry']))}"><img src="{$vo['main_img']}" alt="{$vo['name']}"></a>
+<dl>
+  <dt>
+    <h4 class="title"><a href="{:u(CONTROLLER_NAME.'/detail',array('id'=>$vo['id'],'username'=>$_GET['username'],'encry'=>$_GET['encry']))}">{$vo['name']}</a></h4>
+  </dt>
+  <dd><span class="pull-left"><strong>价格：<b class="ect-colory">{$vo['shop_price']}分</b></strong><small class="ect-margin-lr"><del>{$vo['goods_total']}分</del></small></span><span class="ect-pro-price">
+     
+    </span></dd>
+  <dd><span class="pull-left "><i class="fa fa-heart-o"></i> {$vo['like']}人喜欢</span><span class="pull-right">销量：{$vo['sale']}件</span> </dd>
+</dl>
+ </li></div>
+      </volist>
+</ul>
+</div>
+<footer class="logo"><a href="" target="_blank">
+    <!--<img src="__PUBLIC__/Home/shop/copyright.png" width="100%">-->
+    </a></footer>
+<form class="hold-height" method="get" id="form" action="{:u(CONTROLLER_NAME.'/search',array('cid'=>$_GET['cid'],'username'=>$_GET['username'],'encry'=>$_GET['encry']))}">
+  <div id="goFilter">
+    <div class="touchweb_mod_Filter">
+      <div class="touchweb-com_headerFilter"> <a class="pull-left left" href="javascript:;" data-data-pc="-1">取消</a>
+        <h1 class="title"><span>筛选<span></span></span></h1>
+        <a class=" right pull-right" href="javascript:document.getElementById(&#39;form&#39;).submit()">确定</a> </div>
+      <div class="scrollContent">
+        <div data-tpa="H5_SEARCH_FILTER" class="touchweb-com_listType">
+          <!--<input type="hidden" name="id" class="cat" value="1">-->
+          <!--<a href="javascript:;" id="filter_brand" data-url="touchweb_mod_Brand" class="title"> 品牌 <span class="range">-->
+          <!--全部-->
+          <!--</span> <em class="icon-right_arrow"></em> </a>-->
+          <!--<ul>-->
+                        <!--<li class="av-selected"><a href="javascript:;" id="brand_0" value="0" name="全部" class="childTitle">全部</a></li>-->
+                        <!--<li class="av-selected"><a href="javascript:;" id="brand_4" value="4" name="苹果" class="childTitle">苹果</a></li>-->
+                        <!--<li class="av-selected"><a href="javascript:;" id="brand_49" value="49" name="金士顿" class="childTitle">金士顿</a></li>-->
+                        <!--<li class="av-selected"><a href="javascript:;" id="brand_50" value="50" name="金立" class="childTitle">金立</a></li>-->
+                      <!--</ul>-->
+          <!--<input type="hidden" name="brand" value="0">-->
+          <a href="javascript:;" id="filter_price" data-url="attr_price" class="title"> 价格 <span class="range">
+          全部
+          </span> <em class="icon-right_arrow"></em> </a>
+          <ul>
+                        <li class="av-selected"><a href="javascript:;" id="grade_0" value="0|0" name="全部" class="childTitle">全部</a></li>
+                        <li class="av-selected"><a href="javascript:;" id="grade_4" value="0|30000" name="0 - 30000" class="childTitle">0&nbsp;-&nbsp;30000</a></li>
+                        <li class="av-selected"><a href="javascript:;" id="grade_" value="120000|150000" name="120000 - 150000" class="childTitle">120000&nbsp;-&nbsp;150000</a></li>
+                      </ul>
+          <input type="hidden" name="price_min" value="0">
+          <input type="hidden" name="price_max" value="0">
+          
+                    <input type="hidden" name="filter_attr" value="0">
+        </div>
+        <div class="btn1 row">
+          <div class="col-xs-3">
+            <input type="button" class="clear" onclick="javascript:clear_filter()" value="清空">
+          </div>
+          <div class="col-xs-9">
+            <input type="submit" class="sure" name="sub" value="确定">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
+<script src="__PUBLIC__/Home/shop/hm.js"></script><script>
+function clear_filter(){
+ $(".touchweb-com_listType .range").text("全部");
+	   $(".touchweb-com_listType input").each(function() {
+		  if($(this).attr('class') != 'cat'){ 
+			   $(this).val("");
+		  }
+	   });
+}
+</script>
+ </div>
+ <a id="scrollUp" href="#" style="position: fixed; z-index: 10;"><i class="fa fa-angle-up"></i></a>
+<style>
+#scrollUp {
+	border-radius:100%;
+	background-color: #777;
+	color: #eee;
+	font-size: 40px;
+	line-height: 1;text-align: center;text-decoration: none;bottom: 1em;right: 10px;overflow: hidden;width: 46px;
+	height: 46px;
+	border: none;
+	opacity: 0.6;
+}
+</style>
+<script type="text/javascript" src="__PUBLIC__/Home/shop/jquery.min.js"></script> 
+<script type="text/javascript" src="__PUBLIC__/Home/shop/jquery.json.js"></script> 
+<script type="text/javascript" src="__PUBLIC__/Home/shop/common.js"></script> 
+<script type="text/javascript" src="__PUBLIC__/Home/shop/jquery.more.js"></script> 
+<script type="text/javascript" src="__PUBLIC__/Home/shop/utils.js"></script> 
+<script src="__PUBLIC__/Home/shop/TouchSlide.1.1.js"></script> 
+<script src="__PUBLIC__/Home/shop/ectouch.js"></script> 
+<script src="__PUBLIC__/Home/shop/simple-inheritance.min.js"></script> 
+<script src="__PUBLIC__/Home/shop/code-photoswipe-1.0.11.min.js"></script> 
+<script src="__PUBLIC__/Home/shop/bootstrap.min.js"></script> 
+<script src="__PUBLIC__/Home/shop/jquery.scrollUp.min.js"></script> 
+<script type="text/javascript" src="__PUBLIC__/Home/shop/validform.js"></script> 
+<script language="javascript">
+	/*banner滚动图片*/
+		TouchSlide({
+			slideCell : "#focus",
+			titCell : ".hd ul", // 开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+			mainCell : ".bd ul",
+			effect : "left",
+			autoPlay : true, // 自动播放
+			autoPage : true, // 自动分页
+			delayTime: 200, // 毫秒；切换效果持续时间（执行一次效果用多少毫秒）
+			interTime: 2500, // 毫秒；自动运行间隔（隔多少毫秒后执行下一个效果）
+			switchLoad : "_src" // 切换加载，真实图片路径为"_src"
+		});
+	/*弹出评论层并隐藏其他层*/
+	function openSearch(){
+		if($(".con").is(":visible")){
+			$(".con").hide();	
+			$(".search").show();
+		}
+	}
+	function closeSearch(){
+		if($(".con").is(":hidden")){
+			$(".con").show();	
+			$(".search").hide();
+		}
+	}
+</script> 
+<div style="display:none"><script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?61e7518cb8f77449a17a841ececaea9f";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</div>
+</body></html>

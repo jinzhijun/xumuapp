@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<!-- saved from url=(0068)http://jf.vhot119.com/mobile/index.php?m=default&c=user&a=order_list -->
+<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="Keywords" content="九万内部积分商城">
+<meta name="Description" content="九万内部积分商城">
+<title>九万内部积分商城 触屏版</title>
+<link rel="stylesheet" href="__PUBLIC__/Home/shop/bootstrap.min.css">
+<link rel="stylesheet" href="__PUBLIC__/Home/shop/font-awesome.min.css">
+<link rel="stylesheet" href="__PUBLIC__/Home/shop/ectouch_red.css">
+<link rel="stylesheet" href="__PUBLIC__/Home/shop/user.css">
+<link rel="stylesheet" href="__PUBLIC__/Home/shop/photoswipe.css">
+<link rel="stylesheet" href="http://cdn.bootcss.com/twitter-bootstrap/3.0.3/css/bootstrap.min.css">
+</head>
+
+<body style="margin: auto">
+<div class="con">
+<div class="ect-bg">
+  <header class="ect-header ect-margin-tb ect-margin-lr text-center ect-bg icon-write"> <a href="javascript:history.go(-1)" class="pull-left ect-icon ect-icon1 ect-icon-history"></a> <span>全部订单</span> <a href="javascript:;" onclick="openMune()" class="pull-right ect-icon ect-icon1 ect-icon-mune"></a></header>
+  <nav class="ect-nav ect-nav-list" style="display:none;">
+    <ul class="ect-diaplay-box text-center">
+      <li class="ect-box-flex"><a href="{:u(CONTROLLER_NAME.'/index',array('username'=>$_GET['username'],'encry'=>$_GET['encry']))}"><i class="ect-icon ect-icon-home"></i>首页</a></li>
+  <li class="ect-box-flex"><a href="{:u(CONTROLLER_NAME.'/exchange',array('username'=>$_GET['username'],'encry'=>$_GET['encry']))}"><i class="glyphicon glyphicon-gift" style="font-size:1.9em;width:100%;"></i><span style="margin-top:-1.9em;display: block;">积分兑换</span></a></li>
+  <li class="ect-box-flex"><a href="{:u(CONTROLLER_NAME.'/capital',array('username'=>$_GET['username'],'encry'=>$_GET['encry']))}"><i class="glyphicon glyphicon-usd" style="font-size:1.9em;width:100%;"></i><span style="margin-top:-1.9em;display: block;">资金管理</span></a></li>
+  <li class="ect-box-flex"><a href="{:u(CONTROLLER_NAME.'/order_list',array('username'=>$_GET['username'],'encry'=>$_GET['encry']))}"><i class="" style="font-size:1.9em;width:100%;"><img src="__PUBLIC__/Home/shop/nav_1.png" style="width:1em;margin-top:-0.5em;"></i><span style="margin-top:-1.9em;display: block;">我的订单</span></a></li>
+</ul>
+  </nav>
+</div>
+    <div class="ect-pro-list user-order" style="border-bottom:none;">
+        <ul id="J_ItemList">
+            <volist name="list" id="vo">
+            <li>
+                <a    style="text-decoration:none; color: #474747;" href="{:u(CONTROLLER_NAME.'/order_detail',array('id'=>$vo['id'],'username'=>$_GET['username'],'encry'=>$_GET['encry']))}"><img src="{$vo['primg']}"  style="text-decoration:none;"   class="pull-left">
+                    <dl>
+                        <dt>
+                        <h4 class="title">订单号：{$vo['order_id']}</h4>
+                        </dt>
+
+                        <dd>订单状态：<if condition="$vo['status'] eq 1">已确认,已付款<else/>未确认,未付款</if><if condition="$vo['type'] eq 1">,未发货<elseif condition="$vo['type'] eq 2"/>,已发货<else/>, 已收货</if></dd>
+                        <dd>订单总金额：<span class="ect-color">{$vo['total']}分</span></dd>
+                        <dd>下单时间：{$vo.date|date="Y-m-d H:i:s",###}</dd>
+                    </dl>
+                   </a>
+            </li>
+            </volist>
+        </ul>
+    </div>
+</div>
+<div class="search" style="display:none;">
+    <div class="ect-bg">
+        <header class="ect-header ect-margin-tb ect-margin-lr text-center"><span>搜索</span><a href="javascript:;" onclick="closeSearch();"><i class="icon-close pull-right"></i></a></header>
+    </div>
+    <div class="ect-padding-lr">
+        <form action="http://jf.vhot119.com/mobile/index.php?m=default&amp;c=category&amp;a=index" method="post" id="searchForm" name="searchForm">
+            <div class="input-search"> <span>
+        <input name="keywords" type="search" placeholder="请输入搜索关键词！" id="keywordBox">
+        </span>
+                <button type="submit" value="搜索" onclick="return check(&#39;keywordBox&#39;)"><i class="glyphicon glyphicon-search"></i></button>
+            </div>
+        </form>
+
+    </div>
+</div>
+<a id="scrollUp" href="http://jf.vhot119.com/mobile/index.php?m=default&amp;c=user&amp;a=order_list#top" style="position: fixed; z-index: 10;"><i class="fa fa-angle-up"></i></a>
+<style>
+    #scrollUp {
+        border-radius:100%;
+        background-color: #777;
+        color: #eee;
+        font-size: 40px;
+        line-height: 1;text-align: center;text-decoration: none;bottom: 1em;right: 10px;overflow: hidden;width: 46px;
+        height: 46px;
+        border: none;
+        opacity: 0.6;
+    }
+</style>
+<script src="__PUBLIC__/Home/shop/hm.js"></script><script type="text/javascript" src="__PUBLIC__/Home/shop/jquery.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Home/shop/jquery.json.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Home/shop/common.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Home/shop/jquery.more.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Home/shop/utils.js"></script>
+<script src="__PUBLIC__/Home/shop/TouchSlide.1.1.js"></script>
+<script src="__PUBLIC__/Home/shop/ectouch.js"></script>
+<script src="__PUBLIC__/Home/shop/simple-inheritance.min.js"></script>
+<script src="__PUBLIC__/Home/shop/code-photoswipe-1.0.11.min.js"></script>
+<script src="__PUBLIC__/Home/shop/bootstrap.min.js"></script>
+<script src="__PUBLIC__/Home/shop/jquery.scrollUp.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Home/shop/validform.js"></script>
+<script language="javascript">
+    /*banner滚动图片*/
+    TouchSlide({
+        slideCell : "#focus",
+        titCell : ".hd ul", // 开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+        mainCell : ".bd ul",
+        effect : "left",
+        autoPlay : true, // 自动播放
+        autoPage : true, // 自动分页
+        delayTime: 200, // 毫秒；切换效果持续时间（执行一次效果用多少毫秒）
+        interTime: 2500, // 毫秒；自动运行间隔（隔多少毫秒后执行下一个效果）
+        switchLoad : "_src" // 切换加载，真实图片路径为"_src"
+    });
+    /*弹出评论层并隐藏其他层*/
+    function openSearch(){
+        if($(".con").is(":visible")){
+            $(".con").hide();
+            $(".search").show();
+        }
+    }
+    function closeSearch(){
+        if($(".con").is(":hidden")){
+            $(".con").show();
+            $(".search").hide();
+        }
+    }
+</script>
+<div style="display:none"><script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?61e7518cb8f77449a17a841ececaea9f";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+</div>
+<script type="text/javascript">
+    var from_order_empty = "请选择要合并的从订单";
+    var to_order_empty = "请选择要合并的主订单";
+    var order_same = "主订单和从订单相同，请重新选择";
+    var confirm_merge = "您确实要合并这两个订单吗？";
+    if(){
+        get_asynclist('index.php?m=default&c=user&a=async_order_list&pay=1' , '/mobile/themes/default/images/loader.gif');
+    }
+</script>
+</body></html>

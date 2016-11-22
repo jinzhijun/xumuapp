@@ -1,0 +1,357 @@
+[ 2016-10-18T13:43:27+08:00 ] 192.168.0.66 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.012132s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001200s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001412s ]
+
+[ 2016-10-18T13:43:27+08:00 ] 192.168.0.66 /index.php/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000295s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000395s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000531s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000192s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.078390s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.078509s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000857s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000949s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000915s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001054s ]
+
+[ 2016-10-18T13:43:28+08:00 ] 192.168.0.66 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000327s ]
+
+[ 2016-10-18T13:43:32+08:00 ] 192.168.0.66 /index.php/Login/loginCheck.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000294s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000715s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000848s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0314s ]
+SQL: SELECT * FROM `tp_admin` WHERE `account` = 'admin' AND `password` = 'c3284d0f94606de1fd2af172aba15bf3' LIMIT 1   [ RunTime:0.0077s ]
+SQL: SHOW COLUMNS FROM `tp_admin_login_log` [ RunTime:0.0114s ]
+SQL: INSERT INTO `tp_admin_login_log` (`user_id`,`status`,`login_time`,`login_ip`) VALUES ('21','用户登录','1476769412','192.168.0.66') [ RunTime:0.0065s ]
+
+[ 2016-10-18T13:43:32+08:00 ] 192.168.0.66 /index.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000292s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000488s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000676s ]
+SQL: SHOW COLUMNS FROM `tp_menu_admin` [ RunTime:0.0167s ]
+SQL: SELECT * FROM `tp_menu_admin` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0066s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `tp_admin` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000188s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.066000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.066149s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000649s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000824s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000532s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000669s ]
+
+[ 2016-10-18T13:43:32+08:00 ] 192.168.0.66 /Uploads/2016-01-06/568ccc4c2d725.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000468s ]
+
+[ 2016-10-18T13:43:32+08:00 ] 192.168.0.66 /index.php/index/content.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000439s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000665s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000820s ]
+SQL: SHOW COLUMNS FROM `tp_menu_admin` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `tp_menu_admin` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0091s ]
+SQL: SELECT * FROM `tp_admin` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000224s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042034s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042219s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000561s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000718s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000823s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000988s ]
+
+[ 2016-10-18T13:44:43+08:00 ] 192.168.0.66 /index.php/Menu/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000321s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000411s ]
+SQL: SHOW COLUMNS FROM `tp_menu_admin` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `tp_menu_admin` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `tp_admin` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tp_menu_admin` ORDER BY sort asc  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000150s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000252s ]
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.084280s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.084381s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000311s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000400s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000829s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000980s ]
+
+[ 2016-10-18T13:44:44+08:00 ] 192.168.0.66 /index.php/Setting/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000318s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000493s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000639s ]
+SQL: SHOW COLUMNS FROM `tp_menu_admin` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `tp_menu_admin` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `tp_admin` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `tp_admin`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000221s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040934s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041100s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000225s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000325s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000401s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000533s ]
+
+[ 2016-10-18T13:44:44+08:00 ] 192.168.0.66 /Uploads/2016-01-06/568ccc4c2d725.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000447s ]
+
+[ 2016-10-18T13:44:44+08:00 ] 192.168.0.66 /Uploads/2016-08-09/57a9834502d0b.JPG
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000555s ]
+
+[ 2016-10-18T13:44:44+08:00 ] 192.168.0.66 /Uploads/2016-01-07/568e1ac899c6c.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000505s ]
+
+[ 2016-10-18T13:44:45+08:00 ] 192.168.0.66 /index.php/Sugg/gindex.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000308s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000419s ]
+SQL: SHOW COLUMNS FROM `tp_menu_admin` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `tp_menu_admin` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `tp_admin` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tp_sugg` [ RunTime:0.0241s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_sugg` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tp_sugg` ORDER BY id asc LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000220s ]
+NOTIC: [8] Undefined variable: not_found D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Runtime\Cache\Admin\339d2f6dd9085af944adb28c140eaa75.php 第 237 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041677s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041840s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000433s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000704s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000834s ]
+
+[ 2016-10-18T13:44:46+08:00 ] 192.168.0.66 /index.php/Xieyi/gadd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000373s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000487s ]
+ERR: 无法加载控制器:Xieyi
+
+[ 2016-10-18T13:44:55+08:00 ] 192.168.0.66 /index.php/ProOrder/gindex.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000298s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008961s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009168s ]
+SQL: SHOW COLUMNS FROM `tp_menu_admin` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `tp_menu_admin` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `tp_admin` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tp_pro_order` [ RunTime:0.0319s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_pro_order` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tp_pro_order` ORDER BY id ASC LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tp_product` [ RunTime:0.0285s ]
+SQL: SELECT * FROM `tp_product` WHERE `id` = 12 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `tp_product` WHERE `id` = 14 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tp_product` WHERE `id` = 12 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tp_product` WHERE `id` = 12 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000123s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000227s ]
+NOTIC: [8] Undefined variable: nav_head D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Runtime\Cache\Admin\c524f68a410fa5b54a772aacf00d184f.php 第 162 行.
+NOTIC: [8] Undefined variable: title D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Runtime\Cache\Admin\c524f68a410fa5b54a772aacf00d184f.php 第 182 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Runtime\Cache\Admin\c524f68a410fa5b54a772aacf00d184f.php 第 238 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Runtime\Cache\Admin\c524f68a410fa5b54a772aacf00d184f.php 第 238 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Runtime\Cache\Admin\c524f68a410fa5b54a772aacf00d184f.php 第 238 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Runtime\Cache\Admin\c524f68a410fa5b54a772aacf00d184f.php 第 238 行.
+NOTIC: [8] Undefined variable: not_found D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Runtime\Cache\Admin\c524f68a410fa5b54a772aacf00d184f.php 第 260 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043754s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043887s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000511s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000662s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000640s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000799s ]
+
+[ 2016-10-18T13:44:55+08:00 ] 192.168.0.66 /index.php/Product/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000436s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000463s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000627s ]
+SQL: SHOW COLUMNS FROM `tp_product` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `tp_product` [ RunTime:0.0021s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_product` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tp_product` ORDER BY id asc LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tp_pro_class` [ RunTime:0.0097s ]
+SQL: SHOW COLUMNS FROM `tp_pro_class` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `tp_pro_class` WHERE `id` = 23 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tp_pro_class` WHERE `id` = 23 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tp_pro_class` WHERE `id` = 23 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tp_pro_class` WHERE `id` = 35 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000156s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000278s ]
+NOTIC: [8] Undefined variable: name D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Runtime\Cache\Admin\f158d891b6efe0f27faa477fc881521f.php 第 185 行.
+NOTIC: [8] Undefined variable: not_found D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Runtime\Cache\Admin\f158d891b6efe0f27faa477fc881521f.php 第 249 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019958s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020082s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000363s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000452s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000679s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000842s ]
+
+[ 2016-10-18T13:44:55+08:00 ] 192.168.0.66 /Uploads/2016-06-27/57708c23d9778.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000467s ]
+
+[ 2016-10-18T13:44:56+08:00 ] 192.168.0.66 /Uploads/2016-06-27/57708c23d9778.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-10-18T13:44:56+08:00 ] 192.168.0.66 /index.php/ProClass/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000337s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000481s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000587s ]
+SQL: SHOW COLUMNS FROM `tp_menu_admin` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `tp_menu_admin` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `tp_admin` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tp_pro_class` [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `tp_pro_class` [ RunTime:0.0021s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_pro_class` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tp_pro_class` ORDER BY id ASC LIMIT 0,10   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000218s ]
+NOTIC: [8] Undefined variable: not_found D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Runtime\Cache\Admin\1050d7806eeaabc012748010cd6f61e1.php 第 245 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042136s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042291s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000639s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000797s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000809s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000975s ]
+

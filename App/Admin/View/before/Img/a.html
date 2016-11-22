@@ -1,0 +1,111 @@
+	<!-- 引入公脚文件 -->
+	<include file="common:header" />
+<body style="background:#fff;">
+
+
+<div class="" style="width:300px;">
+				
+	 <div id="upload_zizhi" style="padding: 0; cursor: pointer;"
+								class="upload"></div>
+							<div id="imgdiv_zizhi" style=" padding: 0"
+								class="upload">
+
+								<if condition="($sel['certificate'] neq '')">
+									<img id="imgShow_zizhi" src="/{$sel.certificate}" width="153" height="94">
+								<else />
+									<img id="imgShow_zizhi" width="153" height="94" style="padding: 0" />
+								</if>
+
+ <div id="cancel_zizhi"
+									style="width: 50px; height: 30px; cursor: pointer">
+
+								</div>
+								<input type="hidden" id="ifuploadback_zizhi"
+									name="ifuploadback_zizhi" value="0" />
+
+							</div>
+						 
+<div class="">
+							
+							<p>支持JPG、PNG、BMP、GIF格式</p>
+						</div>
+					 
+					<div
+						style="background:url(__PUBLIC__/img/xuanze.png) no-repeat; width: 200px; margin: 0;">
+						<input type="file" id="certificate" name="certificate"
+							style="height: 44px; width: 113px; filter: alpha(opacity : 0); opacity: 0; cursor: pointer;"
+							onblur="checknewpaaa()" />
+
+					</div>
+				</div>
+				<br>
+				  <a class="search" href="javascript:$('form').submit()">提交</a>
+				  </form>
+				<script type="text/javascript">
+		$(function() {
+
+			new uploadPreview({
+				UpBtn : "certificate",
+				DivShow : "imgdiv_zizhi",
+				ImgShow : "imgShow_zizhi"
+			});
+
+			$("#certificate").change(function() {
+				$("#imgdiv_zizhi").show();
+				$("#upload_zizhi").hide();
+				$("#ifuploadback_zizhi").val("1");
+			});
+
+			$("#cancel_zizhi").click(function() {
+				$("#imgdiv_zizhi").hide();
+				$("#upload_zizhi").show();
+				$("#ifuploadback_zizhi").val("0");
+			});
+
+			 
+		   	  $(".bottom2").next().hide();
+			  $(".user_left>ul>li").eq(0).removeClass("a");
+			  $(".user_left>ul>li").eq(5).addClass("a");
+
+		});
+		$('.search').click(function(){
+			 
+			var name = $('#name').val();
+			var mobile = $('#mobile').val();
+			var truename = $('#truename').val();
+			if(name == ""){
+				toastr.error("请输入客户名称！", opts);
+        		 $('#name').focus();
+        		return false;
+        	}
+			if(mobile==""){
+        		toastr.error("请输入手机号码！", opts);
+        		$('#mobile').focus();
+        		return false;
+        	}
+			if(truename==""){
+        		toastr.error("请输入真实姓名！", opts);
+        		$('#truename').focus();
+        		return false;
+        	}
+			
+			 $.ajax({
+			     url:"{:u(CONTROLLER_NAME . '/create')}",
+			     type:"POST",
+			     dataType:"json",
+			     data:$(".form-horizontal").serialize()+"&status="+status+"&certificate="+$('#certificate').val(),
+			     success:function(res){
+			    if(res.result == 'success'){
+			           alert("操作成功");
+			   		//  location.href="{:u(CONTROLLER_NAME . '/index')}"
+			         }else{
+			        	 toastr.error("操作失败！", opts);
+			        
+			      }
+			     
+			     }
+			    });
+		})
+	</script>
+</body>
+</html>

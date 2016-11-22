@@ -1,0 +1,216 @@
+<include file="common:header" />
+<body>
+ <style>
+ .btn {
+    background-image: none !important;
+    border: medium none;
+    border-radius: 0;
+    box-shadow: none !important;
+    color: #fff !important;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0;
+    position: relative;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25) !important;
+    transition: all 0.15s ease 0s;
+    vertical-align: middle;
+}
+ </style>
+ 
+<div class="main-container" id="main-container">
+  <div class="main-container-inner"> <a class="menu-toggler" id="menu-toggler" href="#"> <span
+				class="menu-text"></span> </a> 
+    <div class="main-content">
+      <div class="page-content">
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="widget-box transparent" id="recent-box">
+              <div class="widget-header">
+                <div class="widget-toolbar no-border">
+                  <ul class="nav nav-tabs" id="recent-tab">
+                   
+                    <li class="active"><a href="{:U(CONTROLLER_NAME.'/index')}">管理员列表</a></li>
+                    <li><a href="{:U(CONTROLLER_NAME.'/add')}">添加</a> </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <br>
+            <div class="main-container" id="main-container"> 
+              
+        
+			 <table cellspacing="0" width="100%" class="table table-small-font table-bordered table-striped">
+									<thead>
+										<tr>
+											<th>编号</th>
+											<th data-priority="1">用户名</th>
+											 <th data-priority="3">用户头像</th>
+											<th data-priority="3">姓名</th>
+										
+											<th data-priority="3">状态</th>
+											<th data-priority="3">操作</th>
+										 
+										</tr>
+									</thead>
+									<tbody>
+										 <volist  name="admins" id="admin">
+			 	<tr>
+			 		<td>{$admin.id}</td>
+			 		<td>{$admin.account}</td>
+			 		 			 		<td><img src="{$admin.head}" width="50" /></td>
+			 		<td>{$admin.real_name}</td>
+
+			 		<td>
+			 		
+				 		 <if condition="$admin.status eq '1'">
+				 		正常
+				 		<elseif condition="$admin.status eq '2'"  />
+				 		冻结
+				 		<else/>
+				 		删除
+				 		</if>
+				 		
+			 		</td>
+			 		<td>					
+			 		<a class="btn btn-secondary" href="{:u(CONTROLLER_NAME . '/edit')}?id={$admin.id}" >编辑</a>
+			 		<if condition="$admin.account eq 'admin'">
+						<a class="btn btn-pink"  href="{:u(CONTROLLER_NAME . '/setAdminPassword')}?id={$admin.id}">设置密码</a>
+						<a class="btn btn-pink" disabled="disabled" href="{:u(CONTROLLER_NAME . '/setpower')}?id={$admin.id}">设置权限</a>
+				 	<else/>
+				 		<a class="btn btn-pink"  href="{:u(CONTROLLER_NAME . '/setAdminPassword')}?id={$admin.id}">设置密码</a>
+				 		<a class="btn btn-pink"  href="{:u(CONTROLLER_NAME . '/setpower')}?id={$admin.id}">设置权限</a>
+				 		<if condition="$hoster eq 'admin'">
+				 			<a class="btn btn-pink"  href="javascript:deladmin({$admin.id})">删除</a>
+				 		</if>
+			 		</if></td>
+			 	</tr>
+			 </volist>
+										</tbody>
+										</table>
+									 
+			 
+			 
+			
+			
+			
+			 
+			<div class="page-loading-overlay">
+				<div class="loader-2"> </div>
+			 
+
+		 
+      </div>
+              <!-- /.main-container-inner --> 
+              
+            </div>
+            <!-- /.main-container --> 
+          </div>
+        </div>
+        <!-- /.row --> 
+      </div>
+      <!-- /.page-content --> 
+    </div>
+    <!-- /.main-content --> 
+    
+  </div>
+  <!-- /.main-container-inner --> 
+   <script>
+	function deladmin(power_id){
+   		if(confirm('确定删除吗 ？')){
+   			$.ajax({
+				url:"{:u(CONTROLLER_NAME . '/deladmin')}",
+				type:"POST",
+				dataType:"json",
+				data:{power_id:power_id},
+				success:function(res){
+					if(res.result == '1'){
+						alert('操作成功');
+						 window.location.reload();
+					}else{
+						alert('操作失败');
+						 window.location.reload();
+					}
+				}
+			 });
+   		}else{
+   			return false;
+   		}
+   }
+   
+   
+$(document).ready(function(){
+    var opts = {
+			"closeButton": true,
+			"debug": false,
+			"positionClass": "toast-top-full-width",
+			"onclick": null,
+			"showDuration": "300",
+			"hideDuration": "1000",
+			"timeOut": "5000",
+			"extendedTimeOut": "1000",
+			"showEasing": "swing",
+			"hideEasing": "linear",
+			"showMethod": "fadeIn",
+			"hideMethod": "fadeOut"
+		};
+	$('#submit').click(function(){
+		 
+		//show_loading_bar(100);
+		 if($("#name").val() ==  "")
+		 {
+			// toastr.error("<i class=fa-info></i>请输入名称内容", opts);
+			 $("#name").focus();
+			 return false;
+		 }
+		 if($("#path").val() ==  "")
+		 {
+			// toastr.error("<i class=fa-info></i>请输入路径内容", opts);
+			 $("#path").focus();
+			 return false;
+		 }
+		 if($("#icon").val() ==  "")
+		 {
+			// toastr.error("<i class=fa-info></i>请输入图片class", opts);
+			 $("#icon").focus();
+			 return false;
+		 }
+		  
+		 var data = "name="+$("#name").val()+
+		 	 "&path="+$("#path").val()+
+		 	 "&is_menu="+$('#is_menu').val()+
+		 	"&status="+$('#status').val()+
+			"&icon="+$('#icon').val()+
+			"&sex="+$('#sex').val()+
+			"&parent="+$('#parent').val()+
+			"&sort="+$('#sort').val();
+		 $.ajax({
+			url:"{:u(CONTROLLER_NAME . '/add')}",
+			type:"POST",
+			dataType:"json",
+			data:data,
+			success:function(res){
+				if(res.result == 'success'){
+					alert('操作成功');
+					 window.location.reload();
+				}else{
+					alert('操作失败');
+					 window.location.reload();
+				}
+			}
+		 
+		 });
+		 
+	});
+	
+});
+</script> 
+  <!--a href="#" id="btn-scroll-up"
+			class="btn-scroll-up btn btn-sm btn-inverse"> <i
+			class="icon-double-angle-up icon-only bigger-110"></i> </a--> </div>
+<include file="common:footer" />
+
+
+ 
+ 
+ 
+  

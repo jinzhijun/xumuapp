@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<!-- saved from url=(0041)http://fc.vhot119.com/home/fuli/news.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>每日新闻</title><link href="__PUBLIC__/Home/daynews/css.css" rel="stylesheet">
+    <script src="__PUBLIC__/Home/daynews/hm.js"></script>
+    <script src="__PUBLIC__/Home/daynews/jquery-2.0.3.min.js"></script>
+    <link href="__PUBLIC__/Home/daynews/arplist.css" rel="stylesheet"></head>
+<body bgcolor="#f3efef"><a href="JavaScript:history.go(-1)" id="back"></a>
+<div id="bt"><span>每日新闻</span></div><div id="nr"><div class="logodiwen">
+
+    <volist name="list" id="vo">
+    <div class="nr">
+        {$vo.date|date="Y-m-d H:i:s",###}&nbsp;<a href="{:u(CONTROLLER_NAME.'/info',array('id'=>$vo['id'],'username'=>$_GET['username'],'encry'=>$_GET['encry']))}" target="_self">{$vo['title']}</a></div><div class="huixian"></div>
+        </volist>
+    <div></div></div></div>
+<div class="linian">诚信　创新　忠诚　共赢</div><div style="display: none"></div></body></html>

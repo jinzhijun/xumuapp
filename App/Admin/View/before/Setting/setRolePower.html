@@ -1,0 +1,133 @@
+<include file="Common:header" />
+<script type="text/javascript">
+$(document).ready(function(){
+		$(".js_submit").live("click",function(){
+			var list = new Array();
+			$(".menu_level_1 :checkbox").each(function(){
+				var checked = $(this).attr("checked")=="checked"?true:false;
+				if(checked){
+					list.push($(this).val());
+				}
+			});
+			
+			var data = "id="+$("#id").val()+"&list="+list.join(',');
+			 
+			 $.ajax({
+				 url:"{:u('/admin/setting/setrolepower')}",
+				 type:"POST",
+				 dataType:"json",
+				 data:data,
+				 success:function(res){
+					 if(res.result == 'success'){
+						 message.show("保存成功",'success');
+						 location.href="{:u('/admin/setting/role')}";
+					 }else{
+						 message.show("保存失败",'error')
+					 }
+				 }
+			 });
+		});
+		$("#chkall").live("click",function(){
+			var checked = $(this).attr("checked")=="checked"?true:false;
+			$("input[type='checkbox']").attr("checked",checked);
+		})
+		$(".menu_level_1 :checkbox").live("click",function(){
+			var checked = $(this).attr("checked")=="checked"?true:false;
+			var id = $(this).attr("id");
+			$("input[id^='"+id+"_']").attr("checked",checked);
+		 
+		})
+})
+</script>
+<div class="body page_index">
+	<include file="Common:topMenu" />
+
+	<div id="js_container_box" class="container_box side_l">
+
+		<div class="col_side">
+			<include file="Common:leftMenu" />
+		</div>
+		<div class="col_main">
+			<div class="nybt">
+				<span>设置权限    [{$role.name}]</span>
+  				<input type="hidden" id="id" value="{$role.id}">
+				<div class="tool_area_right">
+					
+					<a class="js_submit btn  btn_primary">保存</a>
+					 <a class="btn  btn_default" href="javascript:history.go(-1)">返回
+					</a>
+				</div>
+			</div>
+			
+			<div class="module_list">
+		<div style="text-align:right"><input type="checkbox"  id="chkall">全选</div>
+				<volist name="system_module" id="menu"> <if
+					condition="$menu.parent eq 0">
+				<dl class="menu_level_1">
+					<dt>{$menu.name}
+					 
+					 <input type="checkbox" id="{$menu.id}" value={$menu.id} 
+					 <if condition="in_array($menu['id'],$power) eq 'true'">
+					 checked
+					 </if>
+					 
+					 >
+							
+					</dt>
+					<volist name="system_module" id="menusub"> <eq
+						name="menusub.parent" value="$menu.id">
+					<dd>
+						<dl class="menu_level_2">
+							<dt>{$menusub.name}
+							 <input type="checkbox" id={$menu.id}_{$menusub.id} value={$menusub.id}
+							  <if condition="in_array($menusub['id'],$power) eq 'true'">
+								 checked
+								 </if>
+							 >
+							 
+							</dt>
+							<volist name="system_module" id="menusub3"> <eq
+								name="menusub3.parent" value="$menusub.id">
+							<dd>
+								<dl class="menu_level_3">
+									<dt>{$menusub3.name}
+									 
+								  <input type="checkbox" id={$menu.id}_{$menusub.id}_{$menusub3.id} value={$menusub3.id}
+								   <if condition="in_array($menusub3['id'],$power) eq 'true'">
+								 checked
+								 </if>
+								  >
+									</dt>
+									<foreach name="system_module" item="sub"> <eq
+										name="sub.parent" value="$menusub3.id">
+									<dd>{$sub.name}
+									 <input type="checkbox" id={$menu.id}_{$menusub.id}_{$menusub3.id}_{$sub.id} value={$sub.id}
+									   <if condition="in_array($sub['id'],$power) eq 'true'">
+								 	checked
+									 </if>
+									 />
+									</dd>
+									</eq> </foreach>
+								</dl>
+							</dd>
+							</eq> </volist>
+						</dl>
+					</dd>
+					</eq> </volist>
+				</dl>
+				</if> </volist>
+			</div>
+	<div class="tool_area">
+				<div class="tool_bar border">
+
+					<a href="javascript:history.go(-1)" class="btn btn_default">取消</a> <span
+						id="js_submit" class="btn btn_input btn_primary">
+						<button class="js_submit">保存</button>
+					</span>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+<include file="Common:footer" />

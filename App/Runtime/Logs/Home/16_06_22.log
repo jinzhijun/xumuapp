@@ -1,0 +1,507 @@
+[ 2016-06-22T13:27:33+08:00 ] 127.0.0.1 /home.php/Login/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000307s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000350s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000465s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.011001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.011316s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.100931s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.101239s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.011439s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011857s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.022186s ]
+INFO: [ app_end ] --END-- [ RunTime:0.022729s ]
+
+[ 2016-06-22T13:28:25+08:00 ] 127.0.0.1 /home.php/Login/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000437s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000417s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000523s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `tp_user` WHERE `name` = '361212739' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] iconv(): Detected an illegal character in input string D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Home\Common\function.php 第 6 行.
+NOTIC: [8] iconv(): Detected an illegal character in input string D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Home\Common\function.php 第 6 行.
+NOTIC: [8] iconv(): Detected an illegal character in input string D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Home\Common\function.php 第 6 行.
+NOTIC: [8] iconv(): Detected an illegal character in input string D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Home\Common\function.php 第 6 行.
+NOTIC: [8] iconv(): Detected an illegal character in input string D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Home\Common\function.php 第 6 行.
+NOTIC: [8] iconv(): Detected an illegal character in input string D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Home\Common\function.php 第 6 行.
+NOTIC: [8] iconv(): Detected an illegal character in input string D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Home\Common\function.php 第 6 行.
+NOTIC: [8] iconv(): Detected an illegal character in input string D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Home\Common\function.php 第 6 行.
+SQL: SHOW COLUMNS FROM `tp_group_hx` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `tp_group_hx` WHERE `market_id` = 'SDQDSLCQ' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tp_group_hx` [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0027s ]
+NOTIC: [2] json_decode() expects parameter 1 to be string, array given D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Home\Controller\LoginController.class.php 第 60 行.
+SQL: INSERT INTO `tp_group_hx` (`market_id`,`market_name`,`create_user`,`create_time`,`group_id`) VALUES ('SDQDSLCQ','山东青岛市李沧区','yxfceshi','1466573305','210489941895938476') [ RunTime:0.0013s ]
+SQL: INSERT INTO `tp_user` (`name`,`truename`,`tel`,`card`,`payname`,`pay`,`province`,`city`,`area`,`address`,`pass_initialize`,`password`,`date`,`status`,`grade_id`,`group_id`) VALUES ('361212739','闫晓飞','18765218752','371327199004032213','y_jgs','18765218752','山东','青岛市','李沧区','d8dbeb684ebabe0ea1466f3542defdc4','1','123456','1466573304','0','1','SDQDSLCQ') [ RunTime:0.0022s ]
+
+[ 2016-06-22T13:28:26+08:00 ] 127.0.0.1 /home.php/Login/appdown.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000492s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000439s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000589s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000131s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000259s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012440s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012554s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000330s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000420s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000567s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000691s ]
+
+[ 2016-06-22T14:44:22+08:00 ] 192.168.0.66 /home.php/Login/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000421s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000457s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000580s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000218s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007056s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007226s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000396s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000564s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000659s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000846s ]
+
+[ 2016-06-22T14:45:53+08:00 ] 192.168.0.66 /home.php/Login/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000333s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000435s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000548s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0389s ]
+SQL: SELECT * FROM `tp_user` WHERE `name` = '1007977962' LIMIT 1   [ RunTime:0.0008s ]
+NOTIC: [8] iconv(): Detected an illegal character in input string D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Home\Common\function.php 第 6 行.
+NOTIC: [8] iconv(): Detected an illegal character in input string D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Home\Common\function.php 第 6 行.
+NOTIC: [8] iconv(): Detected an illegal character in input string D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Home\Common\function.php 第 6 行.
+NOTIC: [8] iconv(): Detected an illegal character in input string D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Home\Common\function.php 第 6 行.
+NOTIC: [8] iconv(): Detected an illegal character in input string D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Home\Common\function.php 第 6 行.
+NOTIC: [8] iconv(): Detected an illegal character in input string D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Home\Common\function.php 第 6 行.
+NOTIC: [8] iconv(): Detected an illegal character in input string D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Home\Common\function.php 第 6 行.
+NOTIC: [8] iconv(): Detected an illegal character in input string D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Home\Common\function.php 第 6 行.
+SQL: SHOW COLUMNS FROM `tp_group_hx` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `tp_group_hx` WHERE `market_id` = 'SDQDSLCQ' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tp_group_hx` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0023s ]
+NOTIC: [2] json_decode() expects parameter 1 to be string, array given D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Home\Controller\LoginController.class.php 第 60 行.
+
+[ 2016-06-22T14:46:46+08:00 ] 192.168.0.66 /home.php/Login/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000345s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000408s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `tp_user` WHERE `name` = '1007977962' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] iconv(): Detected an illegal character in input string D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Home\Common\function.php 第 6 行.
+NOTIC: [8] iconv(): Detected an illegal character in input string D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Home\Common\function.php 第 6 行.
+NOTIC: [8] iconv(): Detected an illegal character in input string D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Home\Common\function.php 第 6 行.
+NOTIC: [8] iconv(): Detected an illegal character in input string D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Home\Common\function.php 第 6 行.
+NOTIC: [8] iconv(): Detected an illegal character in input string D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Home\Common\function.php 第 6 行.
+NOTIC: [8] iconv(): Detected an illegal character in input string D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Home\Common\function.php 第 6 行.
+NOTIC: [8] iconv(): Detected an illegal character in input string D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Home\Common\function.php 第 6 行.
+NOTIC: [8] iconv(): Detected an illegal character in input string D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Home\Common\function.php 第 6 行.
+SQL: SHOW COLUMNS FROM `tp_group_hx` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `tp_group_hx` WHERE `market_id` = 'SDQDSLCQ' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tp_group_hx` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0024s ]
+NOTIC: [2] json_decode() expects parameter 1 to be string, array given D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Home\Controller\LoginController.class.php 第 60 行.
+SQL: INSERT INTO `tp_user` (`name`,`truename`,`tel`,`card`,`payname`,`pay`,`province`,`city`,`area`,`address`,`pass_initialize`,`password`,`date`,`status`,`grade_id`,`group_mark`) VALUES ('1007977962','牛牛','14758565656','371235789658965589','12585685958','12589858585','山东','青岛市','李沧区','66a18647d7c1450987b1ceaa776dd9de','1','123123','1466578004','0','1','SDQDSLCQ') [ RunTime:0.0025s ]
+
+[ 2016-06-22T14:46:48+08:00 ] 192.168.0.66 /home.php/Login/appdown.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000316s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000309s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000418s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000192s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007939s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008051s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000315s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000410s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000563s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000724s ]
+
+[ 2016-06-22T15:12:23+08:00 ] 192.168.0.66 /home.php/Login/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000342s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000399s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000508s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000113s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000231s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006989s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007092s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000268s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000359s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000523s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000640s ]
+
+[ 2016-06-22T15:18:00+08:00 ] 192.168.0.66 /home.php/Login/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000344s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000408s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000518s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000213s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006716s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006820s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000270s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000360s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000587s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000726s ]
+
+[ 2016-06-22T15:18:00+08:00 ] 192.168.0.66 /home.php/Login/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000303s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000412s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000225s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007122s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007224s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000263s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000358s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000470s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000613s ]
+
+[ 2016-06-22T15:18:00+08:00 ] 192.168.0.66 /home.php/Login/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000329s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000726s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000895s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000220s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007576s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007684s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000314s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000407s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000519s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000658s ]
+
+[ 2016-06-22T15:18:01+08:00 ] 192.168.0.66 /home.php/Login/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000306s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000414s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000105s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000208s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006901s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000401s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001477s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001624s ]
+
+[ 2016-06-22T15:18:01+08:00 ] 192.168.0.66 /home.php/Login/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000307s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000414s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000222s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007042s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007145s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000190s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000288s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000425s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000530s ]
+
+[ 2016-06-22T15:18:01+08:00 ] 192.168.0.66 /home.php/Login/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000307s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000423s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000181s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000385s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007709s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007815s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000414s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000586s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000723s ]
+
+[ 2016-06-22T15:18:02+08:00 ] 192.168.0.66 /home.php/Login/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000310s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000375s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000496s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000212s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006654s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006761s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000256s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000349s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000589s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000726s ]
+
+[ 2016-06-22T15:18:02+08:00 ] 192.168.0.66 /home.php/Login/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000306s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000317s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000426s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000119s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000240s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007341s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007445s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000314s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000406s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000588s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000726s ]
+
+[ 2016-06-22T15:46:11+08:00 ] 192.168.0.66 /home.php/Login/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000546s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000516s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000768s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `tp_user` WHERE `name` = '2775617476' LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] iconv(): Detected an illegal character in input string D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Home\Common\function.php 第 6 行.
+NOTIC: [8] iconv(): Detected an illegal character in input string D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Home\Common\function.php 第 6 行.
+NOTIC: [8] iconv(): Detected an illegal character in input string D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Home\Common\function.php 第 6 行.
+NOTIC: [8] iconv(): Detected an illegal character in input string D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Home\Common\function.php 第 6 行.
+NOTIC: [8] iconv(): Detected an illegal character in input string D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Home\Common\function.php 第 6 行.
+NOTIC: [8] iconv(): Detected an illegal character in input string D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Home\Common\function.php 第 6 行.
+NOTIC: [8] iconv(): Detected an illegal character in input string D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Home\Common\function.php 第 6 行.
+NOTIC: [8] iconv(): Detected an illegal character in input string D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Home\Common\function.php 第 6 行.
+SQL: SHOW COLUMNS FROM `tp_group_hx` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `tp_group_hx` WHERE `market_id` = 'JSSQSSCQ' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tp_group_hx` [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0026s ]
+NOTIC: [2] json_decode() expects parameter 1 to be string, array given D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Home\Controller\LoginController.class.php 第 60 行.
+SQL: INSERT INTO `tp_group_hx` (`market_id`,`market_name`,`create_user`,`create_time`,`group_id`) VALUES ('JSSQSSCQ','江苏宿迁市宿城区','yxfceshi','1466581570','210525443302883752') [ RunTime:0.0007s ]
+SQL: INSERT INTO `tp_user` (`name`,`truename`,`tel`,`card`,`payname`,`pay`,`province`,`city`,`area`,`address`,`pass_initialize`,`password`,`date`,`status`,`grade_id`,`group_mark`) VALUES ('2775617476','厕所','15689898585','371327789558952258','125689','12586586585','江苏','宿迁市','宿城区','79fed117bcad6e616b8de5af8489b6dc','1','123456','1466581570','0','1','JSSQSSCQ') [ RunTime:0.0006s ]
+
+[ 2016-06-22T15:46:13+08:00 ] 192.168.0.66 /home.php/Login/appdown.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000313s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000453s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000590s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000203s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005424s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005535s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000255s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000349s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000511s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000653s ]
+
+[ 2016-06-22T17:14:28+08:00 ] 192.168.0.66 /home.php/Login/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000348s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000435s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000557s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000210s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000338s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040753s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040864s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.007807s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007905s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007026s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007178s ]
+
+[ 2016-06-22T17:15:19+08:00 ] 192.168.0.66 /home.php/Login/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000423s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000599s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000779s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `tp_user` WHERE `name` = '3612127399' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] iconv(): Detected an illegal character in input string D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Home\Common\function.php 第 6 行.
+NOTIC: [8] iconv(): Detected an illegal character in input string D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Home\Common\function.php 第 6 行.
+NOTIC: [8] iconv(): Detected an illegal character in input string D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Home\Common\function.php 第 6 行.
+NOTIC: [8] iconv(): Detected an illegal character in input string D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Home\Common\function.php 第 6 行.
+NOTIC: [8] iconv(): Detected an illegal character in input string D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Home\Common\function.php 第 6 行.
+NOTIC: [8] iconv(): Detected an illegal character in input string D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Home\Common\function.php 第 6 行.
+NOTIC: [8] iconv(): Detected an illegal character in input string D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Home\Common\function.php 第 6 行.
+NOTIC: [8] iconv(): Detected an illegal character in input string D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Home\Common\function.php 第 6 行.
+SQL: SHOW COLUMNS FROM `tp_group_hx` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `tp_group_hx` WHERE `market_id` = 'SDDZSQYX' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tp_group_hx` [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0035s ]
+NOTIC: [2] json_decode() expects parameter 1 to be string, array given D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Home\Controller\LoginController.class.php 第 60 行.
+SQL: INSERT INTO `tp_group_hx` (`market_id`,`market_name`,`create_user`,`create_time`,`group_id`) VALUES ('SDDZSQYX','山东德州市庆云县','3612127399','1466586919','210548414608310696') [ RunTime:0.0011s ]
+SQL: INSERT INTO `tp_user` (`name`,`truename`,`tel`,`card`,`payname`,`pay`,`province`,`city`,`area`,`address`,`pass_initialize`,`password`,`date`,`status`,`grade_id`,`group_mark`) VALUES ('3612127399','三分','18765218752','371327199004032213','y_jgs','18765218752','山东','德州市','庆云县','79fed117bcad6e616b8de5af8489b6dc','1','123456','1466586918','0','1','SDDZSQYX') [ RunTime:0.0010s ]
+
+[ 2016-06-22T17:15:20+08:00 ] 192.168.0.66 /home.php/Login/appdown.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000557s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000586s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000839s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000186s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006884s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000414s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001249s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001406s ]
+
+[ 2016-06-22T17:17:05+08:00 ] 192.168.0.66 /home.php/Login/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000312s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000413s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000120s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000224s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006991s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007111s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000416s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000578s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000716s ]
+
+[ 2016-06-22T17:17:47+08:00 ] 192.168.0.66 /home.php/Login/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000316s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000309s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000412s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `tp_user` WHERE `name` = '361212739' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] iconv(): Detected an illegal character in input string D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Home\Common\function.php 第 6 行.
+NOTIC: [8] iconv(): Detected an illegal character in input string D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Home\Common\function.php 第 6 行.
+NOTIC: [8] iconv(): Detected an illegal character in input string D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Home\Common\function.php 第 6 行.
+NOTIC: [8] iconv(): Detected an illegal character in input string D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Home\Common\function.php 第 6 行.
+NOTIC: [8] iconv(): Detected an illegal character in input string D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Home\Common\function.php 第 6 行.
+NOTIC: [8] iconv(): Detected an illegal character in input string D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Home\Common\function.php 第 6 行.
+NOTIC: [8] iconv(): Detected an illegal character in input string D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Home\Common\function.php 第 6 行.
+NOTIC: [8] iconv(): Detected an illegal character in input string D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Home\Common\function.php 第 6 行.
+SQL: SHOW COLUMNS FROM `tp_group_hx` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `tp_group_hx` WHERE `market_id` = 'SDQDSLCQ' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tp_group_hx` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0029s ]
+NOTIC: [2] json_decode() expects parameter 1 to be string, array given D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Home\Controller\LoginController.class.php 第 60 行.
+SQL: INSERT INTO `tp_group_hx` (`market_id`,`market_name`,`create_user`,`create_time`,`group_id`) VALUES ('SDQDSLCQ','山东青岛市李沧区','361212739','1466587067','210549051492401604') [ RunTime:0.0006s ]
+SQL: INSERT INTO `tp_user` (`name`,`truename`,`tel`,`card`,`payname`,`pay`,`province`,`city`,`area`,`address`,`pass_initialize`,`password`,`date`,`status`,`grade_id`,`group_mark`) VALUES ('361212739','闫晓飞','18765218752','3713271969004032213','y_jgs','18765218752','山东','青岛市','李沧区','d8dbeb684ebabe0ea1466f3542defdc4','1','123456','1466587067','0','1','SDQDSLCQ') [ RunTime:0.0006s ]
+
+[ 2016-06-22T17:17:48+08:00 ] 192.168.0.66 /home.php/Login/appdown.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000571s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000349s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000468s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000207s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006695s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006853s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000441s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000703s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000622s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000739s ]
+

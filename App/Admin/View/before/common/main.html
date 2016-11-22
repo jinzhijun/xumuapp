@@ -1,0 +1,16 @@
+<div>
+    <iframe id="main" name="main" style="background:#fff;width: 100%;" frameborder="0" class="appiframe" src="{:U('index/content')}" > </iframe>
+</div><!-- /.row -->
+<link rel="stylesheet" href="__PUBLIC__/Admin/assets/css/fullcalendar.css" />
+<script type="text/javascript">
+	window.jQuery || document.write("<script src='__PUBLIC__/Admin/assets/js/jquery-2.0.3.min.js'>"+"<"+"/script>");
+</script>
+<script src="__PUBLIC__/Admin/assets/js/fullcalendar.min.js"></script>
+<script type="text/javascript">
+var h = $(window).height()-102;
+var w = $(window).width()-220;
+
+$("#main").css("height",h);
+//$("#main").css("width",w);
+</script>
+

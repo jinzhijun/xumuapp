@@ -1,0 +1,10 @@
+.top{width: 100vw;height: 125vw;background: url('shengribj.png') no-repeat;background-size: 100%;}
+.zoumadeng{width: 45vw;padding-top: 40vw;margin-left: 14vw;color: #fff;font-size: 15vw;line-height: 18vw;overflow: hidden;height: 18vw;}
+.zoumadeng ul{margin: 0px;padding: 0px;}
+.zoumadeng li{display: inline-block;}
+body{background-color: #D3F1FF;}
+.list{background-color: #D3F1FF;margin: 0px;}
+.neirong{width: 80vw;margin: 10px auto;}
+.neirong div{float: left;width: 40vw;font-size: 3vw;color: #FF004C;margin: 1vw auto;}
+.neirong div i{width: 3vw;height: 3vw;background: url('hongxing.png') no-repeat;background-size: 100%;display: inline-block;}
+

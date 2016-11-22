@@ -1,0 +1,350 @@
+
+<include file="common:header"/>
+	<body> 
+	 
+	 
+
+		<div class="main-container" id="main-container">
+			
+
+			<div class="main-container-inner">
+				 
+
+				<div class="main-content">
+					 
+<style>
+.widget-toolbar {
+    display: inline-block;
+    padding: 0 10px;
+    line-height: 37px;
+    float: none;
+    position: relative;
+}
+					</style>
+					<div class="page-content">
+						 <div class="row">
+						 
+				<div class="col-xs-12">
+							 
+										<div class="widget-box transparent" id="recent-box">
+											<div class="widget-header">
+												 
+
+												<div class="widget-toolbar no-border">
+													<ul class="nav nav-tabs" id="recent-tab">
+																											
+														<li>
+															<a  href="{:U(CONTROLLER_NAME . '/index')}">会员列表</a>
+														</li>
+														<if condition="$list.id eq '' "> 
+														<li class="active">
+															<a href="{:U(CONTROLLER_NAME . '/add')}">添加</a>
+														</li>
+														<else />
+														<li class="active">
+															<a href="#">修改</a>
+														</li>
+														</if>
+
+														 
+													</ul>
+												</div>
+											</div>
+											
+											</div>
+											<br>
+										<if condition="$list.id neq '' ">	
+										<form role="form" id="form1"	method="post" enctype="multipart/form-data"   action="__URL__/save_data">
+										<else />
+										<form role="form" id="form1" method="post" enctype="multipart/form-data" action="">
+										</if>	
+											<if condition="$list.id neq '' ">
+												<div class="form-group">
+											 
+													
+														
+														 <div class="col-sm-9">
+													</div>	<div style="clear:both;"></div>
+												</div>
+											</if>
+					<div class="form-group">
+						<input type="hidden" value="1" name="change" id="change" />
+						<label style="text-align:right" class="col-sm-3 control-label no-padding-right" for="form-field-1">会员级别</label>
+						<input type="hidden" name="id" id="id" value="{$list.id}" />
+						<div class="col-sm-9">
+							<select name="news_class">
+								<volist name="UserGrade" id="n_v">
+									<option <if condition="$n_v['id'] eq $list['grade_id']">selected = selected</if> value="{$n_v.id}">{$n_v.name}</option>
+								</volist>
+
+							</select>
+						</div>  <div style="clear: both;"></div>
+					</div>
+									<div class="form-group">
+										<label style="text-align:right" class="col-sm-3 control-label no-padding-right" for="form-field-1">用户名</label>
+										<input type="hidden" name="id" id="id" value="{$list.id}" />
+										<div class="col-sm-9">
+										<if condition="$list.id neq '' ">
+										 	<input disabled value="{$list.name}" type="text" id="name" placeholder="请用手机号注册" name="name" class="col-xs-10 col-sm-5" />
+										<else />
+										<input value="" type="text" id="name" placeholder="请用手机号注册" name="name" class="col-xs-10 col-sm-5" />
+										</if>	
+										</div><div style="clear:both;"></div>
+									</div>
+									
+									<div class="form-group">
+										<label style="text-align:right" class="col-sm-3 control-label no-padding-right" for="form-field-1">手机号码</label>
+
+										<div class="col-sm-9">
+											<input  value="{$list.mobile}" type="text" id="mobile" placeholder="" name="mobile" class="col-xs-10 col-sm-5" />
+										 
+										</div>	<div style="clear:both;"></div>
+									</div>
+									<!--<div class="form-group">
+										<label style="text-align:right" class="col-sm-3 control-label no-padding-right" for="form-field-1">真实姓名</label>
+
+										<div class="col-sm-9">
+											<input  value="{$list.truename}" type="text" id="truename" placeholder="请填写真实姓名" name="truename" class="col-xs-10 col-sm-5" />
+										 
+										</div>	<div style="clear:both;"></div>
+									</div>-->
+									<if condition="$list.id neq '' ">
+									<div class="form-group">
+										<label style="text-align:right" class="col-sm-3 control-label no-padding-right" for="form-field-1">生日</label>
+
+										<div class="col-sm-9">
+											 
+																<div style="padding:0;" class="input-group date form_date col-md-5" data-date="" data-date-format="yyyy-mm-dd" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+                    <input class="form-control" size="16" type="text"  name="birthday"  <if condition="$list.birthday neq '' "> value="{$list.birthday|date="Y-m-d",###}" </if> >
+                    <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+					<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                </div>
+															 
+										 
+										</div>	<div style="clear:both;"></div>
+									</div>
+									
+									</if>
+								
+								  
+									<!--div class="form-group">
+										<label style="text-align:right" class="col-sm-3 control-label no-padding-right" for="form-field-1">排序</label>
+
+										<div class="col-sm-9">
+
+											<input  value="{$list.sort}" type="text" id="sort" placeholder="" name="sort" class="col-xs-10 col-sm-5" />
+										<p class="col-xs-10 col-sm-12" style="padding:0;color:#999;"><span style="color:#f00;">*</span>数字越小越靠前</p>
+										</div>	<div style="clear:both;"></div>
+									</div-->
+									 
+									<if condition="$list.id neq '' ">
+									 <div class="form-group">
+										<label style="text-align:right" class="col-sm-3 control-label no-padding-right" for="form-field-1">性别</label>
+
+										<div class="col-sm-9">
+											<label style="margin:5px 0 0 0;"><input type="radio" name="sex" value="0" <if condition="$list.sex eq 0"> checked="checked"</if> />未知
+													</label>
+							<label style="margin:5px 0 0 0;">	
+                										
+											   <input type="radio" name="sex" value="1" <if condition="$list.sex eq 1"> checked="checked"</if>  />男
+                							</label>
+													<label style="margin:5px 0 0 0;">	
+                							<input type="radio" name="sex" value="2" <if condition="$list.sex eq 2"> checked="checked"</if> />女
+													</label>
+										</div>	<div style="clear:both;"></div>
+									</div></if>
+									<div>
+ 
+  <label style="text-align:right" class="col-sm-3 control-label no-padding-right" for="form-field-1" style="text-align:right">头像</label>
+  <input type="hidden" name="id" id="id" value="{$list.id}" /> 
+
+													 <div class="col-sm-9">
+<div class="" style="width:300px;">
+				
+	 <div id="upload_zizhi" style="padding: 0; cursor: pointer;"
+								class="upload"></div>
+							<div id="imgdiv_zizhi" style=" padding: 0"
+								class="upload">
+
+								 
+									<img id="imgShow_zizhi" src="{$list.head}" width="100" height="100">
+								 
+
+ <div id="cancel_zizhi"
+									style="width: 50px; cursor: pointer">
+
+								</div>
+								<input type="hidden" id="ifuploadback_zizhi"
+									name="ifuploadback_zizhi" value="0" />
+
+							</div>
+						 
+<div class=""> <p>支持JPG、PNG、BMP、GIF格式</p> </div>
+					 
+					<div style="background:url(__PUBLIC__/img/xuanze.png) no-repeat; width: 200px; margin: 0;">
+						<input type="file" id="certificate" name="certificate"
+							style="height: 44px; width: 113px; filter: alpha(opacity : 0); opacity: 0; cursor: pointer;"
+							onblur="checknewpaaa()" />
+
+					</div>
+				</div>	</div>
+				
+				<div style="clear:both;"></div>
+			
+				  </div> 
+
+									<!--div class="form-group">
+										<label style="text-align:right" class="col-sm-3 control-label no-padding-right" for="form-field-1">是否显示</label>
+
+										<div class="col-sm-9">
+											<label style="margin:5px 0 0 0;">
+											
+											   <input type="radio" name="status" value="1" <if condition="$list.status eq 1"> checked="checked"</if> />显示
+                							<label style="">	
+                							<input type="radio" name="status" value="0" <if condition="$list.status eq 0"> checked="checked"</if> />不显示
+													</label>
+										</div>	<div style="clear:both;"></div>
+									</div-->
+									 
+									<div class="clearfix form-actions">
+										<div class="col-md-offset-3 col-md-9">
+										
+										 
+												 <a class="sub_f btn btn-info" href="javascript:$('form').submit()" name="on"><i class="icon-ok bigger-110" ></i>提交</a>	 
+													 
+										
+											
+
+											&nbsp; &nbsp; &nbsp;
+											<if condition="$list.id eq '' ">
+											<button class="btn" type="reset">
+												<i class="icon-undo bigger-110"></i>
+												重置
+											</button>
+												</if>
+										</div>
+									</div>
+									</form>
+											</div>
+									 
+							 
+						</div><!-- /.row -->
+					</div><!-- /.page-content -->
+				</div><!-- /.main-content -->
+
+				  
+			</div><!-- /.main-container-inner -->
+
+			<a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse">
+				<i class="icon-double-angle-up icon-only bigger-110"></i>
+			</a>
+		</div> 
+
+<script type="text/javascript">
+
+		$(function() {
+
+			new uploadPreview({
+				UpBtn : "certificate",
+				DivShow : "imgdiv_zizhi",
+				ImgShow : "imgShow_zizhi"
+			});
+
+			$("#certificate").change(function() {
+				$("#imgdiv_zizhi").show();
+				$("#upload_zizhi").hide();
+				$("#ifuploadback_zizhi").val("1");
+			});
+
+			$("#cancel_zizhi").click(function() {
+				$("#imgdiv_zizhi").hide();
+				$("#upload_zizhi").show();
+				$("#ifuploadback_zizhi").val("0");
+			});
+
+			 
+		   	  $(".bottom2").next().hide();
+			  $(".user_left>ul>li").eq(0).removeClass("a");
+			  $(".user_left>ul>li").eq(5).addClass("a");
+
+		});
+	</script>
+
+		<!-- <script>
+		var status = 1;
+		$('.add_').click(function(){
+			 
+			var name = $('#name').val();
+			var mobile = $('#mobile').val();
+			var truename = $('#truename').val();
+			if(name == ""){
+				toastr.error("请输入客户名称！", opts);
+        		 $('#name').focus();
+        		return false;
+        	}
+			if(mobile==""){
+        		toastr.error("请输入手机号码！", opts);
+        		$('#mobile').focus();
+        		return false;
+        	}
+			if(truename==""){
+        		toastr.error("请输入真实姓名！", opts);
+        		$('#truename').focus();
+        		return false;
+        	}
+			
+			 $.ajax({
+			     url:"{:u(CONTROLLER_NAME . '/add_user')}",
+			     type:"POST",
+			     dataType:"json",
+			     data:$(".form-horizontal").serialize()+"&status="+status,
+			     success:function(res){
+			    if(res.result == 'success'){
+			           alert("操作成功");
+			   		   location.href="{:u(CONTROLLER_NAME . '/index')}"
+			         }else{
+			        	 toastr.error("操作失败！", opts);
+			        
+			      }
+			     
+			     }
+			    });
+		})
+		$('.submit_save').click(function(){
+			var name = $('#name').val();
+			var certificate = $('#certificate').val();
+        	if(name == ""){
+        		alert('请输入名称！');
+        		$('#name').focus();
+        		return false;
+        	}
+        	var data = $("form").serialize()+"&status="+status+"&certificate="+certificate;
+			//alert(data);	
+        	$.ajax({
+				     url:"{:u(CONTROLLER_NAME . '/save_data')}",
+				     type:"POST",
+				     dataType:"json",
+				     data:data,
+				     success:function(res){
+				    if(res.result == 'success'){
+				           alert("操作成功");
+				           location.href="{:u(CONTROLLER_NAME . '/index')}"
+				         }else{
+				        alert("操作失败");
+				      }
+				     
+				     }
+				    });
+			})
+		
+		</script> -->
+
+		<!-- <![endif]-->
+
+		<!--[if IE]>
+
+<![endif]-->
+ 
+	 
+
+		<include file="common:footer" />

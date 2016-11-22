@@ -1,0 +1,35 @@
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div{margin:0;padding:0;border:0;}
+body{background: #c2012e url('bgb.jpg') repeat-y top left;background-size: 100%;overflow-x: hidden;}
+ul,ol{list-style-type:none;}
+select,input,img,select{vertical-align:middle;}
+input{ font-size:12px;}
+a{ text-decoration:none; color:#000;}
+a:hover{color:#c00; text-decoration:none;}
+.clear{clear:both;}
+
+#header{width: 100vw;height: 75vw;position: relative;}
+.dangqianjifen{position: absolute;width: 95vw;height: 10vw;font-size: 4vw;line-height: 5vw;left: 5vw;bottom: 15vw;color: #fff;}
+.dangqianjifen>p>span{color: #fff;}
+
+#zhuanpan{width: 100vw;height: 100vw;text-align: center;}
+/* 大转盘样式 */
+.banner{display:block;width:90%;margin-left:auto;margin-right:auto;padding-top: 1vw;background: url('zhuanbj.png') no-repeat center center;background-size: 100%;}
+.banner .turnplate{display:block;width:100%;position:relative;}
+.banner .turnplate canvas.item{width:100%;}
+.banner .turnplate img.pointer{position:absolute;width:40%;height:40%;left:30%;top:30%;}
+
+#jiangpin{width: 98vw;margin:1vw;font-size: 3vw;color: #fff;}
+#jiangpin>span{font-weight: bold;}
+#jiangpin>div>div{display: inline-block;margin: 2vw;text-align: center;line-height: 5vw;}
+#jiangpin>div>div>img{max-height: 20vw;max-width: 20vw;}
+
+#zhongjiang{width: 98vw;margin: 1vw;text-align: center;height:80vw;overflow: hidden;color: #fff;}
+#zhongjiang>div>div{line-height: 8vw;font-size: 3vw;margin: 0;padding: 0;}
+#zhongjiang>div>div>span:first-child{color: #E09215;}
+.help{font-size: 2vw;}
+.help img{width: 36vw;}
+
+.main{background: url('bgb.jpg') no-repeat bottom left;background-size: 100%;}
+.tixiananniu{width: 12vw;display: inline-block;vertical-align: bottom;}
+
+.top{background: url('bgt.jpg') no-repeat top left;background-size: 100%;}

@@ -1,0 +1,196 @@
+
+<include file="common:header"/>
+	<body> 
+	 
+		 
+		<div class="main-container" id="main-container">
+			<script type="text/javascript">
+				try{ace.settings.check('main-container' , 'fixed')}catch(e){}
+			</script>
+
+			<div class="main-container-inner">
+				<a class="menu-toggler" id="menu-toggler" href="#">
+					<span class="menu-text"></span>
+				</a>
+
+				 
+
+				<div class="main-content">
+					 
+<style>
+.widget-toolbar {
+    display: inline-block;
+    padding: 0 10px;
+    line-height: 37px;
+    float: none;
+    position: relative;
+}
+					</style>
+					<div class="page-content">
+						 <div class="row">
+							 
+				<div class="col-xs-12">
+							 
+										<div class="widget-box transparent" id="recent-box">
+											<div class="widget-header">
+												 
+
+												<div class="widget-toolbar no-border">
+													<ul class="nav nav-tabs" id="recent-tab">
+																											
+														<li>
+															<a  href="{:U(CONTROLLER_NAME . '/index')}">类型列表</a>
+														</li>
+														<if condition="$list.id eq '' "> 
+														<li class="active">
+															<a href="{:U(CONTROLLER_NAME . '/_add')}">添加</a>
+														</li>
+														<else />
+														<li class="active">
+															<a href="#">修改</a>
+														</li>
+														</if>
+
+														 
+													</ul>
+												</div>
+											</div>
+											
+											</div>
+											<br>
+											<form class="form-horizontal" role="form">
+									<div class="form-group">
+										<label class="col-sm-3 control-label no-padding-right" for="form-field-1">类型名称</label>
+										<input type="hidden" name="id" id="id" value="{$list.id}" /> 
+										<div class="col-sm-9">
+											<input value="{$list.name}" type="text" id="name" placeholder="" name="name" class="col-xs-10 col-sm-5" />
+										</div>
+									</div>
+		   
+									
+								  
+									<div class="form-group">
+										<label class="col-sm-3 control-label no-padding-right" for="form-field-1">排序</label>
+
+										<div class="col-sm-9">
+											<input  value="{$list.sort}" type="text" id="sort" placeholder="" name="sort" class="col-xs-10 col-sm-5" />
+										<p class="col-xs-10 col-sm-12" style="padding:0;color:#999;"><span style="color:#f00;">*</span>数字越小越靠前</p>
+										</div>
+									</div>
+			 
+									<div class="form-group">
+										<label class="col-sm-3 control-label no-padding-right" for="form-field-1">是否显示</label>
+
+										<div class="col-sm-9">
+											<label style="margin:5px 0 0 0;">
+											
+											   <input type="radio" name="status" value="1" <if condition="$list.status eq 1"> checked="checked"</if> />显示
+                							<label style="">	<input type="radio" name="status" value="0" <if condition="$list.status eq 0"> checked="checked"</if> />不显示
+													</label>
+										</div>
+									</div>
+									 
+									<div class="clearfix form-actions">
+										<div class="col-md-offset-3 col-md-9">
+										
+										<if condition="$list.id eq '' "> 
+													<button class="btn btn-info submit" type="button">
+												<i class="icon-ok bigger-110"></i>
+												提交	
+											</button>	 
+														<else />
+													<button class="btn btn-info submit_save" type="button">
+												<i class="icon-ok bigger-110"></i>
+												修改	
+											</button>	 
+														</if>
+
+											<if condition="$list.id eq '' ">
+
+											&nbsp; &nbsp; &nbsp;
+											<button class="btn" type="reset">
+												<i class="icon-undo bigger-110"></i>
+												重置
+											</button>	</if>
+										</div>
+									</div>
+									</form>
+											</div>
+									 
+							 
+						</div><!-- /.row -->
+					</div><!-- /.page-content -->
+				</div><!-- /.main-content -->
+
+				  
+			</div><!-- /.main-container-inner -->
+
+			<a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse">
+				<i class="icon-double-angle-up icon-only bigger-110"></i>
+			</a>
+		</div> 
+
+		<script>
+		 
+		$('.submit').click(function(){
+			var name = $('#name').val();
+			var mobile = $('#mobile').val();
+			var truename = $('#truename').val();
+			if(name == ""){
+        		alert('请输入医院名称！');
+        		$('#name').focus();
+        		return false;
+        	}
+			 
+			 $.ajax({
+			     url:"{:u(CONTROLLER_NAME . '/add_data')}",
+			     type:"POST",
+			     dataType:"json",
+			     data:$(".form-horizontal").serialize(),
+			     success:function(res){
+			    if(res.result == 'success'){
+			           alert("操作成功");
+			     location.href="{:u(CONTROLLER_NAME . '/index')}"
+			         }else{
+			        alert("操作失败");
+			      }
+			     
+			     }
+			    });
+		})
+		$('.submit_save').click(function(){
+			var name = $('#name').val();
+        	if(name == ""){
+        		alert('请输入名称！');
+        		$('#name').focus();
+        		return false;
+        	}
+				 $.ajax({
+				     url:"{:u(CONTROLLER_NAME . '/previous_save')}",
+				     type:"POST",
+				     dataType:"json",
+				     data:$(".form-horizontal").serialize(),
+				     success:function(res){
+				    if(res.result == 'success'){
+				           alert("操作成功");
+				           location.href="{:u(CONTROLLER_NAME . '/index')}"
+				         }else{
+				        alert("操作失败");
+				      }
+				     
+				     }
+				    });
+			})
+		</script>
+
+		<!-- <![endif]-->
+
+		<!--[if IE]>
+<script type="text/javascript">
+ window.jQuery || document.write("<script src='assets/js/jquery-1.10.2.min.js'>"+"<"+"/script>");
+</script>
+<![endif]-->
+
+	 
+
+		<include file="common:footer" />

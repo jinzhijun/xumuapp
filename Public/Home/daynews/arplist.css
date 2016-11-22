@@ -1,0 +1,15 @@
+.logodiwen{background-image: url("../Img/logodiwen.png");background-size: 23%;}
+.nr{border-width: 0px;margin-bottom: 3%;}
+.nr a{ margin:  2vw;display: inline-block;margin-bottom: 0px;color: #F47C7D;font-size: 18px;}
+.nr p{ margin:  2vw;}
+#neirong{height:100px;width: 90%;}
+#button{font-size: 20px;height: 30px;}
+.dangqian{border: #00BAFF 1px solid;margin: 30px auto 20px auto;width:90vw;color: #999;height: 42px;}
+.dangqian span{text-align: center;display: block;width: 19%;float: left;border-left:#00BAFF 1px solid;}
+.dangqian span:first-child{width: 22%;color: #fff;background-color: #00BAFF;padding-top: 10px;height: 32px;}
+.huixian{width:96%;margin-left: 2%;border-bottom: #ccc 1px solid;}
+.hongse{color: #F47C7D;}
+.huise{color: #999;}
+.arp{width:60px;height: 50px;}
+.arp2{width:22px;height: 20px;}
+.arp3{width:16px;height: 18px;}

@@ -1,0 +1,85 @@
+<include file="common:header"/>
+<body> 
+<div class="main-container" id="main-container">
+	<div class="main-container-inner">
+		<div class="main-content">
+<style>
+.widget-toolbar {
+    display: inline-block;
+    padding: 0 10px;
+    line-height: 37px;
+    float: none;
+    position: relative;
+}
+</style>
+<div class="page-content">
+<div class="row">
+<div class="col-xs-12">
+	<div class="widget-box transparent" id="recent-box">
+		<div class="widget-header">
+			<div class="widget-toolbar no-border">
+				<ul class="nav nav-tabs" id="recent-tab">
+					<li>
+						<a  href="{:U(CONTROLLER_NAME . '/index')}">直播间列表</a>
+					</li>
+					<li class="active">
+						<a href="" >地址详情</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<br>	
+	<if condition="$liveinfo.id neq '' ">
+	<div class="form-group">
+	<div class="col-sm-9"></div><div style="clear:both;"></div>
+	</div>
+	</if>
+	<div class="form-group">
+		<label style="text-align:right" class="col-sm-3 control-label no-padding-right" for="form-field-1">直播室标识</label>
+		<div class="col-sm-9">
+		<input disabled value="{$liveinfo.room_id}" type="text" id="form-field-1" placeholder="请填写唯一标识" name="room_id" class="col-xs-10 col-sm-5" />	
+		</div><div style="clear:both;"></div>
+	</div>
+	
+	<div class="form-group">
+	<label style="text-align:right" class="col-sm-3 control-label no-padding-right" for="form-field-2">直播间名称</label>
+	<div class="col-sm-9">
+		<input disabled value="{$liveinfo.name}" type="text" id="form-field-2" placeholder="请填写名称" name="name" class="col-xs-10 col-sm-5" />
+	</div>	<div style="clear:both;"></div>
+	</div>
+	<div class="form-group">
+	<label style="text-align:right" class="col-sm-3 control-label no-padding-right" for="form-field-3">推流地址</label>
+	<div class="col-sm-9">
+		<textarea disabled type="text" id="form-field-4"  name="pushUrl" class="col-xs-10 col-sm-7" style="background-color:#eee!important">{$url_info.ret.pushUrl}</textarea>
+	</div>	<div style="clear:both;"></div>
+	</div>
+	
+	<div class="form-group">
+	<label style="text-align:right" class="col-sm-3 control-label no-padding-right" for="form-field-4">http拉流地址</label>
+	<div class="col-sm-9">
+		<input disabled value="{$url_info.ret.httpPullUrl}" type="text" id="form-field-4"  name="httpPullUrl" class="col-xs-20 col-sm-7" />
+	</div>	<div style="clear:both;"></div>
+	</div>
+	
+	<div class="form-group">
+	<label style="text-align:right" class="col-sm-3 control-label no-padding-right" for="form-field-5">hls拉流地址</label>
+	<div class="col-sm-9">
+		<input disabled value="{$url_info.ret.hlsPullUrl}" type="text" id="form-field-4"  name="hlsPullUrl" class="col-xs-10 col-sm-7" />	
+	</div>	<div style="clear:both;"></div>
+	</div>
+	<div class="form-group">
+	<label style="text-align:right" class="col-sm-3 control-label no-padding-right" for="form-field-6">rtmp拉流地址</label>
+	<div class="col-sm-9">
+		<input disabled value="{$url_info.ret.rtmpPullUrl}" type="text" id="form-field-4"  name="rtmpPullUrl" class="col-xs-10 col-sm-7" />	
+	</div>	<div style="clear:both;"></div>
+	</div>
+	</form>
+</div>
+</div><!-- /.row -->
+</div><!-- /.page-content -->
+</div><!-- /.main-content -->
+<!-- <![endif]-->
+<!--[if IE]>
+<![endif]-->
+<include file="common:footer" />

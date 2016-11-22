@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!-- saved from url=(0069)http://jf.vhot119.com/mobile/index.php?m=default&c=category&a=top_all -->
+<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="Keywords" content="九万内部积分商城">
+<meta name="Description" content="九万内部积分商城">
+<title>所有分类_九万内部积分商城 触屏版</title>
+<link rel="stylesheet" href="__PUBLIC__/Home/shop/bootstrap.min.css">
+<link rel="stylesheet" href="__PUBLIC__/Home/shop/font-awesome.min.css">
+<link rel="stylesheet" href="__PUBLIC__/Home/shop/ectouch_red.css">
+<link rel="stylesheet" href="__PUBLIC__/Home/shop/photoswipe.css">
+<link rel="stylesheet" href="__PUBLIC__/Font-Awesome-3.2.1/css/font-awesome.css">
+
+</head><body><div class="con">
+<header class="ect-header ect-margin-tb ect-margin-lr text-center"> <a href="javascript:history.go(-1)" class="pull-left ect-icon ect-icon1 ect-icon-history"></a>
+<span>所有分类</span>
+ <a href="javascript:openSearch();" class="pull-right ect-icon ect-icon1 ect-icon-search1"></a>
+</header>
+<div class="panel panel-default ect-category-all ect-border-radius0">
+    <ul>
+        <volist name="list" id="vo">
+          <li>
+     	        <a href="{:u(CONTROLLER_NAME.'/search',array('cid'=>$vo['id'],'username'=>$_GET['username'],'encry'=>$_GET['encry']))}">
+        <div class="media panel-body">
+            <img class="pull-left" src="{$vo['main_img']}">
+            <div class="pull-left ect-category-right">
+                <h3>{$vo['name']}</h3>
+                <h5> 
+                </h5>
+                </div>
+                <i class="fa fa-angle-down ect-transition05"></i>
+        </div></a>
+                <div class="ect-category-child">
+         
+        </div>
+      </li>
+            </volist>
+          </ul> 
+</div>
+</div>
+<a id="scrollUp" href="#" style="position: fixed; z-index: 10;"><i class="fa fa-angle-up"></i></a>
+<style>
+#scrollUp {
+	border-radius:100%;
+	background-color: #777;
+	color: #eee;
+	font-size: 40px;
+	line-height: 1;text-align: center;text-decoration: none;bottom: 1em;right: 10px;overflow: hidden;width: 46px;
+	height: 46px;
+	border: none;
+	opacity: 0.6;
+}
+</style>
+<script src="__PUBLIC__/Home/shop/hm.js"></script><script type="text/javascript" src="__PUBLIC__/Home/shop/jquery.min.js"></script> 
+<script type="text/javascript" src="__PUBLIC__/Home/shop/jquery.json.js"></script> 
+<script type="text/javascript" src="__PUBLIC__/Home/shop/common.js"></script> 
+<script type="text/javascript" src="__PUBLIC__/Home/shop/jquery.more.js"></script> 
+<script type="text/javascript" src="__PUBLIC__/Home/shop/utils.js"></script> 
+<script src="__PUBLIC__/Home/shop/TouchSlide.1.1.js"></script> 
+<script src="__PUBLIC__/Home/shop/ectouch.js"></script> 
+<script src="__PUBLIC__/Home/shop/simple-inheritance.min.js"></script> 
+<script src="__PUBLIC__/Home/shop/code-photoswipe-1.0.11.min.js"></script> 
+<script src="__PUBLIC__/Home/shop/bootstrap.min.js"></script> 
+<script src="__PUBLIC__/Home/shop/jquery.scrollUp.min.js"></script> 
+<script type="text/javascript" src="__PUBLIC__/Home/shop/validform.js"></script> 
+<script language="javascript">
+	/*banner滚动图片*/
+		TouchSlide({
+			slideCell : "#focus",
+			titCell : ".hd ul", // 开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+			mainCell : ".bd ul",
+			effect : "left",
+			autoPlay : true, // 自动播放
+			autoPage : true, // 自动分页
+			delayTime: 200, // 毫秒；切换效果持续时间（执行一次效果用多少毫秒）
+			interTime: 2500, // 毫秒；自动运行间隔（隔多少毫秒后执行下一个效果）
+			switchLoad : "_src" // 切换加载，真实图片路径为"_src"
+		});
+	/*弹出评论层并隐藏其他层*/
+	function openSearch(){
+		if($(".con").is(":visible")){
+			$(".con").hide();	
+			$(".search").show();
+		}
+	}
+	function closeSearch(){
+		if($(".con").is(":hidden")){
+			$(".con").show();	
+			$(".search").hide();
+		}
+	}
+</script> 
+<div style="display:none"><script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?61e7518cb8f77449a17a841ececaea9f";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</div>
+
+</body></html>

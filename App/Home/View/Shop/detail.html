@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<!-- saved from url=(0095)http://jf.vhot119.com/mobile/index.php?m=default&c=goods&a=index&id=192#PhotoSwipe1464915819433 -->
+<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <title>金士顿（Kingston）32GB 高速存储卡_手机类型_九万内部积分商城 触屏版</title>
+    <link rel="stylesheet" href="__PUBLIC__/Home/shop/bootstrap.min.css">
+    <link rel="stylesheet" href="__PUBLIC__/Home/shop/font-awesome.min.css">
+    <link rel="stylesheet" href="__PUBLIC__/Home/shop/ectouch_red.css">
+    <link rel="stylesheet" href="__PUBLIC__/Home/shop/photoswipe.css">
+    <link rel="stylesheet" href="__PUBLIC__/Font-Awesome-3.2.1/css/font-awesome.css">
+    <link rel="stylesheet" href="http://cdn.bootcss.com/twitter-bootstrap/3.0.3/css/bootstrap.min.css">
+
+</head><body style="margin: auto;"><div class="con">
+    <div class="ect-bg">
+        <header class="ect-header ect-margin-tb ect-margin-lr text-center icon-write ect-bg"> <a href="javascript:history.go(-1)" class="pull-left ect-icon ect-icon1 ect-icon-history"></a> <span>商品详情</span> <a href="javascript:;" onclick="openMune()" class="pull-right ect-icon ect-icon1 ect-icon-mune icon-write"></a></header>
+        <nav class="ect-nav ect-nav-list" style="display:none;">
+            <ul class="ect-diaplay-box text-center">
+                <li class="ect-box-flex"><a href="{:u(CONTROLLER_NAME.'/index',array('username'=>$_GET['username'],'encry'=>$_GET['encry']))}"><i class="ect-icon ect-icon-home"></i>首页</a></li>
+                <li class="ect-box-flex"><a href="{:u(CONTROLLER_NAME.'/exchange',array('username'=>$_GET['username'],'encry'=>$_GET['encry']))}"><i class="glyphicon glyphicon-gift" style="font-size:1.9em;width:100%;"></i><span style="margin-top:-1.9em;display: block;">积分兑换</span></a></li>
+                <li class="ect-box-flex"><a href="{:u(CONTROLLER_NAME.'/capital',array('username'=>$_GET['username'],'encry'=>$_GET['encry']))}"><i class="glyphicon glyphicon-usd" style="font-size:1.9em;width:100%;"></i><span style="margin-top:-1.9em;display: block;">资金管理</span></a></li>
+                <li class="ect-box-flex"><a href="{:u(CONTROLLER_NAME.'/order_list',array('username'=>$_GET['username'],'encry'=>$_GET['encry']))}"><i class="" style="font-size:1.9em;width:100%;"><img src="__PUBLIC__/Home/shop/nav_1.png" style="width:1em;margin-top:-0.5em;"></i><span style="margin-top:-1.9em;display: block;">我的订单</span></a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="focus" class="focus goods-focus ect-padding-lr ect-margin-tb">
+        <div class="hd">
+            <ul>
+                <volist name="pro_img" id="vo">
+                <li class="">1</li>
+                </volist>
+            </ul>
+        </div>
+        <div class="bd">
+            <div class="tempWrap" style="overflow:hidden; position:relative;"><ul id="Gallery" style="width: 3708px; position: relative; overflow: hidden; padding: 0px; margin: 0px; transition-duration: 200ms; transform: translate(-2472px, 0px) translateZ(0px);">
+                <!--li><a href="http://jf.vhot119.com/images/201603/goods_img/192_G_1459367411047.jpg"><img src="http://jf.vhot119.com/images/201603/goods_img/192_G_1459367411047.jpg" alt="金士顿（Kingston）32GB 高速存储卡" /></a></li-->
+                <li style="display: table-cell; vertical-align: top; width: 618px;"><a href="#"><img src="{$pro['main_img']}" alt=""></a></li>
+                <volist name="pro_img" id="vo">
+                <li style="display: table-cell; vertical-align: top; width: 618px;"><a href="#"><img src="{$vo['url']}" alt=""></a></li>
+                    </volist>
+            </ul></div>
+        </div>
+    </div>
+
+    <div class="goods-info ect-padding-tb">
+
+        <section class="ect-margin-tb ect-margin-lr goods-title">
+            <h4 class="title pull-left">{$pro['name']}</h4>
+            <if condition="$likes">
+            <span class="pull-right text-center  ect-padding-lr" onclick="apply_submit(2)" id="ECS_COLLECT"> <i class="fa fa-heart"></i><br>
+       喜欢 </span>
+                <else/>
+           <span class="pull-right text-center  ect-padding-lr" onclick="apply_submit(1)" id="ECS_COLLECT"> <i class="fa fa-heart-o fa-heart"></i><br>
+     喜欢 </span>
+            </if>
+
+
+        </section>
+        <section class="ect-margin-tb ect-margin-lr ">
+            <p><span class="pull-left">商品总价：<b class="ect-colory" id="ECS_GOODS_AMOUNT">{$pro['goods_total']}分</b></span><span class="pull-right">销量：{$pro['sale']}件</span></p>
+            <p>本店售价：
+                {$pro['shop_price']}分
+                <small> <del></del></small>
+            </p>
+            <p></p>
+
+        </section>
+
+        <form action="{:U(CONTROLLER_NAME . '/checkout',array('id'=>$_GET['id'],'username'=>$_GET['username'],'encry'=>$_GET['encry']))}" method="post" name="ECS_FORMBUY" id="ECS_FORMBUY">
+            <section class="ect-padding-lr ect-padding-tb goods-option">
+                <div class="goods-optionc">
+
+                </div>
+                <div class="goods-num"> <span class="pull-left">购买数量：</span>
+                    <div class="input-group pull-left wrap"><span class="input-group-addon sup" onclick="changePrice(1)">-</span>
+                        <input type="text" class="form-contro form-num" name="number" id="goods_number"  value="1"  onblur="changePrice(3)">
+                        <input type="text" hidden  class="form-contro form-num" name="id" id="goods_number"  value="{$pro['id']}"  onblur="changePrice(3)">
+                        <span class="input-group-addon plus" onclick="changePrice(3)">+</span></div>
+                </div>
+            </section>
+            <section class="goods-more-a">
+                <a class="ect-padding-lr ect-padding-tb" href=""><span class="Text">商品描述</span> <span class="pull-right"><i class="fa fa-chevron-right"></i></span></a>
+
+            <div style="padding-left: 0.6em; ">{$pro['text']}</div>
+
+            </section>
+
+            <div class="ect-padding-lr ect-padding-tb goods-submit">
+                <div><input type="submit"  style="font-size: 22px"  value="立即购买" class="btn btn-info ect-btn-info ect-colorf ect-bg"></div>
+            </div>
+
+        </form>
+
+    </div>
+    <!--<div class="goods-related ect-padding-lr ect-padding-tb">-->
+        <!--<p><strong>相关商品：</strong></p>-->
+
+        <!--<div id="picScroll" class="picScroll">-->
+            <!--<div class="hd">-->
+                <!--<ul><li class="on">1</li></ul>-->
+            <!--</div>-->
+            <!--<div class="tempWrap" style="overflow:hidden; position:relative;"><div class="bd" style="width: 618px; position: relative; overflow: hidden; padding: 0px; margin: 0px; transition-duration: 200ms; transform: translate(0px, 0px) translateZ(0px);">-->
+                <!--<ul style="display: table-cell; vertical-align: top; width: 618px;">-->
+                <!--</ul>-->
+            <!--</div></div>-->
+        <!--</div>-->
+
+
+    <!--</div>-->
+    <footer class="logo"><a href="#" target="_blank">
+        <!--<img src="__PUBLIC__/Home/shop/copyright.png" width="100%">-->
+    </a></footer>
+</div>
+
+<style>
+    #scrollUp {
+        border-radius:100%;
+        background-color: #777;
+        color: #eee;
+        font-size: 40px;
+        line-height: 1;text-align: center;text-decoration: none;bottom: 1em;right: 10px;overflow: hidden;width: 46px;
+        height: 46px;
+        border: none;
+        opacity: 0.6;
+    }
+</style>
+<script type="text/javascript" src="__PUBLIC__/Home/shop/jquery.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Home/shop/jquery.json.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Home/shop/common.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Home/shop/jquery.more.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Home/shop/utils.js"></script>
+<script src="__PUBLIC__/Home/shop/TouchSlide.1.1.js"></script>
+<script src="__PUBLIC__/Home/shop/ectouch.js"></script>
+<script src="__PUBLIC__/Home/shop/simple-inheritance.min.js"></script>
+<script src="__PUBLIC__/Home/shop/code-photoswipe-1.0.11.min.js"></script>
+<script src="__PUBLIC__/Home/shop/bootstrap.min.js"></script>
+<script src="__PUBLIC__/Home/shop/jquery.scrollUp.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Home/shop/validform.js"></script>
+
+
+<script type="text/javascript" src="__PUBLIC__/Home/shop/lefttime.js">
+</script>
+<script type="text/javascript">
+
+    TouchSlide({
+        slideCell : "#focus",
+        titCell : ".hd ul", // 开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+        mainCell : ".bd ul",
+        effect : "left",
+        autoPlay : true, // 自动播放
+        autoPage : true, // 自动分页
+        delayTime: 200, // 毫秒；切换效果持续时间（执行一次效果用多少毫秒）
+        interTime: 2500, // 毫秒；自动运行间隔（隔多少毫秒后执行下一个效果）
+        switchLoad : "_src" // 切换加载，真实图片路径为"_src"
+    });
+
+    /**
+     * 点选可选属性或改变数量时修改商品价格的函数
+     */
+    function changePrice(type)
+    {
+        var qty = document.forms['ECS_FORMBUY'].elements['number'].value;
+        if(type == 1){qty--;}
+        if(type == 3){qty++;}
+        if(qty <=0 ){qty=1;}
+        //alert(qty); //return;
+        //document.getElementById('goods_number').value = qty;
+        $("#goods_number").val(qty)
+    }
+
+    function apply_submit(s){
+        var post_data = {
+            username:'11',
+            num:s
+        };
+        $.ajax({
+            url: "{:U(CONTROLLER_NAME . '/likes',array('id'=>$_GET['id']))}",
+            type: 'post',
+            dataType: 'json',
+            data: post_data,
+            success: function (data) {
+                if(data==1){
+                    $("#ECS_COLLECT").find("i").removeClass().addClass("fa fa-heart");
+                }else{
+                    $("#ECS_COLLECT").find("i").removeClass().addClass("fa fa-heart-o");
+                }
+            },
+            cache: false
+        });
+    }
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body></html>

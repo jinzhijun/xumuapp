@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<!-- saved from url=(0065)http://fc.vhot119.com/home/beian/upload/id/46256/code/qG24Ok.html -->
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>上传本地免费广告</title><link href="__PUBLIC__/Home/record/update/css.css" rel="stylesheet"><script src="__PUBLIC__/Home/record/update/hm.js">
+</script>
+<script src="__PUBLIC__/Home/record/update/jquery-2.0.3.min.js"></script><style>
+            .success{background-color: #ccffcc}
+            .error{background-color: #ffcccc}
+            .suoluetu{width: 50%;}
+        </style><script>
+            function back() {
+                history.go(-1);
+            }
+        </script>
+        </head>
+<body bgcolor="#f3efef">
+<div class="loading" style="display: none;"></div><a href="javascript:back();" id="back"><img src=""></a>
+<div id="bt"><span>上传本地免费广告</span></div><div id="nr">
+<div id="younz"><style type="text/css">
+<!--
+                    .input {
+                        width: 80%;
+                        margin: 3px;
+                    }
+                    -->
+                    </style>
+    <form action="{:u('Record/update',array('id'=>$_GET['id'],'username'=>$_GET['username'],'encry'=>$_GET['encry']))}" method="post" onsubmit="return tiui();"   enctype="multipart/form-data">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tbody>
+            <tr><td width="1%" height="30">&nbsp;</td><td width="30%">&nbsp;</td><td>&nbsp;</td>
+
+                <td>&nbsp;</td></tr><tr><td>&nbsp;</td>
+                <td align="right" nowrap="">*推荐人：</td>
+                <td align="left">
+                    <input name="title" value="" type="text" class="input" required="" maxlength="20" placeholder="20字以内，必填">
+                </td><td>&nbsp;</td></tr><tr>
+                <td>&nbsp;</td><td align="right" style="width: 30px">*负责人手机：</td>
+                <td align="left"><input name="tel" value="" type="text" class="input" id="lianxi" required="" maxlength="100" placeholder="手机或微信，必填"></td>
+                <td>&nbsp;</td></tr><tr><td>&nbsp;</td>
+                <td align="right">*宣传语：</td><td align="left"><input name="title" value="" type="text" class="input" id="title" required="" maxlength="100" placeholder="宣传语"></td>
+                <td>&nbsp;</td></tr><tr><td>&nbsp;</td><td align="right">*营业执照：</td>
+                <td align="left">
+                    <div class="form-group">
+                        <div class="col-sm-7" >
+                            <div style="float: left;width:200px;margin:0 10px 10px 0;">
+                                <img src="" id="main_img"   width="200" height="150"><br>
+                                <input type="file" name="filemain" id="filemain" multiple="multiple" style="border:none"/>
+                            </div>
+                            <script>
+                                $("#filemain").change(function(){
+                                    var objUrl = getObjectURL(this.files[0]) ;
+                                    console.log("objUrl = "+objUrl) ;
+                                    if (objUrl) {
+                                        $("#main_img").attr("src", objUrl) ;
+                                    }
+                                }) ;
+                                //建立一個可存取到該file的url
+                                function getObjectURL(file) {
+                                    var url = null ;
+                                    if (window.createObjectURL!=undefined) { // basic
+                                        url = window.createObjectURL(file) ;
+                                    } else if (window.URL!=undefined) { // mozilla(firefox)
+                                        url = window.URL.createObjectURL(file) ;
+                                    } else if (window.webkitURL!=undefined) { // webkit or chrome
+                                        url = window.webkitURL.createObjectURL(file) ;
+                                    }
+                                    return url ;
+                                }
+                            </script>
+                        </div>
+                    </div>
+                </td><td>&nbsp;</td></tr>
+
+
+            <td>&nbsp;</td></tr><tr><td>&nbsp;</td><td align="right">*身份证：</td>
+                <td align="left">
+                    <div class="form-group">
+
+                        <div class="col-sm-7" >
+                            <div style="float: left;width:200px;margin:0 10px 10px 0;">
+                                <img src="" id="idr_img"   width="200" height="150"><br>
+                                <input type="file" name="fileidr" id="fileidr" multiple="multiple" style="border:none"/>
+                            </div>
+                            <script>
+                                $("#fileidr").change(function(){
+                                    var objUrl = getObjectURL(this.files[0]) ;
+                                    console.log("objUrl = "+objUrl) ;
+                                    if (objUrl) {
+                                        $("#idr_img").attr("src", objUrl) ;
+                                    }
+                                }) ;
+                                //建立一個可存取到該file的url
+                                function getObjectURL(file) {
+                                    var url = null ;
+                                    if (window.createObjectURL!=undefined) { // basic
+                                        url = window.createObjectURL(file) ;
+                                    } else if (window.URL!=undefined) { // mozilla(firefox)
+                                        url = window.URL.createObjectURL(file) ;
+                                    } else if (window.webkitURL!=undefined) { // webkit or chrome
+                                        url = window.webkitURL.createObjectURL(file) ;
+                                    }
+                                    return url ;
+                                }
+                            </script>
+                        </div>
+                    </div>
+
+
+                    <div class="form-group">
+                        <div class="col-sm-7" >
+                            <div style="float: left;width:200px;margin:0 10px 10px 0;">
+                                <img src="" id="idl_img"   width="200" height="150"><br>
+
+                                <input type="file" name="fileidl" id="fileidl" multiple="multiple" style="border:none"/>
+                            </div>
+                            <script>
+                                $("#fileidl").change(function(){
+                                    var objUrl = getObjectURL(this.files[0]) ;
+                                    console.log("objUrl = "+objUrl) ;
+                                    if (objUrl) {
+                                        $("#idl_img").attr("src", objUrl) ;
+                                    }
+                                }) ;
+                                //建立一個可存取到該file的url
+                                function getObjectURL(file) {
+                                    var url = null ;
+                                    if (window.createObjectURL!=undefined) { // basic
+                                        url = window.createObjectURL(file) ;
+                                    } else if (window.URL!=undefined) { // mozilla(firefox)
+                                        url = window.URL.createObjectURL(file) ;
+                                    } else if (window.webkitURL!=undefined) { // webkit or chrome
+                                        url = window.webkitURL.createObjectURL(file) ;
+                                    }
+                                    return url ;
+                                }
+                            </script>
+                        </div>
+                    </div>
+
+                </td><td>&nbsp;</td></tr>
+
+            <td>&nbsp;</td></tr><tr><td>&nbsp;</td><td align="right">*门店外观：</td>
+                <td align="left">
+                    <div class="form-group">
+                        <div class="col-sm-7" >
+                            <div style="float: left;width:200px;margin:0 10px 10px 0;">
+                                <img src="" id="storer1_img"   width="200" height="150"><br>
+                                <input type="file" name="filestorer1" id="filestorer1" multiple="multiple" style="border:none"/>
+                            </div>
+                            <script>
+                                $("#filestorer1").change(function(){
+                                    var objUrl = getObjectURL(this.files[0]) ;
+                                    console.log("objUrl = "+objUrl) ;
+                                    if (objUrl) {
+                                        $("#storer1_img").attr("src", objUrl) ;
+                                    }
+                                }) ;
+                                //建立一個可存取到該file的url
+                                function getObjectURL(file) {
+                                    var url = null ;
+                                    if (window.createObjectURL!=undefined) { // basic
+                                        url = window.createObjectURL(file) ;
+                                    } else if (window.URL!=undefined) { // mozilla(firefox)
+                                        url = window.URL.createObjectURL(file) ;
+                                    } else if (window.webkitURL!=undefined) { // webkit or chrome
+                                        url = window.webkitURL.createObjectURL(file) ;
+                                    }
+                                    return url ;
+                                }
+                            </script>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-sm-7" >
+                            <div style="float: left;width:200px;margin:0 10px 10px 0;">
+                                <img src="" id="storer2_img"   width="200" height="150"><br>
+                                <input type="file" name="filestorer2" id="filestorer2" multiple="multiple" style="border:none"/>
+                            </div>
+                            <script>
+                                $("#filestorer2").change(function(){
+                                    var objUrl = getObjectURL(this.files[0]) ;
+                                    console.log("objUrl = "+objUrl) ;
+                                    if (objUrl) {
+                                        $("#storer2_img").attr("src", objUrl) ;
+                                    }
+                                }) ;
+                                //建立一個可存取到該file的url
+                                function getObjectURL(file) {
+                                    var url = null ;
+                                    if (window.createObjectURL!=undefined) { // basic
+                                        url = window.createObjectURL(file) ;
+                                    } else if (window.URL!=undefined) { // mozilla(firefox)
+                                        url = window.URL.createObjectURL(file) ;
+                                    } else if (window.webkitURL!=undefined) { // webkit or chrome
+                                        url = window.webkitURL.createObjectURL(file) ;
+                                    }
+                                    return url ;
+                                }
+                            </script>
+                        </div>
+                    </div>
+                </td><td>&nbsp;</td></tr>
+
+
+            <td>&nbsp;</td></tr><tr><td>&nbsp;</td><td align="right">*店内照片：</td>
+                <td align="left">
+                    <div class="form-group">
+                        <div class="col-sm-7" >
+                            <div style="float: left;width:200px;margin:0 10px 10px 0;">
+                                <img src="" id="storel1_img"   width="200" height="150"><br>
+                                <input type="file" name="filestorel1" id="filestorel1" multiple="multiple" style="border:none"/>
+                            </div>
+                            <script>
+                                $("#filestorel1").change(function(){
+                                    var objUrl = getObjectURL(this.files[0]) ;
+                                    console.log("objUrl = "+objUrl) ;
+                                    if (objUrl) {
+                                        $("#storel1_img").attr("src", objUrl) ;
+                                    }
+                                }) ;
+                                //建立一個可存取到該file的url
+                                function getObjectURL(file) {
+                                    var url = null ;
+                                    if (window.createObjectURL!=undefined) { // basic
+                                        url = window.createObjectURL(file) ;
+                                    } else if (window.URL!=undefined) { // mozilla(firefox)
+                                        url = window.URL.createObjectURL(file) ;
+                                    } else if (window.webkitURL!=undefined) { // webkit or chrome
+                                        url = window.webkitURL.createObjectURL(file) ;
+                                    }
+                                    return url ;
+                                }
+                            </script>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-sm-7" >
+                            <div style="float: left;width:200px;margin:0 10px 10px 0;">
+                                <img src="" id="storel2_img"   width="200" height="150"><br>
+                                <input type="file" name="filestorel2" id="filestorel2" multiple="multiple" style="border:none"/>
+                            </div>
+                            <script>
+                                $("#filestorel2").change(function(){
+                                    var objUrl = getObjectURL(this.files[0]) ;
+                                    console.log("objUrl = "+objUrl) ;
+                                    if (objUrl) {
+                                        $("#storel2_img").attr("src", objUrl) ;
+                                    }
+                                }) ;
+                                //建立一個可存取到該file的url
+                                function getObjectURL(file) {
+                                    var url = null ;
+                                    if (window.createObjectURL!=undefined) { // basic
+                                        url = window.createObjectURL(file) ;
+                                    } else if (window.URL!=undefined) { // mozilla(firefox)
+                                        url = window.URL.createObjectURL(file) ;
+                                    } else if (window.webkitURL!=undefined) { // webkit or chrome
+                                        url = window.webkitURL.createObjectURL(file) ;
+                                    }
+                                    return url ;
+                                }
+                            </script>
+                        </div>
+                    </div>
+
+
+                    <div class="form-group">
+                        <div class="col-sm-7" >
+                            <div style="float: left;width:200px;margin:0 10px 10px 0;">
+                                <img src="" id="storel3_img"   width="200" height="150"><br>
+                                <input type="file" name="filestorel3" id="filestorel3" multiple="multiple" style="border:none"/>
+                            </div>
+                            <script>
+                                $("#filestorel3").change(function(){
+                                    var objUrl = getObjectURL(this.files[0]) ;
+                                    console.log("objUrl = "+objUrl) ;
+                                    if (objUrl) {
+                                        $("#storel3_img").attr("src", objUrl) ;
+                                    }
+                                }) ;
+                                //建立一個可存取到該file的url
+                                function getObjectURL(file) {
+                                    var url = null ;
+                                    if (window.createObjectURL!=undefined) { // basic
+                                        url = window.createObjectURL(file) ;
+                                    } else if (window.URL!=undefined) { // mozilla(firefox)
+                                        url = window.URL.createObjectURL(file) ;
+                                    } else if (window.webkitURL!=undefined) { // webkit or chrome
+                                        url = window.webkitURL.createObjectURL(file) ;
+                                    }
+                                    return url ;
+                                }
+                            </script>
+                        </div>
+                    </div>
+                </td><td>&nbsp;</td></tr>
+            <tr><td>&nbsp;</td>
+         <td>&nbsp;</td></tr><tr><td>&nbsp;</td><td align="right">&nbsp;</td><td align="left">&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td align="right">&nbsp;</td><td align="left">&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td align="right">&nbsp;</td><td align="left"><input type="submit" name="button" id="button" value="提交"></td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td align="right">&nbsp;</td><td align="left">&nbsp;</td><td>&nbsp;</td></tr></tbody></table>
+    </form>
+</div>
+</div><div id="xiaotishi"></div><script>
+    $(document).ready(function () {
+	$('#xiaotishi').click(function () {
+	    $('#xiaotishihua').show();
+	});
+	$('#xiaotishihua').click(function () {
+	    $('#xiaotishihua').hide();
+	});
+    });
+</script><div class="linian">友爱　执着　分享　感恩</div><div style="display: none"><script>
+                var _hmt = _hmt || [];
+                (function () {
+                    var hm = document.createElement("script");
+                    hm.src = "//hm.baidu.com/hm.js?2866d184a661820df35879dc03c43cff";
+                    var s = document.getElementsByTagName("script")[0];
+                    s.parentNode.insertBefore(hm, s);
+                })();
+                function tiui() {
+                    var returnvalue = true;
+                    $('.input').each(function () {
+                        if (!$(this).val() && $(this).attr('required')) {
+                            alert('请检查必填项');
+                            returnvalue = false;
+                            return returnvalue;
+                        }
+                    });
+                    if (!returnvalue) {
+                        return returnvalue;
+                    }
+                    if (!confirm('确认都正确填写了？'))
+                    {
+                        returnvalue = false;
+                    } else {
+                        var scrollTop = Math.max(document.documentElement.scrollTop, document.body.scrollTop);
+                        $('body').css('overflow', 'hidden');
+                        $('.loading').css('top', scrollTop).show();
+                        setTimeout('clickloading()', 2000);
+                    }
+                    return returnvalue;
+                }
+                function clickloading() {
+                    $('.loading').click(function () {
+                        $('body').css('overflow', 'auto');
+                        $('.loading').hide();
+                    });
+                }
+                $(document).ready(function () {
+                    $('.loading').hide();
+                });
+            </script></div></body></html>

@@ -1,0 +1,1066 @@
+[ 2016-06-22T09:56:47+08:00 ] 127.0.0.1 /api.php/Hxgroup/group_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001794s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.011194s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011440s ]
+NOTIC: [2048] Declaration of Common\Model\HxgroupModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Common\Model\HxgroupModel.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `tp_group_hx` [ RunTime:0.0036s ]
+ERR: 1146:La table 'weishijiao.tp_hxgroup' n'existe pas
+ [ SQL语句 ] : SHOW COLUMNS FROM `tp_hxgroup`
+ERR: 1146:La table 'weishijiao.tp_hxgroup' n'existe pas
+ [ SQL语句 ] : SHOW COLUMNS FROM `tp_hxgroup`
+
+[ 2016-06-22T09:57:04+08:00 ] 127.0.0.1 /api.php/Hxgroup/group_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000342s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000421s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000519s ]
+
+[ 2016-06-22T09:57:46+08:00 ] 127.0.0.1 /api.php/Hxgroup/group_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000508s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000533s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000696s ]
+
+[ 2016-06-22T09:57:52+08:00 ] 127.0.0.1 /api.php/Hxgroup/group_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000482s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000572s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000715s ]
+SQL: SHOW COLUMNS FROM `tp_group_hx` [ RunTime:0.0031s ]
+ERR: Think\Model:getlist方法不存在！
+
+[ 2016-06-22T09:58:12+08:00 ] 127.0.0.1 /api.php/Hxgroup/group_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000515s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000697s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000915s ]
+ERR: 无法加载控制器:Hxgroup
+
+[ 2016-06-22T09:59:24+08:00 ] 127.0.0.1 /api.php/Hxgroup/group_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000653s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000612s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000796s ]
+SQL: SHOW COLUMNS FROM `tp_group_hx` [ RunTime:0.0049s ]
+ERR: Think\Model:getlist方法不存在！
+
+[ 2016-06-22T09:59:44+08:00 ] 127.0.0.1 /api.php/Hxgroup/group_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000508s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000538s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000704s ]
+SQL: SHOW COLUMNS FROM `tp_group_hx` [ RunTime:0.0032s ]
+ERR: Think\Model:getlist方法不存在！
+
+[ 2016-06-22T09:59:45+08:00 ] 127.0.0.1 /api.php/Hxgroup/group_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000362s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000384s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000499s ]
+SQL: SHOW COLUMNS FROM `tp_group_hx` [ RunTime:0.0027s ]
+ERR: Think\Model:getlist方法不存在！
+
+[ 2016-06-22T09:59:45+08:00 ] 127.0.0.1 /api.php/Hxgroup/group_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000631s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000707s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000914s ]
+SQL: SHOW COLUMNS FROM `tp_group_hx` [ RunTime:0.0027s ]
+ERR: Think\Model:getlist方法不存在！
+
+[ 2016-06-22T09:59:45+08:00 ] 127.0.0.1 /api.php/Hxgroup/group_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000303s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000316s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000412s ]
+SQL: SHOW COLUMNS FROM `tp_group_hx` [ RunTime:0.0037s ]
+ERR: Think\Model:getlist方法不存在！
+
+[ 2016-06-22T09:59:45+08:00 ] 127.0.0.1 /api.php/Hxgroup/group_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000307s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000319s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000414s ]
+SQL: SHOW COLUMNS FROM `tp_group_hx` [ RunTime:0.0026s ]
+ERR: Think\Model:getlist方法不存在！
+
+[ 2016-06-22T09:59:45+08:00 ] 127.0.0.1 /api.php/Hxgroup/group_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000403s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000429s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000559s ]
+SQL: SHOW COLUMNS FROM `tp_group_hx` [ RunTime:0.0031s ]
+ERR: Think\Model:getlist方法不存在！
+
+[ 2016-06-22T09:59:45+08:00 ] 127.0.0.1 /api.php/Hxgroup/group_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000493s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000429s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000568s ]
+SQL: SHOW COLUMNS FROM `tp_group_hx` [ RunTime:0.0024s ]
+ERR: Think\Model:getlist方法不存在！
+
+[ 2016-06-22T09:59:46+08:00 ] 127.0.0.1 /api.php/Hxgroup/group_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000312s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000325s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000432s ]
+SQL: SHOW COLUMNS FROM `tp_group_hx` [ RunTime:0.0038s ]
+ERR: Think\Model:getlist方法不存在！
+
+[ 2016-06-22T10:00:23+08:00 ] 127.0.0.1 /api.php/Hxgroup/group_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000637s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000796s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000982s ]
+NOTIC: [2048] Declaration of Common\Model\Group_hxModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Common\Model\Group_hxModel.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `tp_group_hx` [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `tp_group_hx` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined offset: 0 D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\Core\Library\Think\Model.class.php 第 222 行.
+NOTIC: [8] Undefined variable: page D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Common\Model\Group_hxModel.class.php 第 31 行.
+SQL: SELECT * FROM `tp_group_hx` LIMIT 0,10   [ RunTime:0.0002s ]
+
+[ 2016-06-22T10:00:23+08:00 ] 127.0.0.1 /api.php/Hxgroup/group_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000667s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000852s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001129s ]
+NOTIC: [2048] Declaration of Common\Model\Group_hxModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Common\Model\Group_hxModel.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `tp_group_hx` [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `tp_group_hx` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined offset: 0 D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\Core\Library\Think\Model.class.php 第 222 行.
+NOTIC: [8] Undefined variable: page D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Common\Model\Group_hxModel.class.php 第 31 行.
+SQL: SELECT * FROM `tp_group_hx` LIMIT 0,10   [ RunTime:0.0002s ]
+
+[ 2016-06-22T10:00:24+08:00 ] 127.0.0.1 /api.php/Hxgroup/group_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000616s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000677s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000877s ]
+NOTIC: [2048] Declaration of Common\Model\Group_hxModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Common\Model\Group_hxModel.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `tp_group_hx` [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `tp_group_hx` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined offset: 0 D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\Core\Library\Think\Model.class.php 第 222 行.
+NOTIC: [8] Undefined variable: page D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Common\Model\Group_hxModel.class.php 第 31 行.
+SQL: SELECT * FROM `tp_group_hx` LIMIT 0,10   [ RunTime:0.0002s ]
+
+[ 2016-06-22T10:00:24+08:00 ] 127.0.0.1 /api.php/Hxgroup/group_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000717s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000784s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001017s ]
+NOTIC: [2048] Declaration of Common\Model\Group_hxModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Common\Model\Group_hxModel.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `tp_group_hx` [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `tp_group_hx` [ RunTime:0.0034s ]
+NOTIC: [8] Undefined offset: 0 D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\Core\Library\Think\Model.class.php 第 222 行.
+NOTIC: [8] Undefined variable: page D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Common\Model\Group_hxModel.class.php 第 31 行.
+SQL: SELECT * FROM `tp_group_hx` LIMIT 0,10   [ RunTime:0.0004s ]
+
+[ 2016-06-22T10:00:46+08:00 ] 127.0.0.1 /api.php/Hxgroup/group_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000869s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000952s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001161s ]
+NOTIC: [2048] Declaration of Common\Model\Group_hxModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Common\Model\Group_hxModel.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `tp_group_hx` [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `tp_group_hx` [ RunTime:0.0022s ]
+NOTIC: [8] Undefined offset: 0 D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\Core\Library\Think\Model.class.php 第 222 行.
+NOTIC: [8] Undefined variable: page D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Common\Model\Group_hxModel.class.php 第 31 行.
+SQL: SELECT * FROM `tp_group_hx` LIMIT 0,10   [ RunTime:0.0002s ]
+
+[ 2016-06-22T10:00:47+08:00 ] 127.0.0.1 /api.php/Hxgroup/group_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000634s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000664s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000875s ]
+NOTIC: [2048] Declaration of Common\Model\Group_hxModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Common\Model\Group_hxModel.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `tp_group_hx` [ RunTime:0.0044s ]
+SQL: SHOW COLUMNS FROM `tp_group_hx` [ RunTime:0.0025s ]
+NOTIC: [8] Undefined offset: 0 D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\Core\Library\Think\Model.class.php 第 222 行.
+NOTIC: [8] Undefined variable: page D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Common\Model\Group_hxModel.class.php 第 31 行.
+SQL: SELECT * FROM `tp_group_hx` LIMIT 0,10   [ RunTime:0.0002s ]
+
+[ 2016-06-22T10:00:47+08:00 ] 127.0.0.1 /api.php/Hxgroup/group_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000300s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000318s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000412s ]
+NOTIC: [2048] Declaration of Common\Model\Group_hxModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Common\Model\Group_hxModel.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `tp_group_hx` [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `tp_group_hx` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined offset: 0 D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\Core\Library\Think\Model.class.php 第 222 行.
+NOTIC: [8] Undefined variable: page D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Common\Model\Group_hxModel.class.php 第 31 行.
+SQL: SELECT * FROM `tp_group_hx` LIMIT 0,10   [ RunTime:0.0002s ]
+
+[ 2016-06-22T10:02:52+08:00 ] 127.0.0.1 /api.php/Hxgroup/group_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000348s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000415s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000526s ]
+NOTIC: [2048] Declaration of Common\Model\Group_hxModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Common\Model\Group_hxModel.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `tp_group_hx` [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `tp_group_hx` [ RunTime:0.0022s ]
+NOTIC: [8] Undefined offset: 0 D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\Core\Library\Think\Model.class.php 第 222 行.
+NOTIC: [8] Undefined variable: page D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Common\Model\Group_hxModel.class.php 第 31 行.
+SQL: SELECT * FROM `tp_group_hx` LIMIT 0,10   [ RunTime:0.0002s ]
+
+[ 2016-06-22T11:34:22+08:00 ] 127.0.0.1 /api.php/Hxgroup/group_users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000388s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000425s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000523s ]
+
+[ 2016-06-22T11:35:09+08:00 ] 127.0.0.1 /api.php/Hxgroup/group_users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000306s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000323s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000419s ]
+NOTIC: [8] Undefined variable: list_result D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Api\Controller\HxgroupController.class.php 第 22 行.
+
+[ 2016-06-22T11:35:11+08:00 ] 127.0.0.1 /api.php/Hxgroup/group_users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000307s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000418s ]
+NOTIC: [8] Undefined variable: list_result D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Api\Controller\HxgroupController.class.php 第 22 行.
+
+[ 2016-06-22T11:35:14+08:00 ] 127.0.0.1 /api.php/Hxgroup/group_users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000299s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000316s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000423s ]
+NOTIC: [8] Undefined variable: list_result D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Api\Controller\HxgroupController.class.php 第 22 行.
+
+[ 2016-06-22T11:36:20+08:00 ] 127.0.0.1 /api.php/Hxgroup/group_users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000085s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001178s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001539s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001963s ]
+
+[ 2016-06-22T11:36:55+08:00 ] 127.0.0.1 /api.php/Hxgroup/group_users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000379s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000435s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000536s ]
+
+[ 2016-06-22T13:08:16+08:00 ] 127.0.0.1 /api.php/Hxgroup/group_users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000377s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000428s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000544s ]
+
+[ 2016-06-22T13:08:20+08:00 ] 127.0.0.1 /api.php/Hxgroup/group_users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000308s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000441s ]
+
+[ 2016-06-22T13:08:21+08:00 ] 127.0.0.1 /api.php/Hxgroup/group_users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000305s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000319s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000422s ]
+
+[ 2016-06-22T13:08:53+08:00 ] 127.0.0.1 /api.php/Hxgroup/group_users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000345s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000381s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000488s ]
+
+[ 2016-06-22T13:09:11+08:00 ] 127.0.0.1 /api.php/Hxgroup/group_users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000475s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000428s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000552s ]
+
+[ 2016-06-22T13:15:47+08:00 ] 127.0.0.1 /api.php/Hxgroup/group_users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000344s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000422s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000519s ]
+NOTIC: [8] Array to string conversion D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Api\Controller\HxgroupController.class.php 第 24 行.
+
+[ 2016-06-22T13:19:12+08:00 ] 127.0.0.1 /api.php/Hxgroup/group_users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000337s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000403s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000501s ]
+
+[ 2016-06-22T13:19:27+08:00 ] 127.0.0.1 /api.php/Hxgroup/group_users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000527s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000535s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000702s ]
+NOTIC: [8] Undefined index: member D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Api\Controller\HxgroupController.class.php 第 24 行.
+
+[ 2016-06-22T13:25:23+08:00 ] 127.0.0.1 /api.php/Hxgroup/group_users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000367s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000424s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000521s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0059s ]
+NOTIC: [8] Undefined index: member D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Api\Controller\HxgroupController.class.php 第 25 行.
+ERR: Think\Model:Getone方法不存在！
+
+[ 2016-06-22T13:25:43+08:00 ] 127.0.0.1 /api.php/Hxgroup/group_users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000556s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000591s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000770s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: member D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Api\Controller\HxgroupController.class.php 第 25 行.
+ERR: Think\Model:Getone方法不存在！
+
+[ 2016-06-22T13:25:44+08:00 ] 127.0.0.1 /api.php/Hxgroup/group_users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000411s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000378s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000493s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0091s ]
+NOTIC: [8] Undefined index: member D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Api\Controller\HxgroupController.class.php 第 25 行.
+ERR: Think\Model:Getone方法不存在！
+
+[ 2016-06-22T13:25:44+08:00 ] 127.0.0.1 /api.php/Hxgroup/group_users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000406s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000503s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000636s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0035s ]
+NOTIC: [8] Undefined index: member D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Api\Controller\HxgroupController.class.php 第 25 行.
+ERR: Think\Model:Getone方法不存在！
+
+[ 2016-06-22T13:25:45+08:00 ] 127.0.0.1 /api.php/Hxgroup/group_users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000464s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000391s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000515s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0078s ]
+NOTIC: [8] Undefined index: member D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Api\Controller\HxgroupController.class.php 第 25 行.
+ERR: Think\Model:Getone方法不存在！
+
+[ 2016-06-22T13:25:57+08:00 ] 127.0.0.1 /api.php/Hxgroup/group_users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000576s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000590s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000772s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0056s ]
+NOTIC: [8] Undefined index: member D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Api\Controller\HxgroupController.class.php 第 25 行.
+
+[ 2016-06-22T13:26:16+08:00 ] 127.0.0.1 /api.php/Hxgroup/group_users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000763s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000663s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000872s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0064s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0065s ]
+NOTIC: [8] Undefined index: member D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Api\Controller\HxgroupController.class.php 第 25 行.
+SQL: SELECT * FROM `tp_user` WHERE `name` = 'yxfceshi' LIMIT 1   [ RunTime:0.0154s ]
+
+[ 2016-06-22T13:26:18+08:00 ] 127.0.0.1 /api.php/Hxgroup/group_users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000779s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000843s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001152s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0108s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0104s ]
+NOTIC: [8] Undefined index: member D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Api\Controller\HxgroupController.class.php 第 25 行.
+SQL: SELECT * FROM `tp_user` WHERE `name` = 'yxfceshi' LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2016-06-22T13:26:37+08:00 ] 127.0.0.1 /api.php/Hxgroup/group_users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000829s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000467s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0043s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0035s ]
+NOTIC: [8] Undefined index: member D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Api\Controller\HxgroupController.class.php 第 25 行.
+
+[ 2016-06-22T13:26:38+08:00 ] 127.0.0.1 /api.php/Hxgroup/group_users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000577s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000703s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000910s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0038s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0032s ]
+NOTIC: [8] Undefined index: member D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Api\Controller\HxgroupController.class.php 第 25 行.
+
+[ 2016-06-22T13:26:38+08:00 ] 127.0.0.1 /api.php/Hxgroup/group_users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000368s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000563s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000773s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0032s ]
+NOTIC: [8] Undefined index: member D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Api\Controller\HxgroupController.class.php 第 25 行.
+
+[ 2016-06-22T13:29:40+08:00 ] 127.0.0.1 /api.php/Hxgroup/group_users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000322s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000444s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0078s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0055s ]
+NOTIC: [8] Undefined index: member D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Api\Controller\HxgroupController.class.php 第 25 行.
+
+[ 2016-06-22T13:29:59+08:00 ] 127.0.0.1 /api.php/Hxgroup/group_users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000896s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000548s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000678s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0078s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0059s ]
+NOTIC: [8] Undefined index: member D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Api\Controller\HxgroupController.class.php 第 25 行.
+SQL: SELECT * FROM `tp_user` WHERE `name` = '361212739' LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2016-06-22T13:31:05+08:00 ] 127.0.0.1 /api.php/Hxgroup/group_users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000652s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000812s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001007s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0054s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0052s ]
+NOTIC: [8] Undefined index: member D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Api\Controller\HxgroupController.class.php 第 25 行.
+SQL: SELECT * FROM `tp_user` WHERE `name` = '361212739' LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2016-06-22T13:31:06+08:00 ] 127.0.0.1 /api.php/Hxgroup/group_users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000622s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000608s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000795s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0128s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0064s ]
+NOTIC: [8] Undefined index: member D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Api\Controller\HxgroupController.class.php 第 25 行.
+SQL: SELECT * FROM `tp_user` WHERE `name` = '361212739' LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2016-06-22T13:31:06+08:00 ] 127.0.0.1 /api.php/Hxgroup/group_users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001086s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000718s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000891s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0025s ]
+NOTIC: [8] Undefined index: member D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Api\Controller\HxgroupController.class.php 第 25 行.
+SQL: SELECT * FROM `tp_user` WHERE `name` = '361212739' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2016-06-22T13:34:37+08:00 ] 127.0.0.1 /api.php/Hxgroup/group_users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000344s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000412s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000509s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0062s ]
+NOTIC: [8] Undefined index: member D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Api\Controller\HxgroupController.class.php 第 25 行.
+SQL: SELECT * FROM `tp_user` WHERE `name` = '361212739' LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2016-06-22T13:35:35+08:00 ] 127.0.0.1 /api.php/Hxgroup/group_users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000432s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000454s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000591s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0057s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0041s ]
+NOTIC: [8] Undefined index: member D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Api\Controller\HxgroupController.class.php 第 25 行.
+SQL: SELECT * FROM `tp_user` WHERE `name` = '361212739' LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2016-06-22T14:28:34+08:00 ] 127.0.0.1 /api.php/Hxgroup/search
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000371s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000445s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000551s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0037s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0028s ]
+NOTIC: [8] Undefined variable: page D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Common\Model\UserModel.class.php 第 28 行.
+SQL: SELECT * FROM `tp_user` WHERE `truename` LIKE '%%' LIMIT 0,10   [ RunTime:0.0008s ]
+NOTIC: [8] Undefined variable: user_result D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Api\Controller\HxgroupController.class.php 第 45 行.
+
+[ 2016-06-22T14:28:37+08:00 ] 127.0.0.1 /api.php/Hxgroup/search
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000300s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000318s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000414s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0027s ]
+NOTIC: [8] Undefined variable: page D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Common\Model\UserModel.class.php 第 28 行.
+SQL: SELECT * FROM `tp_user` WHERE `truename` LIKE '%%' LIMIT 0,10   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: user_result D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Api\Controller\HxgroupController.class.php 第 45 行.
+
+[ 2016-06-22T14:29:49+08:00 ] 127.0.0.1 /api.php/Hxgroup/search
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000304s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000363s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000493s ]
+
+[ 2016-06-22T14:30:35+08:00 ] 127.0.0.1 /api.php/Hxgroup/search
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000453s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000454s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000572s ]
+
+[ 2016-06-22T14:31:12+08:00 ] 127.0.0.1 /api.php/Hxgroup/search/keyword/yxf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000301s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000417s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0027s ]
+NOTIC: [8] Undefined variable: page D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Common\Model\UserModel.class.php 第 28 行.
+SQL: SELECT * FROM `tp_user` WHERE `truename` LIKE '%yxf%' LIMIT 0,10   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: user_result D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Api\Controller\HxgroupController.class.php 第 45 行.
+
+[ 2016-06-22T14:31:30+08:00 ] 127.0.0.1 /api.php/Hxgroup/search/keyword/yxf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000530s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000599s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000769s ]
+
+[ 2016-06-22T14:31:42+08:00 ] 127.0.0.1 /api.php/Hxgroup/search/keyword/yxf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000473s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000540s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000707s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0043s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0036s ]
+NOTIC: [8] Undefined variable: page D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Common\Model\UserModel.class.php 第 28 行.
+SQL: SELECT * FROM `tp_user` WHERE `truename` LIKE '%yxf%' LIMIT 0,10   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: user_result D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Api\Controller\HxgroupController.class.php 第 45 行.
+
+[ 2016-06-22T14:31:42+08:00 ] 127.0.0.1 /api.php/Hxgroup/search/keyword/yxf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001305s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000541s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000709s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0041s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0047s ]
+NOTIC: [8] Undefined variable: page D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Common\Model\UserModel.class.php 第 28 行.
+SQL: SELECT * FROM `tp_user` WHERE `truename` LIKE '%yxf%' LIMIT 0,10   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: user_result D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Api\Controller\HxgroupController.class.php 第 45 行.
+
+[ 2016-06-22T14:31:42+08:00 ] 127.0.0.1 /api.php/Hxgroup/search/keyword/yxf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000622s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000665s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000865s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0051s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0049s ]
+NOTIC: [8] Undefined variable: page D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Common\Model\UserModel.class.php 第 28 行.
+SQL: SELECT * FROM `tp_user` WHERE `truename` LIKE '%yxf%' LIMIT 0,10   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: user_result D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Api\Controller\HxgroupController.class.php 第 45 行.
+
+[ 2016-06-22T14:31:57+08:00 ] 127.0.0.1 /api.php/Hxgroup/search/keyword/yxf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000637s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000665s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000867s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0052s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0026s ]
+NOTIC: [8] Undefined variable: page D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Common\Model\UserModel.class.php 第 28 行.
+SQL: SELECT * FROM `tp_user` WHERE `truename` LIKE '%yxf%' LIMIT 0,10   [ RunTime:0.0004s ]
+
+[ 2016-06-22T14:32:19+08:00 ] 127.0.0.1 /api.php/Hxgroup/search/keyword/yxf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000505s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000858s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001116s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0043s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0045s ]
+NOTIC: [8] Undefined variable: page D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Common\Model\UserModel.class.php 第 28 行.
+SQL: SELECT * FROM `tp_user` WHERE `truename` LIKE '%yxf%' LIMIT 0,10   [ RunTime:0.0004s ]
+
+[ 2016-06-22T14:32:20+08:00 ] 127.0.0.1 /api.php/Hxgroup/search/keyword/yxf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000552s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000597s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000777s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0046s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0059s ]
+NOTIC: [8] Undefined variable: page D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Common\Model\UserModel.class.php 第 28 行.
+SQL: SELECT * FROM `tp_user` WHERE `truename` LIKE '%yxf%' LIMIT 0,10   [ RunTime:0.0007s ]
+
+[ 2016-06-22T14:32:20+08:00 ] 127.0.0.1 /api.php/Hxgroup/search/keyword/yxf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000297s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000418s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0027s ]
+NOTIC: [8] Undefined variable: page D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Common\Model\UserModel.class.php 第 28 行.
+SQL: SELECT * FROM `tp_user` WHERE `truename` LIKE '%yxf%' LIMIT 0,10   [ RunTime:0.0004s ]
+
+[ 2016-06-22T14:32:20+08:00 ] 127.0.0.1 /api.php/Hxgroup/search/keyword/yxf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000303s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000315s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000411s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0024s ]
+NOTIC: [8] Undefined variable: page D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Common\Model\UserModel.class.php 第 28 行.
+SQL: SELECT * FROM `tp_user` WHERE `truename` LIKE '%yxf%' LIMIT 0,10   [ RunTime:0.0004s ]
+
+[ 2016-06-22T14:32:24+08:00 ] 127.0.0.1 /api.php/Hxgroup/search/keyword/yxf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000508s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000535s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000707s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0043s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined variable: page D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Common\Model\UserModel.class.php 第 28 行.
+SQL: SELECT * FROM `tp_user` WHERE `truename` LIKE '%yxf%' LIMIT 0,10   [ RunTime:0.0006s ]
+
+[ 2016-06-22T14:34:49+08:00 ] 127.0.0.1 /api.php?m=api&c=Hxgroup&a=search
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000343s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000407s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000504s ]
+
+[ 2016-06-22T14:35:10+08:00 ] 127.0.0.1 /api.php?m=api&c=Hxgroup&a=group_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000313s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000392s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000489s ]
+NOTIC: [2048] Declaration of Common\Model\Group_hxModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Common\Model\Group_hxModel.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `tp_group_hx` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `tp_group_hx` [ RunTime:0.0023s ]
+NOTIC: [8] Undefined offset: 0 D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\Core\Library\Think\Model.class.php 第 222 行.
+NOTIC: [8] Undefined variable: page D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Common\Model\Group_hxModel.class.php 第 31 行.
+SQL: SELECT * FROM `tp_group_hx` LIMIT 0,10   [ RunTime:0.0003s ]
+
+[ 2016-06-22T14:36:04+08:00 ] 127.0.0.1 /api.php?m=api&c=Hxgroup&a=group_users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000314s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000430s ]
+
+[ 2016-06-22T14:36:19+08:00 ] 127.0.0.1 /api.php?m=api&c=Hxgroup&a=group_users&group_id=210489941895938476
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000355s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000345s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000451s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0068s ]
+NOTIC: [8] Undefined index: member D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Api\Controller\HxgroupController.class.php 第 25 行.
+SQL: SELECT * FROM `tp_user` WHERE `name` = '361212739' LIMIT 1   [ RunTime:0.0011s ]
+
+[ 2016-06-22T14:36:54+08:00 ] 127.0.0.1 /api.php?m=api&c=Hxgroup&a=search&keyword=yxf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000352s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000418s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000518s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0024s ]
+NOTIC: [8] Undefined variable: page D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Common\Model\UserModel.class.php 第 28 行.
+SQL: SELECT * FROM `tp_user` WHERE `truename` LIKE '%yxf%' LIMIT 0,10   [ RunTime:0.0004s ]
+
+[ 2016-06-22T14:42:39+08:00 ] 192.168.0.66 /api.php?m=api&c=Hxgroup&a=group_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000305s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000535s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000647s ]
+NOTIC: [2048] Declaration of Common\Model\Group_hxModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Common\Model\Group_hxModel.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `tp_group_hx` [ RunTime:0.0532s ]
+SQL: SHOW COLUMNS FROM `tp_group_hx` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined offset: 0 D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\Core\Library\Think\Model.class.php 第 222 行.
+NOTIC: [8] Undefined variable: page D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Common\Model\Group_hxModel.class.php 第 31 行.
+SQL: SELECT * FROM `tp_group_hx` LIMIT 0,10   [ RunTime:0.0002s ]
+
+[ 2016-06-22T16:23:57+08:00 ] 192.168.0.187 /api.php?m=api&c=Hxgroup&a=group_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000595s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000694s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000866s ]
+NOTIC: [2048] Declaration of Common\Model\Group_hxModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Common\Model\Group_hxModel.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `tp_group_hx` [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `tp_group_hx` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined offset: 0 D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\Core\Library\Think\Model.class.php 第 222 行.
+NOTIC: [8] Undefined variable: page D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Common\Model\Group_hxModel.class.php 第 31 行.
+SQL: SELECT * FROM `tp_group_hx` LIMIT 0,10   [ RunTime:0.0006s ]
+
+[ 2016-06-22T16:37:15+08:00 ] 192.168.0.187 /api.php?m=api&c=Hxgroup&a=group_users&group_id=210489941895938476
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000704s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000830s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001043s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0103s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `tp_user` WHERE `name` = '1007977962' LIMIT 1   [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: member D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Api\Controller\HxgroupController.class.php 第 30 行.
+SQL: SELECT * FROM `tp_user` WHERE `name` = '361212739' LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2016-06-22T16:43:09+08:00 ] 192.168.0.187 /api.php?m=api&c=Hxgroup&a=group_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000651s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000483s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000604s ]
+NOTIC: [2048] Declaration of Common\Model\Group_hxModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Common\Model\Group_hxModel.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `tp_group_hx` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `tp_group_hx` [ RunTime:0.0024s ]
+NOTIC: [8] Undefined offset: 0 D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\Core\Library\Think\Model.class.php 第 222 行.
+NOTIC: [8] Undefined variable: page D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Common\Model\Group_hxModel.class.php 第 31 行.
+SQL: SELECT * FROM `tp_group_hx` LIMIT 0,10   [ RunTime:0.0003s ]
+
+[ 2016-06-22T16:43:37+08:00 ] 192.168.0.187 /api.php?m=api&c=Hxgroup&a=group_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000331s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000441s ]
+NOTIC: [2048] Declaration of Common\Model\Group_hxModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Common\Model\Group_hxModel.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `tp_group_hx` [ RunTime:0.0037s ]
+SQL: SHOW COLUMNS FROM `tp_group_hx` [ RunTime:0.0026s ]
+NOTIC: [8] Undefined offset: 0 D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\Core\Library\Think\Model.class.php 第 222 行.
+NOTIC: [8] Undefined variable: page D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Common\Model\Group_hxModel.class.php 第 31 行.
+SQL: SELECT * FROM `tp_group_hx` LIMIT 0,10   [ RunTime:0.0003s ]
+
+[ 2016-06-22T16:54:31+08:00 ] 192.168.0.187 /api.php?m=api&c=Hxgroup&a=group_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000867s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000599s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000737s ]
+NOTIC: [2048] Declaration of Common\Model\Group_hxModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Common\Model\Group_hxModel.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `tp_group_hx` [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `tp_group_hx` [ RunTime:0.0025s ]
+NOTIC: [8] Undefined offset: 0 D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\Core\Library\Think\Model.class.php 第 222 行.
+NOTIC: [8] Undefined variable: page D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Common\Model\Group_hxModel.class.php 第 31 行.
+SQL: SELECT * FROM `tp_group_hx` LIMIT 0,10   [ RunTime:0.0003s ]
+
+[ 2016-06-22T16:55:05+08:00 ] 192.168.0.187 /api.php?m=api&c=Hxgroup&a=group_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000093s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001393s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000665s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000881s ]
+NOTIC: [2048] Declaration of Common\Model\Group_hxModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Common\Model\Group_hxModel.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `tp_group_hx` [ RunTime:0.0043s ]
+SQL: SHOW COLUMNS FROM `tp_group_hx` [ RunTime:0.0045s ]
+NOTIC: [8] Undefined offset: 0 D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\Core\Library\Think\Model.class.php 第 222 行.
+NOTIC: [8] Undefined variable: page D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Common\Model\Group_hxModel.class.php 第 31 行.
+SQL: SELECT * FROM `tp_group_hx` LIMIT 0,10   [ RunTime:0.0004s ]
+
+[ 2016-06-22T16:55:23+08:00 ] 192.168.0.187 /api.php?m=api&c=Hxgroup&a=group_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000092s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001338s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000559s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000742s ]
+NOTIC: [2048] Declaration of Common\Model\Group_hxModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Common\Model\Group_hxModel.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `tp_group_hx` [ RunTime:0.0042s ]
+SQL: SHOW COLUMNS FROM `tp_group_hx` [ RunTime:0.0035s ]
+NOTIC: [8] Undefined offset: 0 D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\Core\Library\Think\Model.class.php 第 222 行.
+NOTIC: [8] Undefined variable: page D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Common\Model\Group_hxModel.class.php 第 31 行.
+SQL: SELECT * FROM `tp_group_hx` LIMIT 0,10   [ RunTime:0.0003s ]
+
+[ 2016-06-22T16:55:27+08:00 ] 192.168.0.187 /api.php?m=api&c=Hxgroup&a=group_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000511s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000811s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001025s ]
+NOTIC: [2048] Declaration of Common\Model\Group_hxModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Common\Model\Group_hxModel.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `tp_group_hx` [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `tp_group_hx` [ RunTime:0.0041s ]
+NOTIC: [8] Undefined offset: 0 D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\Core\Library\Think\Model.class.php 第 222 行.
+NOTIC: [8] Undefined variable: page D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Common\Model\Group_hxModel.class.php 第 31 行.
+SQL: SELECT * FROM `tp_group_hx` LIMIT 0,10   [ RunTime:0.0003s ]
+
+[ 2016-06-22T17:16:24+08:00 ] 192.168.0.187 /api.php?m=api&c=Hxgroup&a=group_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000091s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001313s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001350s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001797s ]
+NOTIC: [2048] Declaration of Common\Model\Group_hxModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Common\Model\Group_hxModel.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `tp_group_hx` [ RunTime:0.0086s ]
+SQL: SHOW COLUMNS FROM `tp_group_hx` [ RunTime:0.0077s ]
+NOTIC: [8] Undefined offset: 0 D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\Core\Library\Think\Model.class.php 第 222 行.
+NOTIC: [8] Undefined variable: page D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Common\Model\Group_hxModel.class.php 第 31 行.
+SQL: SELECT * FROM `tp_group_hx` LIMIT 0,10   [ RunTime:0.0004s ]
+
+[ 2016-06-22T17:16:48+08:00 ] 192.168.0.187 /api.php?m=api&c=Hxgroup&a=group_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000092s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001330s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001346s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001793s ]
+NOTIC: [2048] Declaration of Common\Model\Group_hxModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Common\Model\Group_hxModel.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `tp_group_hx` [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `tp_group_hx` [ RunTime:0.0041s ]
+NOTIC: [8] Undefined offset: 0 D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\Core\Library\Think\Model.class.php 第 222 行.
+NOTIC: [8] Undefined variable: page D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Common\Model\Group_hxModel.class.php 第 31 行.
+SQL: SELECT * FROM `tp_group_hx` LIMIT 0,10   [ RunTime:0.0003s ]
+
+[ 2016-06-22T17:17:17+08:00 ] 192.168.0.187 /api.php?m=api&c=Hxgroup&a=group_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000928s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001284s ]
+NOTIC: [2048] Declaration of Common\Model\Group_hxModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Common\Model\Group_hxModel.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `tp_group_hx` [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `tp_group_hx` [ RunTime:0.0034s ]
+NOTIC: [8] Undefined offset: 0 D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\Core\Library\Think\Model.class.php 第 222 行.
+NOTIC: [8] Undefined variable: page D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Common\Model\Group_hxModel.class.php 第 31 行.
+SQL: SELECT * FROM `tp_group_hx` LIMIT 0,10   [ RunTime:0.0003s ]
+
+[ 2016-06-22T17:18:03+08:00 ] 192.168.0.187 /api.php?m=api&c=Hxgroup&a=group_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000524s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000534s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000707s ]
+NOTIC: [2048] Declaration of Common\Model\Group_hxModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Common\Model\Group_hxModel.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `tp_group_hx` [ RunTime:0.0038s ]
+SQL: SHOW COLUMNS FROM `tp_group_hx` [ RunTime:0.0037s ]
+NOTIC: [8] Undefined offset: 0 D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\Core\Library\Think\Model.class.php 第 222 行.
+NOTIC: [8] Undefined variable: page D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Common\Model\Group_hxModel.class.php 第 31 行.
+SQL: SELECT * FROM `tp_group_hx` LIMIT 0,10   [ RunTime:0.0003s ]
+
+[ 2016-06-22T17:19:18+08:00 ] 192.168.0.187 /api.php?m=api&c=Hxgroup&a=group_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000698s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000829s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001044s ]
+NOTIC: [2048] Declaration of Common\Model\Group_hxModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Common\Model\Group_hxModel.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `tp_group_hx` [ RunTime:0.0046s ]
+SQL: SHOW COLUMNS FROM `tp_group_hx` [ RunTime:0.0022s ]
+NOTIC: [8] Undefined offset: 0 D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\Core\Library\Think\Model.class.php 第 222 行.
+NOTIC: [8] Undefined variable: page D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Common\Model\Group_hxModel.class.php 第 31 行.
+SQL: SELECT * FROM `tp_group_hx` LIMIT 0,10   [ RunTime:0.0002s ]
+
+[ 2016-06-22T17:19:34+08:00 ] 192.168.0.187 /api.php?m=api&c=Hxgroup&a=group_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000632s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000651s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000865s ]
+NOTIC: [2048] Declaration of Common\Model\Group_hxModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Common\Model\Group_hxModel.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `tp_group_hx` [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `tp_group_hx` [ RunTime:0.0044s ]
+NOTIC: [8] Undefined offset: 0 D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\Core\Library\Think\Model.class.php 第 222 行.
+NOTIC: [8] Undefined variable: page D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Common\Model\Group_hxModel.class.php 第 31 行.
+SQL: SELECT * FROM `tp_group_hx` LIMIT 0,10   [ RunTime:0.0004s ]
+
+[ 2016-06-22T17:19:59+08:00 ] 192.168.0.187 /api.php?m=api&c=Hxgroup&a=group_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000509s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000525s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000697s ]
+NOTIC: [2048] Declaration of Common\Model\Group_hxModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Common\Model\Group_hxModel.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `tp_group_hx` [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `tp_group_hx` [ RunTime:0.0033s ]
+NOTIC: [8] Undefined offset: 0 D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\Core\Library\Think\Model.class.php 第 222 行.
+NOTIC: [8] Undefined variable: page D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Common\Model\Group_hxModel.class.php 第 31 行.
+SQL: SELECT * FROM `tp_group_hx` LIMIT 0,10   [ RunTime:0.0003s ]
+
+[ 2016-06-22T17:20:04+08:00 ] 192.168.0.187 /api.php?m=api&c=Hxgroup&a=group_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000647s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000664s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000875s ]
+NOTIC: [2048] Declaration of Common\Model\Group_hxModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Common\Model\Group_hxModel.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `tp_group_hx` [ RunTime:0.0043s ]
+SQL: SHOW COLUMNS FROM `tp_group_hx` [ RunTime:0.0036s ]
+NOTIC: [8] Undefined offset: 0 D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\Core\Library\Think\Model.class.php 第 222 行.
+NOTIC: [8] Undefined variable: page D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Common\Model\Group_hxModel.class.php 第 31 行.
+SQL: SELECT * FROM `tp_group_hx` LIMIT 0,10   [ RunTime:0.0002s ]
+
+[ 2016-06-22T17:20:31+08:00 ] 192.168.0.187 /api.php?m=api&c=Hxgroup&a=group_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000621s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000645s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000857s ]
+NOTIC: [2048] Declaration of Common\Model\Group_hxModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Common\Model\Group_hxModel.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `tp_group_hx` [ RunTime:0.0044s ]
+SQL: SHOW COLUMNS FROM `tp_group_hx` [ RunTime:0.0039s ]
+NOTIC: [8] Undefined offset: 0 D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\Core\Library\Think\Model.class.php 第 222 行.
+NOTIC: [8] Undefined variable: page D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Common\Model\Group_hxModel.class.php 第 31 行.
+SQL: SELECT * FROM `tp_group_hx` LIMIT 0,10   [ RunTime:0.0004s ]
+
+[ 2016-06-22T17:20:36+08:00 ] 192.168.0.187 /api.php?m=api&c=Hxgroup&a=group_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000526s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000466s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000636s ]
+NOTIC: [2048] Declaration of Common\Model\Group_hxModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Common\Model\Group_hxModel.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `tp_group_hx` [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `tp_group_hx` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined offset: 0 D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\Core\Library\Think\Model.class.php 第 222 行.
+NOTIC: [8] Undefined variable: page D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Common\Model\Group_hxModel.class.php 第 31 行.
+SQL: SELECT * FROM `tp_group_hx` LIMIT 0,10   [ RunTime:0.0002s ]
+

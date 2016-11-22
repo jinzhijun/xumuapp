@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!-- saved from url=(0044)http://fc.vhot119.com/home/fuli/aizhuan.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>九万转发文章额外福利</title>
+    <link href="__PUBLIC__/Home/forward/css.css" rel="stylesheet">
+    <script src="__PUBLIC__/Home/forward/hm.js"></script>
+    <script src="__PUBLIC__/Home/forward/jquery-2.0.3.min.js"></script>
+    <link href="__PUBLIC__/Home/forward/aizhuan.css" rel="stylesheet">
+    <script src="__PUBLIC__/Home/forward/jcMarquee.js"></script></head>
+<body bgcolor="#f3efef"><form><a href="JavaScript:history.go(-1)" id="back"></a>
+    <div id="bt"><span>九万转发文章额外福利</span></div>
+    <div id="nr"><div id="top"><div id="tongji">
+        <div class="left"><img src="__PUBLIC__/Home/forward/chakan.png" width="18">总点击量<br>&nbsp;{$count}</div>
+        <div class="zhong"><img src="__PUBLIC__/Home/forward/qianfuhao.png" width="18">总金额<br>&nbsp; <?php echo round($user['total_money'],2)   ?></div>
+        <div class="you"><a id="tixian" class="btn dis" href="http://fc.vhot119.com/home/fuli/aizhuan.html#" data-status="1">提现</a></div></div>
+        <div id="tishi"><div class="left">温馨提示：</div>
+            <div class="right">18：00前提现第二天到账，18：00以后第三天到账。</div><div class="clear"></div></div></div>
+        <div id="gonggao"><div class="left"><img src="__PUBLIC__/Home/forward/laba.png" width="24"></div>
+            <div class="right" id="tixianlist">
+                <ul style="height: 1000%;">
+                    <li style="margin-bottom: 0px;">
+                        <volist name="money" id="vo">
+                        <div style="margin-bottom: 0px;">   {$vo['username']} 不得了啊，提现 {$vo['money']}</div>
+                            </volist>
+                    </li></ul></div><div class="clear"></div></div>
+        <div id="younz" class="logodiwen">
+            <volist name="list" id="vo">
+            <div class="nr">
+                <div class="left">
+                    <img src="__PUBLIC__/Home/forward/liststyle.png" width="36"></div><div class="zhong"><a href="{:u(CONTROLLER_NAME.'/share',array('id'=>$vo['id'],'username'=>$_GET['username'],'encry'=>$_GET['encry']))}" >
+    {$vo['title']}</a></div><div class="you"><span class="huang jiner">&nbsp;{$vo['money']}</span><span class="qian huang qian">&nbsp;/次</span></div><div class="clear"></div><div class="xian"></div></div>
+                </volist>
+        </div></div></form><script>
+    $(document).ready(function () {
+        $('#xiaotishi').click(function () {
+            $('#xiaotishihua').show();
+        });
+        $('#xiaotishihua').click(function () {
+            $('#xiaotishihua').hide();
+        });
+    });
+</script><div class="linian">诚信　创新　忠诚　共赢</div><div style="display: none"><script>
+    $(document).ready(function () {
+        $('#tixianlist').jcMarquee({'marquee': 'y', 'speed': 40});
+        //提现按钮
+        $('.dis').click(function () {
+            alert('低于5600元不可提现');
+            return false;
+        });
+        $('.tixian').click(function () {
+            var status = $(this).data('status');
+            if (status == 1) {
+                $(this).data('status', 2);
+                return true;
+            } else {
+                alert('不要重复点击');
+                return false;
+            }
+        });
+    });
+    var _hmt = _hmt || [];
+    (function () {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?2866d184a661820df35879dc03c43cff";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script></div></body></html>

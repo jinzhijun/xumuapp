@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<!-- saved from url=(0074)http://jf.vhot119.com/mobile/index.php?m=default&c=user&a=transform_points -->
+<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="Keywords" content="九万内部积分商城">
+<meta name="Description" content="九万内部积分商城">
+<title>九万内部积分商城 触屏版</title>
+<link rel="stylesheet" href="__PUBLIC__/Home/shop/bootstrap.min.css">
+<link rel="stylesheet" href="__PUBLIC__/Home/shop/font-awesome.min.css">
+<link rel="stylesheet" href="__PUBLIC__/Home/shop/ectouch_red.css">
+<link rel="stylesheet" href="__PUBLIC__/Home/shop/user.css">
+<link rel="stylesheet" href="__PUBLIC__/Home/shop/photoswipe.css">
+<link rel="stylesheet" href="http://cdn.bootcss.com/twitter-bootstrap/3.0.3/css/bootstrap.min.css">
+</head>
+
+<body style="margin: auto">
+<div class="con">
+<div class="ect-bg">
+  <header class="ect-header ect-margin-tb ect-margin-lr text-center ect-bg icon-write"> <a href="javascript:history.go(-1)" class="pull-left ect-icon ect-icon1 ect-icon-history"></a> <span>积分兑换</span> <a href="javascript:;" onclick="openMune()" class="pull-right ect-icon ect-icon1 ect-icon-mune"></a></header>
+  <nav class="ect-nav ect-nav-list" style="display:none;">
+      <ul class="ect-diaplay-box text-center">
+          <li class="ect-box-flex"><a href="{:u(CONTROLLER_NAME.'/index',array('username'=>$_GET['username'],'encry'=>$_GET['encry']))}"><i class="ect-icon ect-icon-home"></i>首页</a></li>
+          <li class="ect-box-flex"><a href="{:u(CONTROLLER_NAME.'/exchange',array('username'=>$_GET['username'],'encry'=>$_GET['encry']))}"><i class="glyphicon glyphicon-gift" style="font-size:1.9em;width:100%;"></i><span style="margin-top:-1.9em;display: block;">积分兑换</span></a></li>
+          <li class="ect-box-flex"><a href="{:u(CONTROLLER_NAME.'/capital',array('username'=>$_GET['username'],'encry'=>$_GET['encry']))}"><i class="glyphicon glyphicon-usd" style="font-size:1.9em;width:100%;"></i><span style="margin-top:-1.9em;display: block;">资金管理</span></a></li>
+          <li class="ect-box-flex"><a href="{:u(CONTROLLER_NAME.'/order_list',array('username'=>$_GET['username'],'encry'=>$_GET['encry']))}"><i class="" style="font-size:1.9em;width:100%;"><img src="__PUBLIC__/Home/shop/nav_1.png" style="width:1em;margin-top:-0.5em;"></i><span style="margin-top:-1.9em;display: block;">我的订单</span></a></li>
+      </ul>
+  </nav>
+</div>
+<b>您的当前积分:</b><br><br>
+    <table width="100%" border="0" cellpadding="5" cellspacing="1">
+        <tbody><tr>
+            <td width="30%" valign="top"><table border="0">
+                <tbody><tr>
+                    <th nowrap="">业绩积分:</th>
+                    <td style="border-bottom:1px solid #DADADA;">{$user['total_score']}</td>
+                </tr>
+                </tbody></table></td>
+            <td width="50%" valign="top"><table>
+                <tbody><tr>
+                    <th nowrap="">商城消费积分:</th>
+                    <td style="border-bottom:1px solid #DADADA;">{$user['shop_sign']}</td>
+                </tr>
+                <tr>
+                    <th nowrap="">商城等级积分:</th>
+                    <td style="border-bottom:1px solid #DADADA;">0</td>
+                </tr>
+                </tbody></table></td>
+        </tr>
+        </tbody></table>
+    <br>
+<br>
+<b>兑换规则:</b>
+    <ul class="point clearfix">
+        <li><font class="f1">·</font>"业绩积分" 兑换 "商城消费积分" 比例为 1:1        </li></ul>
+    <br>
+    <form action="{:u(CONTROLLER_NAME.'/exchange',array('username'=>$_GET['username'],'encry'=>$_GET['encry']))}" method="post" name="theForm">
+        <table width="100%" border="1" align="center" cellpadding="5" cellspacing="0" style="border-collapse:collapse;border:1px solid #DADADA;">
+            <tbody><tr style="background:#F1F1F1;">
+                <th>兑换规则</th>
+                <th>兑换数量</th>
+                <th>兑换结果</th>
+            </tr>
+            <tr>
+                <td>
+                    <select name="rule_index" onchange="changeRule()">
+                        <option value="0usermoney">业绩积分-&gt;商城消费积分</option>
+                    </select>
+                </td>
+                <td>
+                    <input type="text" name="num" value="0" onkeyup="calPoints()">
+                </td>
+                <td><span id="ECS_RESULT">0</span></td>
+            </tr>
+            <tr>
+                <td colspan="3" align="center"><input type="submit" value="兑换"></td>
+            </tr>
+            </tbody></table>
+    </form>
+<script src="__PUBLIC__/Home/shop/hm.js"></script><script type="text/javascript">
+    //<![CDATA[
+    var rule_list = new Object();
+    var invalid_input = '无效';
+        rule_list['0usermoney'] = '1:1';
+        function calPoints()
+    {
+        var frm = document.forms['theForm'];
+        var rule_index = frm.elements['rule_index'].value;
+        var num = parseInt(frm.elements['num'].value);
+        var rate = rule_list[rule_index];
+
+        if (isNaN(num) || num < 0 || num != frm.elements['num'].value)
+        {
+            document.getElementById('ECS_RESULT').innerHTML = invalid_input;
+            rerutn;
+        }
+        var arr = rate.split(':');
+        var from = parseInt(arr[0]);
+        var to = parseInt(arr[1]);
+
+        if (from <= 0 || to <= 0)
+        {
+            from = 1;
+            to = 0;
+        }
+        document.getElementById('ECS_RESULT').innerHTML = parseInt(num * to / from);
+    }
+
+    function changeRule()
+    {
+        document.forms['theForm'].elements['num'].value = 0;
+        document.getElementById('ECS_RESULT').innerHTML = 0;
+    }
+    //]]>
+</script>
+
+<a id="scrollUp" href="#" style="position: fixed; z-index: 10;"><i class="fa fa-angle-up"></i></a>
+<style>
+#scrollUp {
+	border-radius:100%;
+	background-color: #777;
+	color: #eee;
+	font-size: 40px;
+	line-height: 1;text-align: center;text-decoration: none;bottom: 1em;right: 10px;overflow: hidden;width: 46px;
+	height: 46px;
+	border: none;
+	opacity: 0.6;
+}
+</style>
+<script type="text/javascript" src="__PUBLIC__/Home/shop/jquery.min.js"></script> 
+<script type="text/javascript" src="__PUBLIC__/Home/shop/jquery.json.js"></script> 
+<script type="text/javascript" src="__PUBLIC__/Home/shop/common.js"></script> 
+<script type="text/javascript" src="__PUBLIC__/Home/shop/jquery.more.js"></script> 
+<script type="text/javascript" src="__PUBLIC__/Home/shop/utils.js"></script> 
+<script src="__PUBLIC__/Home/shop/TouchSlide.1.1.js"></script> 
+<script src="__PUBLIC__/Home/shop/ectouch.js"></script> 
+<script src="__PUBLIC__/Home/shop/simple-inheritance.min.js"></script> 
+<script src="__PUBLIC__/Home/shop/code-photoswipe-1.0.11.min.js"></script> 
+<script src="__PUBLIC__/Home/shop/bootstrap.min.js"></script> 
+<script src="__PUBLIC__/Home/shop/jquery.scrollUp.min.js"></script> 
+<script type="text/javascript" src="__PUBLIC__/Home/shop/validform.js"></script> 
+<script language="javascript">
+	/*banner滚动图片*/
+		TouchSlide({
+			slideCell : "#focus",
+			titCell : ".hd ul", // 开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+			mainCell : ".bd ul",
+			effect : "left",
+			autoPlay : true, // 自动播放
+			autoPage : true, // 自动分页
+			delayTime: 200, // 毫秒；切换效果持续时间（执行一次效果用多少毫秒）
+			interTime: 2500, // 毫秒；自动运行间隔（隔多少毫秒后执行下一个效果）
+			switchLoad : "_src" // 切换加载，真实图片路径为"_src"
+		});
+	/*弹出评论层并隐藏其他层*/
+	function openSearch(){
+		if($(".con").is(":visible")){
+			$(".con").hide();	
+			$(".search").show();
+		}
+	}
+	function closeSearch(){
+		if($(".con").is(":hidden")){
+			$(".con").show();	
+			$(".search").hide();
+		}
+	}
+</script> 
+<div style="display:none"><script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?61e7518cb8f77449a17a841ececaea9f";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</div>
+</div></body></html>

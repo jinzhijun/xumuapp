@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<!-- saved from url=(0065)http://fc.vhot119.com/home/beian/upload/id/46256/code/qG24Ok.html -->
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>上传资料</title><link href="__PUBLIC__/Home/record/update/css.css" rel="stylesheet"><script src="__PUBLIC__/Home/record/update/hm.js">
+</script>
+<script src="__PUBLIC__/Home/record/update/jquery-2.0.3.min.js"></script><style>
+            .success{background-color: #ccffcc}
+            .error{background-color: #ffcccc}
+            .suoluetu{width: 50%;}
+        </style><script>
+            function back() {
+                history.go(-1);
+            }
+        </script>
+        </head>
+<body bgcolor="#f3efef">
+<div class="loading" style="display: none;"></div>
+<div id="bt"><span>上传资料</span></div><div id="nr">
+<div id="younz"><style type="text/css">
+<!--
+                    .input {
+                        width: 100%;
+                        margin: 3px;
+                    }
+                    -->
+                    </style>
+    <form action="{:u('Record/update',array('username'=>$_GET['username'],'encry'=>$_GET['encry']))}" method="post" onsubmit="return tiui();"   enctype="multipart/form-data">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tbody>
+            <tr><td width="5%" height="30">&nbsp;</td><td width="20%">&nbsp;</td><td>&nbsp;</td>
+                <td width="5%">&nbsp;</td></tr><tr><td>&nbsp;</td><td align="right">广告协议</td>
+                <td align="left"><label><input type="checkbox" value="1" required="" checked="">我已阅读并同意《<a href="{:U(CONTROLLER_NAME.'/xieyi',array('username'=>$_GET['username'],'encry'=>$_GET['encry']))}">广告协议</a>》</label></td>
+                <td>&nbsp;</td></tr><tr><td>&nbsp;</td>
+                <td align="right" nowrap="">*公司或姓名：</td>
+                <td align="left">
+                    <input name="title" value="{$list.title}" type="text" class="input" required="" maxlength="20" placeholder="20字以内，必填">
+                    <input name="id" value="{$list.id}" type="hidden" class="input"   >
+                </td><td>&nbsp;</td></tr><tr>
+                <td>&nbsp;</td><td align="right">*联系电话：</td>
+                <td align="left"><input name="tel" value="{$list.tel}" type="text" class="input" id="lianxi" required="" maxlength="100" placeholder="手机或微信，必填"></td>
+                <td>&nbsp;</td></tr><tr><td>&nbsp;</td>
+                <td align="right">*邮箱：</td><td align="left"><input name="email" value="{$list.email}" type="text" class="input" id="email" required="" maxlength="100" placeholder="电子邮箱，必填"></td>
+                <td>&nbsp;</td></tr><tr><td>&nbsp;</td><td align="right">*寄件地址：</td>
+                <td align="left"><input name="address" value="{$list.address}" type="text" class="input" id="address" required="" maxlength="100" placeholder="寄件地址，必填"></td><td>&nbsp;</td></tr>
+            <tr><td>&nbsp;</td>
+                <td>&nbsp;</td></tr><tr><td>&nbsp;</td><td align="right">*营业执照：</td>
+                <td align="left">
+                    <div class="form-group">
+                        <div class="col-sm-7" >
+                            <div style="float: left;width:200px;margin:0 10px 10px 0;">
+                                <img src="{$list.main_img}" id="img01"   width="200" height="150"><br>
+                                <input type="hidden" name="file011" id="file011" <if condition="$list.main_img neq '' ">value="0"<else/>value="1"</if> />
+                                <input type="file" name="file01" id="file01" multiple="multiple" style="border:none"/>
+                            </div>
+                            <script>
+                                $("#file01").change(function(){
+                                    var objUrl = getObjectURL(this.files[0]) ;
+                                    console.log("objUrl = "+objUrl) ;
+                                    if (objUrl) {
+                                        $("#file011").attr('value','2');
+                                        $("#img01").attr("src", objUrl) ;
+                                    }
+                                }) ;
+                                //建立一個可存取到該file的url
+                                function getObjectURL(file) {
+                                    var url = null ;
+                                    if (window.createObjectURL!=undefined) { // basic
+                                        url = window.createObjectURL(file) ;
+                                    } else if (window.URL!=undefined) { // mozilla(firefox)
+                                        url = window.URL.createObjectURL(file) ;
+                                    } else if (window.webkitURL!=undefined) { // webkit or chrome
+                                        url = window.webkitURL.createObjectURL(file) ;
+                                    }
+                                    return url ;
+                                }
+                            </script>
+                        </div>
+                    </div>
+                </td><td>&nbsp;</td></tr>
+            <td>&nbsp;</td></tr><tr><td>&nbsp;</td><td align="right">*身份证：</td>
+                <td align="left">
+                    <div class="form-group">
+
+                        <div class="col-sm-7" >
+                            <div style="float: left;width:200px;margin:0 10px 10px 0;">
+                                <img src="{$list.id_img}" id="img02"   width="200" height="150"><br>
+                                <input type="hidden" name="file012" id="file012" <if condition="$list.id_img neq '' ">value="0"<else/>value="1"</if> />
+                                <input type="file" name="file02" id="file02" multiple="multiple" style="border:none"/>
+                            </div>
+                            <script>
+                                $("#file02").change(function(){
+                                    var objUrl = getObjectURL(this.files[0]) ;
+                                    console.log("objUrl = "+objUrl) ;
+                                    if (objUrl) {
+                                        $("#file012").attr('value','2');
+                                        $("#img02").attr("src", objUrl) ;
+                                    }
+                                }) ;
+                                //建立一個可存取到該file的url
+                                function getObjectURL(file) {
+                                    var url = null ;
+                                    if (window.createObjectURL!=undefined) { // basic
+                                        url = window.createObjectURL(file) ;
+                                    } else if (window.URL!=undefined) { // mozilla(firefox)
+                                        url = window.URL.createObjectURL(file) ;
+                                    } else if (window.webkitURL!=undefined) { // webkit or chrome
+                                        url = window.webkitURL.createObjectURL(file) ;
+                                    }
+                                    return url ;
+                                }
+                            </script>
+                        </div>
+                    </div>
+                </td><td>&nbsp;</td></tr>
+
+            <tr><td>&nbsp;</td>
+         <td>&nbsp;</td></tr><tr><td>&nbsp;</td><td align="right">&nbsp;</td><td align="left">&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td align="right">&nbsp;</td><td align="left">&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td align="right">&nbsp;</td><td align="left">
+                <input type="submit" name="button" id="button" value="提交">
+            </td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td align="right">&nbsp;</td><td align="left">&nbsp;</td><td>&nbsp;</td></tr></tbody></table></form><script>
+    $(document).ready(function () {
+	$('#xiaotishi').click(function () {
+	    $('#xiaotishihua').show();
+	});
+	$('#xiaotishihua').click(function () {
+	    $('#xiaotishihua').hide();
+	});
+    });
+</script><div class="linian">诚信　创新　忠诚　共赢</div><div style="display: none"><script>
+                var _hmt = _hmt || [];
+                (function () {
+                    var hm = document.createElement("script");
+                    hm.src = "//hm.baidu.com/hm.js?2866d184a661820df35879dc03c43cff";
+                    var s = document.getElementsByTagName("script")[0];
+                    s.parentNode.insertBefore(hm, s);
+                })();
+                function tiui() {
+                    var returnvalue = true;
+                    $('.input').each(function () {
+                        if (!$(this).val() && $(this).attr('required')) {
+                            alert('请检查必填项');
+                            returnvalue = false;
+                            return returnvalue;
+                        }
+                    });
+                    if (!returnvalue) {
+                        return returnvalue;
+                    }
+                    if (!confirm('确认都正确填写了？'))
+                    {
+                        returnvalue = false;
+                    } else {
+                        var scrollTop = Math.max(document.documentElement.scrollTop, document.body.scrollTop);
+                        $('body').css('overflow', 'hidden');
+                        $('.loading').css('top', scrollTop).show();
+                        setTimeout('clickloading()', 2000);
+                    }
+                    return returnvalue;
+                }
+                function clickloading() {
+                    $('.loading').click(function () {
+                        $('body').css('overflow', 'auto');
+                        $('.loading').hide();
+                    });
+                }
+                $(document).ready(function () {
+                    $('.loading').hide();
+                });
+            </script></div></body></html>

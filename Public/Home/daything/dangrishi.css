@@ -1,0 +1,6 @@
+body{background-size: 100% auto;background-image: url('bj.png');background-position:left top;background-repeat: no-repeat;}
+#jieshao{position: absolute;width: 40vw;height: 20vw;left: 20vw;top: 40vw;padding: 5vw 10vw;background-size: 100%;background-image: url('xbj.png');background-position:left top;background-repeat: no-repeat;}
+#biaodan{position: absolute;width: 80vw;height: 60vw;left: 10vw;top: 70vw;background-color: #FFFD96;background-image: url('../Img/logodiwen.png');background-size: 20vw;}
+.box{box-shadow: 1px 1px 1px 1px #ccc;}
+#biaodan textarea{width: 70vw;height: 35vw;margin-left: 5vw;margin-top:5vw;background-image: url('../Img/logodiwen.png');background-size: 20vw;}
+#biaodan input{width: 30vw;height:8vw;margin-left: 25vw;margin-top: 5vw;background-image:url('anniu.png');background-size: 100% 100%;background-position:left top;background-repeat: no-repeat;border: 0px; }

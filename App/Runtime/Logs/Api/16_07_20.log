@@ -1,0 +1,30 @@
+[ 2016-07-20T10:38:35+08:00 ] 192.168.0.66 /api.php?m=api&c=Hxgroup&a=group_list&user_mark=361212739
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000351s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000445s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000553s ]
+NOTIC: [2048] Declaration of Common\Model\Group_hxModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Common\Model\Group_hxModel.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `tp_group_hx` [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `tp_group_hx` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `tp_user` WHERE `name` = '361212739' LIMIT 1   [ RunTime:0.0175s ]
+
+[ 2016-07-20T10:39:06+08:00 ] 192.168.0.66 /api.php?m=api&c=Hxgroup&a=group_list&user_mark=361212739
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000304s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000418s ]
+NOTIC: [2048] Declaration of Common\Model\Group_hxModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Common\Model\Group_hxModel.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `tp_group_hx` [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `tp_group_hx` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `tp_user` WHERE `name` = '361212739' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: page D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Common\Model\Group_hxModel.class.php 第 31 行.
+SQL: SELECT * FROM `tp_group_hx` WHERE `market_id` = 'SDQDSLCQ' LIMIT 0,10   [ RunTime:0.0002s ]
+

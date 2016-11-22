@@ -1,0 +1,224 @@
+<include file="common:header" />
+<body>
+  <style>
+.main-content {
+  margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    min-height: 100%;
+    padding: 0;
+}
+</style>
+<div class="main-container" id="main-container">
+  <div class="main-container-inner">  
+    <div class="main-content">
+      <div class="page-content">
+        <div class="row">  	
+          <div class="col-xs-12">
+            <div class="widget-box transparent" id="recent-box">
+              <div class="widget-header">
+                <div class="widget-toolbar no-border">
+
+
+                  <ul class="nav nav-tabs" id="recent-tab">
+                   
+                    <li class="active"><a href="{:U(CONTROLLER_NAME.'/index')}">群组列表</a></li>
+                    <!--li><a href="{:U(CONTROLLER_NAME.'/add')}">添加</a> </li-->
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <br>
+            <div class="main-container" id="main-container"> 
+              <script type="text/javascript">
+				try{ace.settings.check('main-container' , 'fixed')}catch(e){}
+			</script>
+              <div>
+                <form action="{:u(CONTROLLER_NAME.'/index')}">
+                  <input style="margin: 0px 0 0 0; float: left;" value="{$name}" type="text" id="name" placeholder="" name="name" />
+                  <a class="search" href="javascript:$('form').submit()">搜索</a>
+                  <div style="clear: both;"></div>
+                </form>
+              </div>
+              <br>
+
+              <div class="main-container-inner">
+                <div class="row">
+                  <div class="col-xs-12"> 
+                    <!-- PAGE CONTENT BEGINS -->
+                     <!--a href="#" class="all_val" >批量删除</a-->
+                    <div class="table-responsive">
+                      <table id="sample-table-1" class="table table-striped table-bordered table-hover">
+                        <thead>
+                          <tr>
+                            <td>编号</td>
+                            <td>创建者</td>
+                            <td>群组名称</td>
+                            <td>创建时间</td>
+                            <!--td>操作</td-->
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <volist name="list" id="vo">
+                            <tr>
+                              <input type="hidden" name="id" id="id" value="{$vo.id}" />
+                              <td><span style="color:#999;">{$vo.id}</span></td>
+                              <td>{$vo.create_user}</td>
+                              <td class="hidden-480">{$vo.market_name}</td>
+                              <td class="hidden-480"><span class="label label-sm label-warning">{$vo.create_time|date="Y-m-d H:i:s",###}</span></td>
+                              <!--td><div class="visible-md visible-lg hidden-sm hidden-xs btn-group"> 
+								<a href="{:u(CONTROLLER_NAME . '/info',array('id'=>$vo['id']))}" class="btn btn-xs btn-info"> 
+								<i class="icon-edit bigger-120">查看</i> 
+								</a>
+                                </div></td-->	
+                            </tr>
+                          </volist>
+                        </tbody>
+                      </table>
+                      <p style="text-align: center; color: #ccc;">{$not_found}</p>
+                      <ul style="line-height: 30px;" class="fy_li">
+                        {$page}
+                      </ul>
+                    </div>
+                   
+                    <!-- /.table-responsive --> 
+                    
+                    <script type="text/javascript">
+                    //搜索表单判断
+                    /*$('.search').click(function () { 
+                    	var name = $('#name').val();
+                    	if(name == ""){
+                    		alert('请输入您要搜索的数据！');
+                    		$('#name').focus();
+                    		return false;
+                    	}
+                     });*/
+                    //checkbox全选
+                    $(".chkall").click(function () { 
+                    	var checked = $(this).prop("checked");
+                    	$('.box').prop("checked",checked);
+                    });
+                  //全部删除按钮为空判断
+                    $(".all_val").click(function () { 
+                    	var list = new Array();
+                    	$("input[id='style_val']:checked").each(
+								function() {
+									list.push($(this).val());
+								 }); 
+                    	if(list == ''){
+                    		alert('请选择您要删除的数据！');
+                    		return false;
+                    	}
+                    });
+                    //执行全部删除方法
+                    $(".all_val").click(function () {
+                        if(confirm("确定要删除？")){
+                    	var list = new Array();
+                    	$("input[id='style_val']:checked").each(
+								function() {
+									list.push($(this).val());
+								 }); 
+                    	 var data = "list="+list.join(',');
+                    	  $.ajax({
+            			     url:"{:u(CONTROLLER_NAME . '/previous_delete')}",
+            			     type:"POST",
+            			     dataType:"json",
+            			     data:data,
+            			     success:function(res){
+            			    if(res.result == 'success1'){
+            			        //  alert("操作成功");
+            			            location.reload() 
+            			         // location.href="{:u('/home/index/cc')}"
+            			         }else{
+            			        alert("操作失败");
+            			      }
+
+            			     }
+            			   });
+                        }
+                    });
+                    
+         //设置密码
+          $('.set_pass').click(function(){
+        	  var status = $(this).attr('data-status');
+        	  var id = $(this).attr('data-id');
+        	  var data = $(".form-horizontal").serialize()+"&status="+status+"&id="+id;
+        	  //alert(data);
+		  $.ajax({
+			     url:"{:u(CONTROLLER_NAME . '/password')}",
+			     type:"POST",
+			     dataType:"json",
+			     data:data,
+			     success:function(res){
+			    if(res.result == 'success'){
+			           location.reload() 
+			         }else{
+			        alert("操作失败");
+			      }
+			     
+			     }
+			    });
+		 // $('.del_id').attr('data-cid',id);
+	  });
+       //获取删除id
+
+	  //执行单条数据删除方法
+	  $('.del').click(function(){
+          if(confirm("确定要删除？")) {
+              var id = $(this).attr('data-id');
+              $.ajax({
+                  url: "{:u(CONTROLLER_NAME . '/previous_delete')}",
+                  type: "POST",
+                  dataType: "json",
+                  data: $(".form-horizontal").serialize() + "&id=" + id,
+                  success: function (res) {
+                      if (res.result == 'success') {
+                          location.reload()
+                      } else {
+                          alert("操作失败");
+                      }
+
+                  }
+              });
+          }
+	  });
+	  //状态开关
+	  function show_change(id){
+		  var show = document.getElementById("show_"+id).checked == true ? '1':'0';
+		   $.ajax({
+		    url:"{:U(CONTROLLER_NAME . '/show_change')}", // 表单提交的地址
+		    type: 'POST',
+		    dataType: 'json',
+		    data:'id='+id+'&status='+show, // 表单提交的数据
+		    success:function(res){alert(res);
+			 }
+		  });
+		}
+		 </script> 
+                    
+                    <!-- PAGE CONTENT ENDS --> 
+                  </div>
+                  <!-- /.col --> 
+                </div>
+                <!-- /.row --> 
+                
+              </div>
+              <!-- /.main-container-inner --> 
+              
+            </div>
+            <!-- /.main-container --> 
+          </div>
+        </div>
+        <!-- /.row --> 
+      </div>
+      <!-- /.page-content --> 
+    </div>
+    <!-- /.main-content --> 
+    
+  </div>
+  <!-- /.main-container-inner --> 
+  
+  <a href="#" id="btn-scroll-up"
+			class="btn-scroll-up btn btn-sm btn-inverse"> <i
+			class="icon-double-angle-up icon-only bigger-110"></i> </a> </div>
+<include file="common:footer" />

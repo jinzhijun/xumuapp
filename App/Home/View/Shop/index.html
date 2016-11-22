@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<!-- saved from url=(0041)http://www.shijiao.cc/home.php/shop/index -->
+<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="Keywords" content="九万内部积分商城">
+    <meta name="Description" content="九万内部积分商城">
+    <title>九万内部积分商城 触屏版</title>
+    <link rel="stylesheet" href="__PUBLIC__/Home/shop/bootstrap.min.css">
+    <link rel="stylesheet" href="__PUBLIC__/Home/shop/font-awesome.min.css">
+    <link rel="stylesheet" href="__PUBLIC__/Home/shop/ectouch_red.css">
+    <link rel="stylesheet" href="__PUBLIC__/Home/shop/photoswipe.css">
+    <link rel="stylesheet" href="__PUBLIC__/Font-Awesome-3.2.1/css/font-awesome.css">
+    <link rel="stylesheet" href="http://cdn.bootcss.com/twitter-bootstrap/3.0.3/css/bootstrap.min.css">
+</head><body style="margin: auto;"><div class="con">
+    <header class="ect-header ect-margin-tb ect-margin-lr"> <a href="{:u(CONTROLLER_NAME.'/category',array('username'=>$_GET['username'],'encry'=>$_GET['encry']))}" class="pull-left ect-icon ect-icon1 ect-icon-cate1"></a>
+        <div class="ect-header-div">
+            <button class="btn btn-default ect-text-left ect-btn-search" onclick="javascript:openSearch();"><i class="fa fa-search"></i>&nbsp;请输入搜索关键词！</button>
+        </div>
+    </header>
+    <div style="text-align: center;padding: 5px 0 18px;"><img src="__PUBLIC__/Home/shop/logo.png" style="width:100%"></div>
+    <nav class="container-fluid">
+        <ul class="row ect-row-nav">
+            <a href="{:u(CONTROLLER_NAME.'/order_list',array('username'=>$_GET['username'],'encry'=>$_GET['encry']))}">
+                <li class="col-sm-3 col-xs-3" style="width: 33%"><i ><img src="__PUBLIC__/Home/shop/nav_1.png"></i>
+                    <p class="text-center">我的订单</p>
+                </li>
+            </a>
+            <a href="{:u(CONTROLLER_NAME.'/exchange',array('username'=>$_GET['username'],'encry'=>$_GET['encry']))}">
+                <li class="col-sm-3 col-xs-3" style="width: 33%"><i class="glyphicon glyphicon-gift" style="font-size:3em;height:1em;text-align:center;width: 3em;"></i>
+                    <p class="text-center">积分兑换</p>
+                </li>
+            </a>
+            <a href="{:u(CONTROLLER_NAME.'/capital',array('username'=>$_GET['username'],'encry'=>$_GET['encry']))}">
+                <li class="col-sm-3 col-xs-3" style="width: 33%"><i class="glyphicon glyphicon-usd" style="font-size:3em;height:1em;text-align:center;width: 3em;"></i>
+                    <p class="text-center">资金管理</p>
+                </li>
+            </a>
+        </ul>
+    </nav>
+
+    <div id="focus" class="focus ect-margin-tb">
+        <div class="hd">
+            <ul>
+            </ul>
+        </div>
+        <div class="bd">
+        </div>
+    </div>
+    <div class="ect-margin-tb ect-pro-list ect-margin-bottom0" style="border-bottom:none;">
+        <ul id="J_ItemList">
+            <volist name="list" id="vo">
+            <div><li class="single_item">
+                <a href="{:u(CONTROLLER_NAME.'/detail',array('id'=>$vo['id'],'username'=>$_GET['username'],'encry'=>$_GET['encry']))}"><img src="{$vo['main_img']}" alt="{$vo['name']} "></a>
+                <dl>
+                    <dt>
+                    <h4 class="title"><a href="{:u(CONTROLLER_NAME.'/detail',array('id'=>$vo['id'],'username'=>$_GET['username'],'encry'=>$_GET['encry']))}">{$vo['name']} </a></h4>
+                    </dt>
+                    <dd class="dd-price"><span class="pull-left"><strong>价格：<b class="ect-colory">{$vo['shop_price']}分</b></strong> <small class="ect-margin-lr"><del>{$vo['goods_total']}分</del></small></span> <span class="ect-pro-price">
+      </span></dd>
+                    <dd class="dd-num"><span class="pull-left"><i class="fa fa-heart-o"></i> {$vo['like']}人喜欢</span><span class="pull-right">销量{$vo['sale']}件</span> </dd>
+                </dl>
+
+            </li></div>
+                </volist>
+        </ul>
+    </div>
+    <footer>
+        <nav class="ect-nav"><ul class="ect-diaplay-box text-center">
+            <li class="ect-box-flex"><a href="{:u(CONTROLLER_NAME.'/index',array('username'=>$_GET['username'],'encry'=>$_GET['encry']))}"><i class="ect-icon ect-icon-home"></i>首页</a></li>
+            <li class="ect-box-flex"><a href="{:u(CONTROLLER_NAME.'/exchange',array('username'=>$_GET['username'],'encry'=>$_GET['encry']))}"><i class="glyphicon glyphicon-gift" style="font-size:1.9em;width:100%;"></i><span style="margin-top:-1.9em;display: block;">积分兑换</span></a></li>
+            <li class="ect-box-flex"><a href="{:u(CONTROLLER_NAME.'/capital',array('username'=>$_GET['username'],'encry'=>$_GET['encry']))}"><i class="glyphicon glyphicon-usd" style="font-size:1.9em;width:100%;"></i><span style="margin-top:-1.9em;display: block;">资金管理</span></a></li>
+            <li class="ect-box-flex"><a href="{:u(CONTROLLER_NAME.'/order_list',array('username'=>$_GET['username'],'encry'=>$_GET['encry']))}"><i class="" style="font-size:1.9em;width:100%;"><img src="__PUBLIC__/Home/shop/nav_1.png" style="width:1em;margin-top:-0.5em;"></i><span style="margin-top:-1.9em;display: block;">我的订单</span></a></li>
+        </ul>
+        </nav>
+    </footer>
+    <div style="padding-bottom:4.2em;"></div>
+</div>
+<div class="search" style="display:none;">
+    <div class="ect-bg">
+        <header class="ect-header ect-margin-tb ect-margin-lr text-center"><span>搜索</span><a href="javascript:;" onclick="closeSearch();"><i class="icon-close pull-right"></i></a></header>
+    </div>
+    <div class="ect-padding-lr">
+        <form action="{:u(CONTROLLER_NAME.'/search',array('username'=>$_GET['username'],'encry'=>$_GET['encry']))})}" method="get" id="searchForm" name="searchForm">
+            <div class="input-search"> <span>
+        <input name="keywords" type="search"  style="border: 1px solid ;width: 90%" placeholder="请输入搜索关键词！" id="keywordBox">
+        </span>
+                <button type="submit" value="搜索" onclick="return check(&#39;keywordBox&#39;)"><i class="glyphicon glyphicon-search"></i></button>
+            </div>
+        </form>
+    </div>
+</div>
+<a id="scrollUp" href="#" style="position: fixed; z-index: 10; "><i class="fa fa-angle-up"></i></a>
+<style>
+    #scrollUp {
+        border-radius:100%;
+        background-color: #777;
+        color: #eee;
+        font-size: 40px;
+        line-height: 1;text-align: center;text-decoration: none;bottom: 1em;right: 10px;overflow: hidden;width: 46px;
+        height: 46px;
+        border: none;
+        opacity: 0.6;
+    }
+</style>
+<script src="__PUBLIC__/Home/shop/hm.js"></script><script src="__PUBLIC__/Home/shop/hm(1).js"></script><script type="text/javascript" src="__PUBLIC__/Home/shop/jquery.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Home/shop/jquery.json.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Home/shop/common.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Home/shop/jquery.more.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Home/shop/utils.js"></script>
+<script src="__PUBLIC__/Home/shop/TouchSlide.1.1.js"></script>
+<script src="__PUBLIC__/Home/shop/ectouch.js"></script>
+<script src="__PUBLIC__/Home/shop/simple-inheritance.min.js"></script>
+<script src="__PUBLIC__/Home/shop/code-photoswipe-1.0.11.min.js"></script>
+<script src="__PUBLIC__/Home/shop/bootstrap.min.js"></script>
+<script src="__PUBLIC__/Home/shop/jquery.scrollUp.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Home/shop/validform.js"></script>
+<script language="javascript">
+    /*banner滚动图片*/
+    TouchSlide({
+        slideCell : "#focus",
+        titCell : ".hd ul", // 开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+        mainCell : ".bd ul",
+        effect : "left",
+        autoPlay : true, // 自动播放
+        autoPage : true, // 自动分页
+        delayTime: 200, // 毫秒；切换效果持续时间（执行一次效果用多少毫秒）
+        interTime: 2500, // 毫秒；自动运行间隔（隔多少毫秒后执行下一个效果）
+        switchLoad : "_src" // 切换加载，真实图片路径为"_src"
+    });
+    /*弹出评论层并隐藏其他层*/
+    function openSearch(){
+        if($(".con").is(":visible")){
+            $(".con").hide();
+            $(".search").show();
+        }
+    }
+    function closeSearch(){
+        if($(".con").is(":hidden")){
+            $(".con").show();
+            $(".search").hide();
+        }
+    }
+</script>
+<!--<div style="display:none">-->
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?61e7518cb8f77449a17a841ececaea9f";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+<!--</div>-->
+
+
+</body></html>

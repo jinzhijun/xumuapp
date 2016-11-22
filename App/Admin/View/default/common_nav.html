@@ -1,0 +1,87 @@
+<div class="sidebar" id="sidebar">
+
+					<div class="sidebar-shortcuts" id="sidebar-shortcuts">
+						 
+<!-- 
+
+<li>
+	<a href="#" class="dropdown-toggle">
+		<i class="icon-list"></i>
+		<span class="menu-text"> Tables </span>
+
+		<b class="arrow icon-angle-down"></b>
+	</a>
+
+	<ul class="submenu">
+		<li>
+			<a href="tables.html">
+				<i class="icon-double-angle-right"></i>
+				Simple &amp; Dynamic
+			</a>
+		</li>
+
+		<li>
+			<a href="jqgrid.html">
+				<i class="icon-double-angle-right"></i>
+				jqGrid plugin
+			</a>
+		</li>
+	</ul>
+</li>
+
+ -->
+						 
+					</div><!-- #sidebar-shortcuts -->
+  
+<ul class="nav nav-list">
+					
+<volist name="system_menu" id="menu"> 
+    <if condition="$menu.parent eq 0">
+    <li>
+    
+        <a href=""  class="dropdown-toggle" data-value="{$menu.id}">
+            <i class="{$menu.icon}"></i>
+            <span class="title">{$menu.name}</span>
+            <b class="arrow icon-angle-down"></b>
+        </a>
+    	<ul  class="submenu">
+        <volist name="system_menu" id="menusub"> 
+        <eq name="menusub.parent" value="$menu.id">
+        <li class="menusub_li">
+            <a onClick="JavaScript:clcik(this)" data-sub="0" href="{:u($menusub['path'])}" target="main"  data-value="{$menusub.id}">
+          		  <i class="icon-double-angle-right {$menusub.icon}"></i>
+               {$menusub.name} 
+            </a>
+            <!--ul>
+	            <volist name="system_menu" id="menusub1"> 
+			        <eq name="menusub1.parent" value="$menusub.id">
+				        <li>
+				        	<a href="{:u($menusub1['path'])}" target="main"  data-value="{$menusub1.id}">
+				          		  <i class="icon-double-angle-right {$menusub1.icon}"></i>
+				               {$menusub1.name} 
+				            </a>
+				        </li>
+			        </eq>
+		        </volist> 
+	        </ul-->
+        </li>
+        
+        </eq> 
+        </volist>
+        </ul>
+     </li>
+    </if>  
+</volist> 
+</ul><!-- /.nav-list -->
+
+					<!--div class="sidebar-collapse" id="sidebar-collapse">
+						<i class="icon-double-angle-left" data-icon1="icon-double-angle-left" data-icon2="icon-double-angle-right"></i>
+					</div-->
+
+					<script>
+                       function clcik(obj){
+                           $(".menusub_li > a").css({"color":"#333"});
+                         obj.style.color = "#1963aa";
+                       }
+                    </script>
+				</div>

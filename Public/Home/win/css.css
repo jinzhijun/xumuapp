@@ -1,0 +1,211 @@
+@charset "utf-8";
+html,body {margin: 0px; font-size:1em;width: 100%;height: 100%;}
+body{background-image: url('logodiwen.png');background-size: 20vw;}
+form{width: 100%;    height: 100%;    position: relative; z-index:1}
+#bj{width: 100%;
+    height: 100%;}
+#wxh{
+    position: absolute;
+    top: 41%;
+    left: 34%;
+    width: 39%;
+    height: 4%;    background: rgba(255, 255, 255, 0) ;border: 0px;
+}
+#pass{
+    position: absolute;
+    width: 39%;
+    height: 4%;
+    top: 49.5%;
+    left: 34%;background: rgba(255, 255, 255, 0) ;border: 0px;
+}
+#submit{
+    position: absolute;
+    top: 60%;
+    left: 26%;
+    width: 48%;
+    height: 5%;
+    background-image: url(2_03.png);
+    background-size: 100% 100%;    border: 0px;
+}
+#bt {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background-image: url(3_01.png);
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 10vw;
+    background-size: 100% 100%;
+    font-size: 5vw;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    z-index: 100;
+    padding-top: 2vw;
+    line-height: 6vw;
+}
+#back {
+    position: absolute;
+    left: 2vw;
+    top: 2vw;
+    z-index: 150;
+    height: 6vw;
+    width: 12vw;
+    background-image: url(4_03.png);
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+}
+#nr {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    left: 0%;
+    top: 10vw;
+}
+#nr .tb {
+    float: left;
+    width: 25%;
+    height: 20vw;
+    text-align: center;padding-bottom: 2%;
+}
+#nr .tb img {
+    width: 40%;
+}
+#nr .tb a span {
+    color: #000;
+    text-decoration: none;
+}
+#nr #xian {
+    background-image: url(6_03.png);
+    background-size: auto 100%;
+    height: 20px;
+    width: 100%;
+}
+#nr #younz {    padding-bottom: 5%;}
+.nr {
+    width: 90%;
+    margin-left: 5%;
+    border: 1px solid #999;
+    -moz-border-radius: 5px;      /* Gecko browsers */
+    -webkit-border-radius: 5px;   /* Webkit browsers */
+    border-radius: 5px;            /* W3C syntax */
+    margin-top: 3%;
+    color: #5B6579;
+    font-size: 0.8em;
+}
+#nr #top {
+    background-color: #d2f0ff;
+    height: 40%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: 88% 40%;
+    background-size:15% auto;
+}
+#nr .yidao{
+    background-image: url(4_07.png);}
+#nr .weidao{
+    background-image: url(5_03.png);}
+
+#nr #top .heixian {
+    height: 1%;
+    width: 80%;
+    margin-left: 10%;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #000;
+}
+.huang{
+    color: #fd7e1e;	
+}
+.baifenbai{ width:100%}
+.center{ text-align:center}
+.baifen80{ width:90%; padding-left:2%; padding-bottom:1%;}
+.fontsize{ font-size:0.8em; color:#5B6579;}#nr #top .baifen80.fontsize ul li {
+    float: left;
+    width: 50%;
+    list-style-position: inside;
+    line-height: 150%;
+}
+.clear{
+    clear: both;
+}
+.nr .left {
+    display: inline-block;
+    width: 50%;
+}
+.nr .zhong {
+    display: inline-block;
+    width: 29%;padding-top: 4%;
+    text-align: right;padding-right: 1%;
+}
+.nr  .right {
+    display: inline-block;
+    width: 20%;    padding-top: 4%;
+}
+#nr #younz .nr .left ul li {
+    font-size: 0.8em;
+    line-height: 150%;
+}
+.qian{vertical-align: top;font-weight:bold;}
+.jiner{font-size:2em; font-weight:bold;}
+#button {
+    width: 50vw;
+    height: 10vw;
+    background-color: #56c3fe;
+    background-size: 100% 100%;
+    border: 0px;
+    color: #fff;
+}
+.loading{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background: #fff url('loading.gif') no-repeat center center;
+    z-index: 1000;
+    filter:alpha(Opacity=80);-moz-opacity:0.8;opacity: 0.8;
+}
+.page{text-align: center;}
+.page a{margin: 1vw;}
+.page span{margin: 1vw;}
+
+#xiaotishi{position: fixed;bottom: 9vw;left: 5vw;width: 15vw;height: 15vw;background:url('laohudong.gif') no-repeat;background-size: 100%;z-index: 99999;}
+#xiaotishihua{position: fixed;bottom: 25vw;right: 20vw;width: 60vw;height: 60vw;z-index: 99999;display: none;}
+#xiaotishihua .xiaotishi{
+    width:60vw;
+    padding:20vw 4vw;
+    margin-left:-5vw;
+    background:#e99402;
+    -webkit-border-top-left-radius:32vw 30vw;
+    -webkit-border-top-right-radius:32vw 30vw;
+    -webkit-border-bottom-right-radius:32vw 30vw;
+    -webkit-border-bottom-left-radius:32vw 30vw;
+    -moz-border-radius:32vw / 30vw;
+    border-radius:32vw / 30vw;
+    position:relative;
+    text-align: center;
+}
+#xiaotishihua .xiaotishi span{width:0; height:0; font-size:0; background:#e99402; overflow:hidden; position:absolute;}
+#xiaotishihua .xiaotishi span.bot{
+    width:5vw;
+    height:5vw;
+    -moz-border-radius:5vw;
+    -webkit-border-radius:5vw;
+    border-radius:5vw;
+    left:3vw;
+    bottom:-5vw;
+}
+#xiaotishihua .xiaotishi span.top{
+    width:2vw;
+    height:2vw;
+    -moz-border-radius:2vw;
+    -webkit-border-radius:2vw;
+    border-radius:2vw;
+    left:2vw;
+    bottom:-8vw;
+}
+.linian{position: fixed;z-index: 99999;bottom: 3vw;font-size:3vw;line-height: 5vw;height: 5vw;text-align: center;width:90vw;left: 5vw;border-top: #ccc 0.5vw solid;
+	color: #000;
+ text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #fff, 0 0 4px #00ff11, 0 0 7px #00ff11, 0 0 8px #00ff11, 0 0 10px #00ff11, 0 0 15px #00ff11; 
+       }
+.linian img{position: absolute;bottom: -1vw;width: 5vw;height: 5vw;right: 3vw;}
+.diwen{background-image: url('logodiwen.png');background-size: 20vw;}

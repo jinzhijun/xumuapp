@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!-- saved from url=(0052)http://fc.vhot119.com/home/fuli/arpinglist/id/2.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>满意度评论列表</title>
+    <link href="__PUBLIC__/Home/agree/info/css.css" rel="stylesheet">
+    <script src="__PUBLIC__/Home/agree/info/hm.js"></script>
+    <script src="__PUBLIC__/Home/agree/info/jquery-2.0.3.min.js"></script>
+    <link href="__PUBLIC__/Home/agree/info/arplist.css" rel="stylesheet"></head>
+<body bgcolor="#f3efef"><a href="JavaScript:history.go(-1)" id="back"></a>
+<div id="bt"><span>满意度评论列表</span></div><div id="nr">
+    <div class="dangqian">
+    <span>当前满意度</span>
+        <span>好<br>（{$count3}）</span>
+        <span>很好<br>（{$count4}）</span>
+        <span>非常好<br>（{$count5}）</span>
+        <span>差<br>（{$count2}）</span>
+    </div><div class="huixian"></div>
+    <form action="" method="POST"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tbody>
+        <tr><td width="5%" height="30">&nbsp;</td>
+            <td width="20%">&nbsp;</td><td>&nbsp;</td>
+            <td width="5%">&nbsp;</td></tr><tr>
+            <td>&nbsp;</td><td align="right" nowrap="" class="hongse">*满意度：</td>
+    <td align="left"><table width="100%" border="0" cellspacing="0" cellpadding="0" class="huise">
+        <tbody><tr><td><label>
+        <input name="status" type="radio" value="3" required="">
+            <img class="arp" src="__PUBLIC__/Home/agree/info/arp3.png">&nbsp;好</label></td><td><label>
+            <input name="status" type="radio" value="4" required="">
+            <input type="hidden" name="id" id="id" value="{$_GET['id']}" />
+            <img class="arp" src="__PUBLIC__/Home/agree/info/arp4.png">&nbsp;很好</label></td></tr>
+        <tr><td><label><input name="status" type="radio" value="5" required="" checked="">
+            <img class="arp" src="__PUBLIC__/Home/agree/info/arp5.png">&nbsp;非常好</label></td>
+            <td><label><input name="status" type="radio" value="2" required="">
+                <img class="arp" src="__PUBLIC__/Home/agree/info/arp2.png">&nbsp;差</label></td></tr></tbody></table></td><td>&nbsp;</td></tr><tr><td>&nbsp;</td>
+    <td align="right">&nbsp;</td>
+            <td align="left">&nbsp;</td><td>&nbsp;</td>
+        </tr>
+<tr><td>&nbsp;</td>
+    <td align="right" class="hongse">*说明：</td>
+    <td align="left" colspan="2">
+    <textarea id="neirong" name="text" class="input" required="" maxlength="800" placeholder="800字以内，不可以带表情，必填"></textarea>
+    </td></tr>
+        <tr>
+    <td>&nbsp;</td><td align="right">&nbsp;</td><td align="left">&nbsp;</td><td>&nbsp;</td>
+</tr><tr><td>&nbsp;</td><td align="right">&nbsp;</td><td align="center" colspan="2">
+    <input type="submit" name="button" id="button" value="提交"></td></tr>
+<tr><td>&nbsp;</td><td align="right">&nbsp;</td>
+    <td align="left">&nbsp;</td><td>&nbsp;</td></tr>
+</tbody></table></form>
+    <div class="huixian">
+</div>
+    <div class="logodiwen">
+
+        <volist name="list" id="vo">
+        <div class="nr"><a>
+            <img class="arp3" src="__PUBLIC__/Home/agree/info/hongren.png">
+    <span class="huise">|</span>
+            <if condition="$vo['status'] eq 2">
+                <img class="arp2" src="__PUBLIC__/Home/agree/info/arp2.png">&nbsp;差</a>
+                <elseif condition="$vo['status'] eq 3"/>
+                   <img class="arp2" src="__PUBLIC__/Home/agree/info/arp2.png">&nbsp;好</a>
+
+                <elseif condition="$vo['status'] eq 4"/>
+            <img class="arp2" src="__PUBLIC__/Home/agree/info/arp2.png">&nbsp;很好</a>
+                    <else/>
+            <img class="arp2" src="__PUBLIC__/Home/agree/info/arp2.png">&nbsp;非常好</a>
+            </if>
+
+    <p>{$vo['text']}</p></div>
+        <div class="huixian"></div>
+            </volist>
+<div>
+
+        {$page}
+
+
+</div>
+
+    </div></div><p>&nbsp;</p><p>&nbsp;</p><div id="xiaotishi"></div><div id="xiaotishihua"><div class="xiaotishi"><span class="bot"></span><span class="top"></span>
+	被推荐广告，工资是广告到期后打入支付宝，注意查收。    </div></div><script>
+    $(document).ready(function () {
+	$('#xiaotishi').click(function () {
+	    $('#xiaotishihua').show();
+	});
+	$('#xiaotishihua').click(function () {
+	    $('#xiaotishihua').hide();
+	});
+    });
+</script><div class="linian">诚信　创新　忠诚　共赢</div><div style="display: none"><script>
+                var _hmt = _hmt || [];
+                (function () {
+                    var hm = document.createElement("script");
+                    hm.src = "//hm.baidu.com/hm.js?2866d184a661820df35879dc03c43cff";
+                    var s = document.getElementsByTagName("script")[0];
+                    s.parentNode.insertBefore(hm, s);
+                })();
+            </script></div></body></html>

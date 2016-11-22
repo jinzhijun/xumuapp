@@ -1,0 +1,16 @@
+ 
+               <volist name="system_menu" id="menusub3"> 
+        <eq name="menusub3.parent" value="$menusub.id">
+         <li class="active"><a href="{:U(CONTROLLER_NAME.'/index')}">{$menusub3.name}</a></li>
+                  
+       <!--  <li>
+            <a href="{:u($menusub['path'])}" target="main"  data-value="{$menusub.id}">
+          		  <i class="icon-double-angle-right {$menusub.icon}"></i>
+               {$menusub.name} 
+            </a>
+        </li> -->
+        	 
+        </eq> 
+        </volist>    
+                  
+</ul>

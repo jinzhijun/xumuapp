@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<!-- saved from url=(0066)http://jf.vhot119.com/mobile/index.php?m=default&c=flow&a=checkout -->
+<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="Keywords" content="九万内部积分商城">
+<meta name="Description" content="九万内部积分商城">
+<title>九万内部积分商城 触屏版</title>
+<link rel="stylesheet" href="__PUBLIC__/Home/shop/bootstrap.min.css">
+<link rel="stylesheet" href="__PUBLIC__/Home/shop/font-awesome.min.css">
+<link rel="stylesheet" href="__PUBLIC__/Home/shop/ectouch_red.css">
+<link rel="stylesheet" href="__PUBLIC__/Home/shop/photoswipe.css">
+<script src="__PUBLIC__/Home/login/register/PCASClass.js"></script>
+<link rel="stylesheet" href="http://cdn.bootcss.com/twitter-bootstrap/3.0.3/css/bootstrap.min.css">
+</head><body style="margin: auto;">
+
+<div class="con">
+  <div class="ect-bg">
+    <header class="ect-header ect-margin-tb ect-margin-lr text-center ect-bg icon-write"> <a href="javascript:history.go(-1)" class="pull-left ect-icon ect-icon1 ect-icon-history"></a> <span>订单确认</span> <a href="javascript:;" onclick="openMune()" class="pull-right ect-icon ect-icon1 ect-icon-mune"></a></header>
+    <nav class="ect-nav ect-nav-list" style="display:none;">
+        <ul class="ect-diaplay-box text-center">
+            <li class="ect-box-flex"><a href="{:u(CONTROLLER_NAME.'/index',array('username'=>$_GET['username'],'encry'=>$_GET['encry']))}"><i class="ect-icon ect-icon-home"></i>首页</a></li>
+            <li class="ect-box-flex"><a href="{:u(CONTROLLER_NAME.'/exchange',array('username'=>$_GET['username'],'encry'=>$_GET['encry']))}"><i class="glyphicon glyphicon-gift" style="font-size:1.9em;width:100%;"></i><span style="margin-top:-1.9em;display: block;">积分兑换</span></a></li>
+            <li class="ect-box-flex"><a href="{:u(CONTROLLER_NAME.'/capital',array('username'=>$_GET['username'],'encry'=>$_GET['encry']))}"><i class="glyphicon glyphicon-usd" style="font-size:1.9em;width:100%;"></i><span style="margin-top:-1.9em;display: block;">资金管理</span></a></li>
+            <li class="ect-box-flex"><a href="{:u(CONTROLLER_NAME.'/order_list',array('username'=>$_GET['username'],'encry'=>$_GET['encry']))}"><i class="" style="font-size:1.9em;width:100%;"><img src="__PUBLIC__/Home/shop/nav_1.png" style="width:1em;margin-top:-0.5em;"></i><span style="margin-top:-1.9em;display: block;">我的订单</span></a></li>
+        </ul>
+ </nav>
+  </div>
+  <div class="flow-checkout">
+    <form action="{:U(CONTROLLER_NAME . '/suborder',array('username'=>$_GET['username'],'encry'=>$_GET['encry']))}" method="post" name="theForm" id="theForm" >
+      <script src="__PUBLIC__/Home/shop/hm.js"></script><script type="text/javascript">
+        </script>
+      <section class="ect-margin-tb ect-padding-lr ect-padding-tb checkout-add">
+          <label for="addressId">
+          <p class="title" style="font-size: 15px;">姓名: <span><input name="name"  size="35"  id="name" value="" type="text"></span></p>
+          <i class="fa fa-angle-right"></i>
+
+          </label>
+          <br>
+
+          <label for="addressId">
+              <p class="title" style="font-size: 15px;">手机: <span><input name="tel"size="35"  id="tel"  value="" type="text"></span></p>
+
+              <i class="fa fa-angle-right"></i>
+          </label>
+
+          <label for="addressId">
+              <p class="title" style="font-size: 15px;">地址:
+
+                                     <span> <select style="font-size: 15px;"  id="province" name="province" tabindex="3" style="background: none;"><option value="">省 </option><option value="北京">北京</option><option value="上海">上海</option><option value="天津">天津</option><option value="重庆">重庆</option><option value="河北">河北</option><option value="山西">山西</option><option value="河南">河南</option><option value="辽宁">辽宁</option><option value="吉林">吉林</option><option value="黑龙江">黑龙江</option><option value="内蒙古">内蒙古</option><option value="江苏">江苏</option><option value="山东">山东</option><option value="安徽">安徽</option><option value="浙江">浙江</option><option value="福建">福建</option><option value="湖北">湖北</option><option value="湖南">湖南</option><option value="广东">广东</option><option value="广西">广西</option><option value="江西">江西</option><option value="四川">四川</option><option value="海南">海南</option><option value="贵州">贵州</option><option value="云南">云南</option><option value="西藏">西藏</option><option value="陕西">陕西</option><option value="甘肃">甘肃</option><option value="青海">青海</option><option value="宁夏">宁夏</option><option value="新疆">新疆</option></select></span>
+                <span>
+                    <select style="font-size: 15px;"   id="city" name="city" tabindex="4" style="background: none;"><option value="">市 </option></select>
+                </span>
+                <span style="border-right:none">
+                    <select style="font-size: 15px;"    id="area" name="area" tabindex="5" style="background: none;"><option value="">区 </option></select>
+                </span>
+              </p>
+              <i class="fa fa-angle-right"></i>
+          </label>
+          <label for="addressId">
+              <p class="title" style="font-size:15px;">详细地址: <span><input name="address" size="35" id="address"  value="" type="text"></span></p>
+
+              <i class="fa fa-angle-right"></i>
+          </label>
+        </section>
+      <section class="ect-margin-tb ect-padding-lr checkout-select">
+        <a data-toggle="collapse" data-parent="#accordion" href="#">
+        <p><b> 使用积分 </b></p>
+        <i class="fa fa-angle-down"></i> </a>
+        <div id="collapseFive1" class="panel-collapse collapse" style="height: 83px;"> 您当前的可用积分为:4 粉，本订单最多可以使用{$pro['price']} 粉.<br>
+          <span id="ECS_INTEGRAL_NOTICE" class="notice"></span>
+        </div>
+        <script language="javascript"></script>
+        <a data-toggle="collapse" data-parent="#accordion" href="#">
+        <p><b> 订单附言 </b></p>
+        <i class="fa fa-angle-down"></i> </a>
+        <div id="collapseFive" class="panel-collapse collapse" style="height: 58px;">
+          <input name="text" type="text"  id="text" value="" class="fuyan" placeholder="请输入订单附言">
+        </div>
+      </section>
+      <section class="ect-margin-tb ect-margin-bottom0 ect-padding-lr checkout-select checkout-pro-list">
+        <p><b>商品列表</b><span class="label ect-bg-colory"></span></p>
+        <ul>
+                    <li>
+            <dl>
+              <dt class="pull-left">
+                <a href="{:u(CONTROLLER_NAME.'/detail',array('id'=>$vo['id']))}" target="_blank">{$pro['name']}</a>
+              </dt>
+              <dd class="pull-left list-num">x {$number}</dd>
+              <dd class="pull-right">{$pro['price']}分</dd>
+            </dl>
+          </li>
+                  </ul>
+<div class="ect-padding-tb text-right" id="ECS_ORDERTOTAL">
+  该订单完成后，您将获得 
+    <b class="ect-colory">0</b>
+  粉
+   <br>
+  商品总价:
+  <b class="ect-colory">{$pro['price']}分</b>
+  <br>
+  应付款金额: <b class="ect-colory">{$pro['price']}分</b><br>
+</div>
+ </section>
+      <div class="ect-padding-lr ect-padding-tb ect-margin-tb">
+        <input type="button"   onclick="apply_submit()"  name="submit" value="订单提交" class="btn btn-info ect-btn-info ect-colorf ect-bg">
+        <input type="hidden" name="id"  id="id"   value="{$pro['id']}">
+          <input type="hidden" name="number"  id="number" value="{$number}">
+      </div>
+    </form>
+  </div>
+</div>
+
+<a id="scrollUp" href="#" style="position: fixed; z-index: 10;"><i class="fa fa-angle-up"></i></a>
+<style>
+#scrollUp {
+	border-radius:100%;
+	background-color: #777;
+	color: #eee;
+	font-size: 40px;
+	line-height: 1;text-align: center;text-decoration: none;bottom: 1em;right: 10px;overflow: hidden;width: 46px;
+	height: 46px;
+	border: none;
+	opacity: 0.6;
+}
+</style>
+<script type="text/javascript" src="__PUBLIC__/Home/shop/jquery.min.js"></script> 
+<script type="text/javascript" src="__PUBLIC__/Home/shop/jquery.json.js"></script> 
+<script type="text/javascript" src="__PUBLIC__/Home/shop/common.js"></script> 
+<script type="text/javascript" src="__PUBLIC__/Home/shop/jquery.more.js"></script> 
+<script type="text/javascript" src="__PUBLIC__/Home/shop/utils.js"></script> 
+<script src="__PUBLIC__/Home/shop/TouchSlide.1.1.js"></script> 
+<script src="__PUBLIC__/Home/shop/ectouch.js"></script> 
+<script src="__PUBLIC__/Home/shop/simple-inheritance.min.js"></script> 
+<script src="__PUBLIC__/Home/shop/code-photoswipe-1.0.11.min.js"></script> 
+<script src="__PUBLIC__/Home/shop/bootstrap.min.js"></script> 
+<script src="__PUBLIC__/Home/shop/jquery.scrollUp.min.js"></script> 
+<script type="text/javascript" src="__PUBLIC__/Home/shop/validform.js"></script> 
+<script language="javascript">
+	/*banner滚动图片*/
+		TouchSlide({
+			slideCell : "#focus",
+			titCell : ".hd ul", // 开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+			mainCell : ".bd ul",
+			effect : "left",
+			autoPlay : true, // 自动播放
+			autoPage : true, // 自动分页
+			delayTime: 200, // 毫秒；切换效果持续时间（执行一次效果用多少毫秒）
+			interTime: 2500, // 毫秒；自动运行间隔（隔多少毫秒后执行下一个效果）
+			switchLoad : "_src" // 切换加载，真实图片路径为"_src"
+		});
+	/*弹出评论层并隐藏其他层*/
+	function openSearch(){
+		if($(".con").is(":visible")){
+			$(".con").hide();	
+			$(".search").show();
+		}
+	}
+	function closeSearch(){
+		if($(".con").is(":hidden")){
+			$(".con").show();	
+			$(".search").hide();
+		}
+	}
+</script> 
+<div style="display:none"><script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?61e7518cb8f77449a17a841ececaea9f";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</div>
+ 
+<script type="text/javascript" src="__PUBLIC__/Home/shop/shopping_flow.js"></script>
+
+<script>
+function back_goods_number(id){
+ var goods_number = document.getElementById('goods_number'+id).value;
+  document.getElementById('back_number'+id).value = goods_number;
+}
+function change_goods_number(type, id)
+{
+  var goods_number = document.getElementById('goods_number'+id).value;
+  if(type != 2){back_goods_number(id)}
+  if(type == 1){goods_number--;}
+  if(type == 3){goods_number++;}
+  if(goods_number <=0 ){goods_number=1;}
+  if(!/^[0-9]*$/.test(goods_number)){goods_number = document.getElementById('back_number'+id).value;}
+  document.getElementById('goods_number'+id).value = goods_number;
+	$.post('/mobile/index.php?m=default&c=flow&a=ajax_update_cart', {
+		rec_id : id,goods_number : goods_number
+	}, function(data) {
+		change_goods_number_response(data,id);
+	}, 'json');  
+} 
+// 处理返回信息并显示
+function change_goods_number_response(result,id)
+{
+	if (result.error == 0){
+		var rec_id = result.rec_id;
+		$("#goods_number_"+rec_id).val(result.goods_number);
+		document.getElementById('total_number').innerHTML = result.total_number;//更新数量
+		document.getElementById('goods_subtotal').innerHTML = result.total_desc;//更新小计
+		if (document.getElementById('ECS_CARTINFO')){
+			//更新购物车数量
+			document.getElementById('ECS_CARTINFO').innerHTML = result.cart_info;
+		}
+	}else if (result.message != ''){
+		alert(result.message);
+		var goods_number = document.getElementById('back_number'+id).value;
+ 		document.getElementById('goods_number'+id).value = goods_number;
+	}                
+}
+
+	/*点击下拉手风琴效果*/
+	$('.collapse').collapse()
+	$(".checkout-select a").click(function(){
+		if(!$(this).hasClass("select")){
+			$(this).addClass("select");
+		}else{	
+			$(this).removeClass("select");
+		}
+	});
+
+
+var pcas = new PCAS("province,省 必选","city,市 必选","area,区 必选");
+var Item = {
+    getItemInfo : function(){
+        $(".sku_li_a").bind("click",function(){  //尺码点击
+            var o = $(this);
+            if(!o.hasClass("sku_hover")){    //点击的不是当前已经选中的
+                $(".sku_hover").removeClass("sku_hover");
+                o.addClass("sku_hover");
+                /*更新对应的选中尺码的数据*/
+                $("#item_price").html("￥"+ o.attr("data-price"));
+                $("#price").val(o.attr("data-price"));
+                $("#attrid").val(o.attr("data-title"));
+                $("#fencheng").val(o.attr("data-fencheng"));
+            }
+        })
+    },
+    init : function(){
+        Item.getItemInfo();
+    }
+}
+Item.init();
+
+var submit_status = true;
+//提交
+function apply_submit(){
+    if ($("#name").val() == ''){
+        alert('请填写您收货人！');
+        return;
+    }
+
+    if ($("#tel").val() == ''){
+        alert('请填写您的手机号！');
+        return;
+    }
+
+    var reg=/^0{0,1}(13[0-9]|145|15[0-9]|170|18[0-9])[0-9]{8}$/i;
+    if(!reg.test($("#tel").val())){
+        alert("请输入11位的手机号！");
+        $("#tel").focus();
+        return;
+    }
+
+
+    if ($("#province").val() == ''){
+        alert('请选择省份！');
+        return;
+    }
+
+
+    if ($("#city").val() == ''){
+        alert('请选择城市！');
+        return;
+    }
+
+    if ($("#area").val() == ''){
+        alert('请选择地区！');
+        return;
+    }
+
+    if ($("#address").val() == ''){
+        alert('请添加详情地址！');
+        return;
+    }
+
+    if (submit_status == false){
+        alert('请不要重复提交！');
+        return;
+    }
+    submit_status = false;
+    var post_data = {
+        name:$("#name").val(),
+        tel:$("#tel").val(),
+        province:$("#province").val(),
+        city:$("#city").val(),
+        area:$("#area").val(),
+        province:$("#province").val(),
+        city:$("#city").val(),
+        area:$("#area").val(),
+        address:$("#address").val(),
+        id:$("#id").val(),
+        number:$("#number").val(),
+        text:$("#text").val()
+    };
+    // 禁用按钮
+
+    $.ajax({
+        url: $("#theForm").attr('action'),
+        type: 'POST',
+        dataType: 'json',
+        data: post_data,
+        success: function (data, textStatus) {
+            // 成功提示框
+            if(data.status==1){
+                submit_status = false;
+                alert(data.info);
+                setTimeout(function () {
+                    window.location.href="{:U(CONTROLLER_NAME . '/order_list',array('username'=>$_GET['username'],'encry'=>$_GET['encry']))}";
+                }, 800);
+            }
+            else if(data.status==2){
+                // 错误提示框
+                alert(data.info);
+                // 按钮恢复可点
+                submit_status = true;
+            }else{
+                alert(data.info);
+                submit_status = true;
+            }
+        },
+        cache: false
+    });
+}
+</script>
+
+</body></html>

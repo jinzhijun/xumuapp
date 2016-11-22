@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)http://fc.vhot119.com/home/choujiang/lists.html -->
+<html><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>抽奖</title>
+    <link href="__PUBLIC__/Home/choujiang/css.css" rel="stylesheet">
+    <link href="__PUBLIC__/Home/choujiang/choujiang.css" rel="stylesheet">
+    <script src="__PUBLIC__/Home/choujiang/hm.js"></script>
+    <script src="__PUBLIC__/Home/choujiang/jquery-2.0.3.min.js"></script>
+    <script src="__PUBLIC__/Home/choujiang/awardRotate.js"></script>
+    <script src="__PUBLIC__/Home/choujiang/jcMarquee.js"></script>
+</head><body><div class="top"><div class="main">
+    <div id="header"><div class="dangqianjifen"><p>当前可用积分：
+        <span id="jifen" title="">{$user['total_score']}</span>
+    </p><p class="help">
+        <a href="http://fc.vhot119.com/home/choujiang/jifenjieshao.html"><img src="__PUBLIC__/Home/choujiang/jfhdfs.gif"></a></p><p>每次抽奖积分：{$list['sign']}</p></div></div><div id="zhuanpan"><div class="banner" style="height: 1807.08px;">
+    <div class="turnplate">
+        <canvas class="item" id="wheelcanvas" width="422" height="422"></canvas>
+        <img class="pointer" src="__PUBLIC__/Home/choujiang/anniu.png"></div></div></div>
+    <div id="jiangpin"><span>奖品列表</span>
+        <div>
+            <div><br>{$list[fist]}</div>
+            <div>
+                <br>{$list['second']}</div>
+            <div><br>{$list['third']}</div>
+            <div><br>{$list['four']}</div>
+            <div><br>{$list['five']}</div>
+        </div>
+    </div>
+    <div id="zhongjiang">
+
+
+      <ul style="height: 1000%;">
+          <li style="margin-bottom: 0px;">
+
+
+              <volist name="win" id="vo">
+              <div style="margin-bottom: 0px;"><span>{$vo['username']}</span>不得了啊！获得{$vo['prize']}</div>
+                  </volist>
+
+          </li></ul></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       <div style="display: none"><script>
+                        var turnplate = {
+                            restaraunts: [], //大转盘奖品名称
+                            colors: [], //大转盘奖品区块对应背景颜色
+                            outsideRadius: 175, //大转盘外圆的半径
+                            textRadius: 140, //大转盘奖品位置距离圆心的距离
+                            insideRadius: 30, //大转盘内圆的半径
+                            startAngle: 0, //开始角度
+
+                            bRotate: false				//false:停止;ture:旋转
+                        };
+                        var dangqianfen = 0;
+                        var dangqianqian = 0;
+
+                        var quyu = 'zhongjiang';
+                        var html, hang, topy;
+                        $(document).ready(function () {
+                            $('#tixian').click(function () {
+                                if (parseInt($('#lingqian').text()) >= 100) {
+                                    $.get('/home/choujiang/tixian.html', function (data) {
+                                        alert(data.info);
+                                        if (data.status == 1) {
+                                            $('#lingqian').text('0');
+                                        }
+                                    }, 'json');
+                                } else {
+                                    alert('满100提现');
+                                }
+                            });
+                            $('.banner').height($('.banner').width() / 590 * 617);
+                            //动态添加大转盘的奖品与奖品区域背景颜色
+                            turnplate.restaraunts = ["谢谢参与",'{$list[fist]}',"谢谢参与","{$list['second']}","谢谢参与","{$list['third']}","谢谢参与","{$list['four']}","谢谢参与","{$list['five']}"];
+                            turnplate.colors = ["#B24A2F", "#F5A618", "#B24A2F", "#F5A618", "#B24A2F", "#F5A618", "#B24A2F", "#F5A618", "#B24A2F", "#F5A618"];
+                            var rotateTimeOut = function () {
+                                $('#wheelcanvas').rotate({
+                                    angle: 0,
+                                    animateTo: 2160,
+                                    duration: 8000,
+                                    callback: function () {
+                                        alert('网络超时，请检查您的网络设置！');
+                                    }
+                                });
+                            };
+
+                            //旋转转盘 item:奖品位置; txt：提示语;
+                            var rotateFn = function (item, txt) {
+                                var angles = item * (360 / turnplate.restaraunts.length) - (360 / (turnplate.restaraunts.length * 2));
+                                if (angles < 270) {
+                                    angles = 270 - angles;
+                                } else {
+                                    angles = 360 - angles + 270;
+                                }
+                                $('#wheelcanvas').stopRotate();
+                                $('#wheelcanvas').rotate({
+                                    angle: 0,
+                                    animateTo: angles + 1800,
+                                    duration: 8000,
+                                    callback: function () {
+                                        alert(txt);
+                                        window.location.reload();return;
+                                        $('#jifen').text(dangqianfen);
+                                        $('#lingqian').text(dangqianqian);
+                                        turnplate.bRotate = !turnplate.bRotate;
+                                    }
+                                });
+                            };
+
+                            $('.pointer').click(function () {
+                                if (turnplate.bRotate)
+                                    return;
+                                turnplate.bRotate = !turnplate.bRotate;
+                                $.get('{:u(CONTROLLER_NAME."/info",array("id"=>$list[id],"username"=>$_GET[username],"encry"=>$_GET[encry]))}', function (data) {
+                                    if (data.status == 1) {
+                                        var item = data.zhong;
+                                        rotateFn(item, turnplate.restaraunts[item - 1]);
+                                        console.log(item);
+                                        dangqianfen = data.fen;
+                                        dangqianqian = data.qian;
+                                    } else {
+                                        alert(data.info);
+                                    }
+                                }, 'json');
+                            });
+                            $('#zhongjiang').jcMarquee({'marquee': 'y', 'speed': 40});
+                        });
+                        function rnd(n, m) {
+                            var random = Math.floor(Math.random() * (m - n + 1) + n);
+                            return random;
+
+                        }
+
+
+        //页面所有元素加载完毕后执行drawRouletteWheel()方法对转盘进行渲染
+                        window.onload = function () {
+                            drawRouletteWheel();
+                        };
+
+                        function drawRouletteWheel() {
+                            var canvas = document.getElementById("wheelcanvas");
+                            if (canvas.getContext) {
+                                //根据奖品个数计算圆周角度
+                                var arc = Math.PI / (turnplate.restaraunts.length / 2);
+                                var ctx = canvas.getContext("2d");
+                                //在给定矩形内清空一个矩形
+                                ctx.clearRect(0, 0, 422, 422);
+                                //strokeStyle 属性设置或返回用于笔触的颜色、渐变或模式  
+                                ctx.strokeStyle = "#fff";
+                                //font 属性设置或返回画布上文本内容的当前字体属性
+                                ctx.font = '16px Microsoft YaHei';
+                                for (var i = 0; i < turnplate.restaraunts.length; i++) {
+                                    var angle = turnplate.startAngle + i * arc;
+                                    ctx.fillStyle = turnplate.colors[i];
+                                    ctx.beginPath();
+                                    //arc(x,y,r,起始角,结束角,绘制方向) 方法创建弧/曲线（用于创建圆或部分圆）    
+                                    ctx.arc(211, 211, turnplate.outsideRadius, angle, angle + arc, false);
+                                    ctx.arc(211, 211, turnplate.insideRadius, angle + arc, angle, true);
+                                    ctx.stroke();
+                                    ctx.fill();
+                                    //锁画布(为了保存之前的画布状态)
+                                    ctx.save();
+
+                                    //----绘制奖品开始----
+                                    ctx.fillStyle = "#fff";
+                                    var text = turnplate.restaraunts[i];
+                                    var line_height = 17;
+                                    //translate方法重新映射画布上的 (0,0) 位置
+                                    ctx.translate(211 + Math.cos(angle + arc / 2) * turnplate.textRadius, 211 + Math.sin(angle + arc / 2) * turnplate.textRadius);
+
+                                    //rotate方法旋转当前的绘图
+                                    ctx.rotate(angle + arc / 2 + Math.PI / 2);
+
+                                    /** 下面代码根据奖品类型、奖品名称长度渲染不同效果，如字体、颜色、图片效果。(具体根据实际情况改变) **/
+                                    if (text.indexOf("积分") > 0) {
+                                        //流量包
+                                        var texts = text.split("积分");
+                                        for (var j = 0; j < texts.length; j++) {
+                                            ctx.font = j == 0 ? 'bold 20px Microsoft YaHei' : '16px Microsoft YaHei';
+                                            if (j !== 0) {
+                                                ctx.fillText(texts[j] + "积分", -ctx.measureText(texts[j] + "积分").width / 2, j * line_height);
+                                            } else {
+                                                ctx.fillText(texts[j], -ctx.measureText(texts[j]).width / 2, j * line_height);
+                                            }
+                                        }
+                                    } else if (text.indexOf("积分") == -1 && text.length > 6) {
+                                        //奖品名称长度超过一定范围 
+                                        text = text.substring(0, 6) + "||" + text.substring(6);
+                                        var texts = text.split("||");
+                                        for (var j = 0; j < texts.length; j++) {
+                                            ctx.fillText(texts[j], -ctx.measureText(texts[j]).width / 2, j * line_height);
+                                        }
+                                    } else {
+                                        //在画布上绘制填色的文本。文本的默认颜色是黑色
+                                        //measureText()方法返回包含一个对象，该对象包含以像素计的指定字体宽度
+                                        ctx.fillText(text, -ctx.measureText(text).width / 2, 0);
+                                    }
+                                    //把当前画布返回（调整）到上一个save()状态之前 
+                                    ctx.restore();
+                                    //----绘制奖品结束----
+                                }
+                            }
+                        }
+                        var _hmt = _hmt || [];
+                        (function () {
+                            var hm = document.createElement("script");
+                            hm.src = "//hm.baidu.com/hm.js?2866d184a661820df35879dc03c43cff";
+                            var s = document.getElementsByTagName("script")[0];
+                            s.parentNode.insertBefore(hm, s);
+                        })();
+                    </script></div><div class="clear"></div></div></div></body></html>

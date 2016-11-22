@@ -1,0 +1,100 @@
+[ 2016-06-27T15:34:33+08:00 ] 192.168.0.66 /api.php?m=api&c=Hxgroup&a=group_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000346s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000481s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000598s ]
+NOTIC: [2048] Declaration of Common\Model\Group_hxModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Common\Model\Group_hxModel.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `tp_group_hx` [ RunTime:0.0173s ]
+SQL: SHOW COLUMNS FROM `tp_group_hx` [ RunTime:0.0024s ]
+NOTIC: [8] Undefined variable: page D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Common\Model\Group_hxModel.class.php 第 31 行.
+SQL: SELECT * FROM `tp_group_hx` LIMIT 0,10   [ RunTime:0.0033s ]
+
+[ 2016-06-27T15:37:15+08:00 ] 192.168.0.66 /api.php?m=api&c=Hxgroup&a=group_users&group_id=210489941895938476
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000355s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000421s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000521s ]
+
+[ 2016-06-27T15:37:21+08:00 ] 192.168.0.66 /api.php?m=api&c=Hxgroup&a=group_users&group_id=210549051492401604
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000314s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000426s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0722s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0116s ]
+SQL: SELECT * FROM `tp_user` WHERE `name` = '123' LIMIT 1   [ RunTime:0.0052s ]
+NOTIC: [8] Undefined index: member D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Api\Controller\HxgroupController.class.php 第 34 行.
+SQL: SELECT * FROM `tp_user` WHERE `name` = '361212739' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-06-27T15:39:09+08:00 ] 192.168.0.66 /api.php?m=api&c=Hxgroup&a=search&keyword=ere
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000359s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000325s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000426s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined variable: page D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Common\Model\UserModel.class.php 第 28 行.
+SQL: SELECT * FROM `tp_user` WHERE `truename` LIKE '%ere%' LIMIT 0,10   [ RunTime:0.0229s ]
+
+[ 2016-06-27T15:41:46+08:00 ] 192.168.0.66 /api.php?m=api&c=Hxgroup&a=send_message&from_user=cc&to_user=yxf&title=ceshi&content=hahahhahahah
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000383s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000554s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000675s ]
+NOTIC: [2048] Declaration of Common\Model\MessageModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Common\Model\MessageModel.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `tp_message` [ RunTime:0.0170s ]
+SQL: SHOW COLUMNS FROM `tp_message` [ RunTime:0.0023s ]
+NOTIC: [2048] Declaration of Common\Model\Message_detailModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Common\Model\Message_detailModel.class.php 第 59 行.
+SQL: SHOW COLUMNS FROM `tp_message_detail` [ RunTime:0.0042s ]
+SQL: SHOW COLUMNS FROM `tp_message_detail` [ RunTime:0.0021s ]
+SQL: INSERT INTO `tp_message` (`from_user`,`create_time`,`title`,`content`) VALUES ('cc','1467013306','ceshi','hahahhahahah') [ RunTime:0.0010s ]
+SQL: INSERT INTO `tp_message_detail` (`message_id`,`from_user`,`to_user`,`create_time`) VALUES ('7','cc','yxf','1467013306') [ RunTime:0.0002s ]
+
+[ 2016-06-27T15:45:44+08:00 ] 192.168.0.66 /api.php?m=api&c=Hxgroup&a=get_message&user=yxf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000396s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000488s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000587s ]
+NOTIC: [2048] Declaration of Common\Model\MessageModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Common\Model\MessageModel.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `tp_message` [ RunTime:0.0037s ]
+SQL: SHOW COLUMNS FROM `tp_message` [ RunTime:0.0027s ]
+NOTIC: [2048] Declaration of Common\Model\Message_detailModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Common\Model\Message_detailModel.class.php 第 59 行.
+SQL: SHOW COLUMNS FROM `tp_message_detail` [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `tp_message_detail` [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0028s ]
+NOTIC: [8] Undefined variable: page D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Common\Model\MessageModel.class.php 第 31 行.
+SQL: SELECT * FROM `tp_message` WHERE `from_user` = 'yxf' LIMIT 0,10   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: page D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Common\Model\Message_detailModel.class.php 第 31 行.
+SQL: SELECT `to_user`,`is_read` FROM `tp_message_detail` WHERE `message_id` = 1 LIMIT 0,10   [ RunTime:0.0001s ]
+SQL: SELECT `truename` FROM `tp_user` WHERE `name` = 'aa' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `truename` FROM `tp_user` WHERE `name` = 'bb' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `truename` FROM `tp_user` WHERE `name` = 'cc' LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: page D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Common\Model\Message_detailModel.class.php 第 31 行.
+SQL: SELECT `to_user`,`is_read` FROM `tp_message_detail` WHERE `message_id` = 2 LIMIT 0,10   [ RunTime:0.0001s ]
+SQL: SELECT `truename` FROM `tp_user` WHERE `name` = 'aa' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `truename` FROM `tp_user` WHERE `name` = 'bb' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `truename` FROM `tp_user` WHERE `name` = 'cc' LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: page D:\diguo_warmpserver-2.5\exe\wamp\www\weishijiao\App\Common\Model\Message_detailModel.class.php 第 31 行.
+SQL: SELECT * FROM `tp_message_detail` WHERE `to_user` = 'yxf' LIMIT 0,10   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tp_message` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `truename` FROM `tp_user` WHERE `name` = 'aa' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tp_message` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `truename` FROM `tp_user` WHERE `name` = 'bb' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tp_message` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `truename` FROM `tp_user` WHERE `name` = 'cc' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tp_message` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `truename` FROM `tp_user` WHERE `name` = 'cc' LIMIT 1   [ RunTime:0.0001s ]
+

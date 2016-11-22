@@ -1,0 +1,2336 @@
+[ 2016-11-15T15:14:18+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000565s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000717s ]
+SQL: SHOW COLUMNS FROM `tp_menu_admin` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `tp_menu_admin` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `tp_admin` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000187s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039368s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039483s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000587s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000687s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000938s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001100s ]
+
+[ 2016-11-15T15:14:18+08:00 ] 127.0.0.1 /Uploads/2016-01-06/568ccc4c2d725.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000300s ]
+
+[ 2016-11-15T15:14:18+08:00 ] 127.0.0.1 /index.php/index/content.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000413s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000519s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000704s ]
+SQL: SHOW COLUMNS FROM `tp_menu_admin` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `tp_menu_admin` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `tp_admin` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000165s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000350s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009411s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009518s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000216s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000321s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000460s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000577s ]
+
+[ 2016-11-15T15:14:26+08:00 ] 127.0.0.1 /index.php/UserGrade/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000321s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000389s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000496s ]
+SQL: SHOW COLUMNS FROM `tp_menu_admin` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `tp_menu_admin` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `tp_admin` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tp_user_grade` [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `tp_user_grade` [ RunTime:0.0022s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_user_grade` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: page D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Common\Model\UserGradeModel.class.php 第 32 行.
+SQL: SELECT * FROM `tp_user_grade` ORDER BY id ASC LIMIT 0,20   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000206s ]
+NOTIC: [8] Undefined variable: not_found D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\1e4d560b72bfe38b9a75e3e34c218f78.php 第 239 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010770s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010873s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000376s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000490s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000622s ]
+
+[ 2016-11-15T15:14:27+08:00 ] 127.0.0.1 /index.php/UserGrade/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000290s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000401s ]
+SQL: SHOW COLUMNS FROM `tp_menu_admin` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `tp_menu_admin` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `tp_admin` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tp_user_grade` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `tp_user_grade` [ RunTime:0.0022s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_user_grade` LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: page D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Common\Model\UserGradeModel.class.php 第 32 行.
+SQL: SELECT * FROM `tp_user_grade` ORDER BY id ASC LIMIT 0,20   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000214s ]
+NOTIC: [8] Undefined variable: not_found D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\1e4d560b72bfe38b9a75e3e34c218f78.php 第 239 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010281s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010408s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000288s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000380s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000495s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000628s ]
+
+[ 2016-11-15T15:14:28+08:00 ] 127.0.0.1 /index.php/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000296s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000414s ]
+SQL: SHOW COLUMNS FROM `tp_menu_admin` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `tp_menu_admin` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `tp_admin` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0023s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_user` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: page D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Common\Model\UserModel.class.php 第 28 行.
+SQL: SELECT * FROM `tp_user` ORDER BY id ASC LIMIT 0,20   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tp_user_grade` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `tp_user_grade` [ RunTime:0.0022s ]
+NOTIC: [8] Undefined variable: page D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Common\Model\UserGradeModel.class.php 第 32 行.
+SQL: SELECT * FROM `tp_user_grade` WHERE `id` IN ('1','1','1','1','1','1','1','1','1','1','1') ORDER BY id asc LIMIT 0,10   [ RunTime:0.0115s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000134s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000241s ]
+NOTIC: [8] Undefined variable: not_found D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\8b3e929810f74dbb05ff99bc58f1ba56.php 第 271 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016806s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016908s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000385s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000541s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000700s ]
+
+[ 2016-11-15T15:14:29+08:00 ] 127.0.0.1 /index.php/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000304s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000319s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000452s ]
+SQL: SHOW COLUMNS FROM `tp_menu_admin` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `tp_menu_admin` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `tp_admin` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0029s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_user` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: page D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Common\Model\UserModel.class.php 第 28 行.
+SQL: SELECT * FROM `tp_user` ORDER BY id ASC LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tp_user_grade` [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `tp_user_grade` [ RunTime:0.0019s ]
+NOTIC: [8] Undefined variable: page D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Common\Model\UserGradeModel.class.php 第 32 行.
+SQL: SELECT * FROM `tp_user_grade` WHERE `id` IN ('1','1','1','1','1','1','1','1','1','1','1') ORDER BY id asc LIMIT 0,10   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000132s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000235s ]
+NOTIC: [8] Undefined variable: not_found D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\8b3e929810f74dbb05ff99bc58f1ba56.php 第 271 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016104s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000403s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000761s ]
+
+[ 2016-11-15T15:14:29+08:00 ] 127.0.0.1 /index.php/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000295s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000467s ]
+SQL: SHOW COLUMNS FROM `tp_menu_admin` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `tp_menu_admin` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `tp_admin` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0023s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_user` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: page D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Common\Model\UserModel.class.php 第 28 行.
+SQL: SELECT * FROM `tp_user` ORDER BY id ASC LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tp_user_grade` [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `tp_user_grade` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: page D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Common\Model\UserGradeModel.class.php 第 32 行.
+SQL: SELECT * FROM `tp_user_grade` WHERE `id` IN ('1','1','1','1','1','1','1','1','1','1','1') ORDER BY id asc LIMIT 0,10   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000133s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000237s ]
+NOTIC: [8] Undefined variable: not_found D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\8b3e929810f74dbb05ff99bc58f1ba56.php 第 271 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016415s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016521s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000389s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000553s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000713s ]
+
+[ 2016-11-15T15:14:30+08:00 ] 127.0.0.1 /index.php/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000292s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000437s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000603s ]
+SQL: SHOW COLUMNS FROM `tp_menu_admin` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `tp_menu_admin` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `tp_admin` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0023s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_user` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: page D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Common\Model\UserModel.class.php 第 28 行.
+SQL: SELECT * FROM `tp_user` ORDER BY id ASC LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tp_user_grade` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `tp_user_grade` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: page D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Common\Model\UserGradeModel.class.php 第 32 行.
+SQL: SELECT * FROM `tp_user_grade` WHERE `id` IN ('1','1','1','1','1','1','1','1','1','1','1') ORDER BY id asc LIMIT 0,10   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000138s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000245s ]
+NOTIC: [8] Undefined variable: not_found D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\8b3e929810f74dbb05ff99bc58f1ba56.php 第 271 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016439s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016536s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000392s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000554s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000736s ]
+
+[ 2016-11-15T15:14:35+08:00 ] 127.0.0.1 /index.php/Basic/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000288s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000397s ]
+SQL: SHOW COLUMNS FROM `tp_menu_admin` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `tp_menu_admin` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `tp_admin` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tp_basic_class` [ RunTime:0.0019s ]
+NOTIC: [2048] Declaration of Common\Model\BasicClassModel::db() should be compatible with Think\Model::db($linkNum = '', $config = '', $force = false) D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Common\Model\BasicClassModel.class.php 第 69 行.
+SQL: SHOW COLUMNS FROM `tp_basic_class` [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `tp_basic` [ RunTime:0.0019s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_basic_class` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tp_basic_class` ORDER BY id ASC LIMIT 0,10   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000117s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000226s ]
+NOTIC: [8] Undefined variable: not_found D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\0c5bfcabbd9805d450085ba13be59c16.php 第 242 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016018s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016116s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000371s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000527s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000632s ]
+
+[ 2016-11-15T15:14:38+08:00 ] 127.0.0.1 /index.php/Record/gindex.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000316s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000366s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000469s ]
+SQL: SHOW COLUMNS FROM `tp_menu_admin` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `tp_menu_admin` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `tp_admin` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tp_record` [ RunTime:0.0021s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_record` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tp_record` ORDER BY id asc LIMIT 0,10   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000220s ]
+NOTIC: [8] Undefined index: emil D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\3498c12ba8bc3695fc9e7c4dfa98f188.php 第 224 行.
+NOTIC: [8] Undefined index: class_id D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\3498c12ba8bc3695fc9e7c4dfa98f188.php 第 225 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\3498c12ba8bc3695fc9e7c4dfa98f188.php 第 238 行.
+NOTIC: [8] Undefined variable: not_found D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\3498c12ba8bc3695fc9e7c4dfa98f188.php 第 248 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021963s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022088s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000372s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000464s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000564s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000683s ]
+
+[ 2016-11-15T15:14:38+08:00 ] 127.0.0.1 /Uploads/2016-06-29/577361d43ed79.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000333s ]
+
+[ 2016-11-15T15:14:38+08:00 ] 127.0.0.1 /Uploads/2016-06-29/577361d43ed79.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000332s ]
+
+[ 2016-11-15T15:14:39+08:00 ] 127.0.0.1 /index.php/Learning/gindex.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000286s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000400s ]
+SQL: SHOW COLUMNS FROM `tp_menu_admin` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `tp_menu_admin` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `tp_admin` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tp_learning` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_learning` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tp_learning` ORDER BY id asc LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000126s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000229s ]
+NOTIC: [8] Undefined variable: controller D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\e1ab29b43cbd12ef65834acf13141d80.php 第 197 行.
+NOTIC: [8] Undefined variable: not_found D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\e1ab29b43cbd12ef65834acf13141d80.php 第 256 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014176s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014279s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000310s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000405s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001030s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001189s ]
+
+[ 2016-11-15T15:14:43+08:00 ] 127.0.0.1 /index.php/Company/gindex.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000290s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000400s ]
+SQL: SHOW COLUMNS FROM `tp_menu_admin` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `tp_menu_admin` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `tp_admin` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tp_company` [ RunTime:0.0022s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_company` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tp_company` ORDER BY sort desc LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000120s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000222s ]
+NOTIC: [8] Undefined variable: not_found D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\87a5662ab23a3a0bb836db0c938edbcc.php 第 251 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013445s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013548s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000397s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000549s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000692s ]
+
+[ 2016-11-15T15:14:43+08:00 ] 127.0.0.1 /ueditor/php/upload/image/20160809/1470725971527276.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000327s ]
+
+[ 2016-11-15T15:14:43+08:00 ] 127.0.0.1 /ueditor/php/upload/image/20160809/1470725883617127.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000571s ]
+
+[ 2016-11-15T15:14:43+08:00 ] 127.0.0.1 /ueditor/php/upload/image/20160823/1471922747586635.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000483s ]
+
+[ 2016-11-15T15:14:46+08:00 ] 127.0.0.1 /index.php/Sign/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000313s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000394s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000511s ]
+SQL: SHOW COLUMNS FROM `tp_menu_admin` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `tp_menu_admin` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `tp_admin` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tp_sign` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `tp_forward_sign` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `tp_forward_sign` WHERE `date` BETWEEN '1479139200' AND '1479225600'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000220s ]
+NOTIC: [8] Undefined variable: nav_head D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\915d51fda0418fc384137a80eb1c0ae8.php 第 161 行.
+NOTIC: [8] Undefined variable: not_found D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\915d51fda0418fc384137a80eb1c0ae8.php 第 225 行.
+NOTIC: [8] Undefined variable: page D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\915d51fda0418fc384137a80eb1c0ae8.php 第 227 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017869s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017970s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000404s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000620s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000739s ]
+
+[ 2016-11-15T15:14:47+08:00 ] 127.0.0.1 /index.php/Sign/expend.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000401s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000409s ]
+SQL: SHOW COLUMNS FROM `tp_menu_admin` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `tp_menu_admin` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `tp_admin` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tp_sign` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `tp_sign` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `tp_sign` WHERE `date` BETWEEN '1479139200' AND '1479225600'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000212s ]
+NOTIC: [8] Undefined variable: nav_head D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\8a55c00f1e092363a4028a9ee6e7f4b5.php 第 161 行.
+NOTIC: [8] Undefined variable: not_found D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\8a55c00f1e092363a4028a9ee6e7f4b5.php 第 225 行.
+NOTIC: [8] Undefined variable: page D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\8a55c00f1e092363a4028a9ee6e7f4b5.php 第 227 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021940s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022035s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000285s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000375s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000493s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000618s ]
+
+[ 2016-11-15T15:14:48+08:00 ] 127.0.0.1 /index.php/Qiandao/gindex.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000302s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000405s ]
+SQL: SHOW COLUMNS FROM `tp_menu_admin` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `tp_menu_admin` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `tp_admin` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tp_qiandao` [ RunTime:0.0019s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_qiandao` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tp_qiandao` ORDER BY id asc LIMIT 0,20   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000209s ]
+NOTIC: [8] Undefined variable: not_found D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\10ac627007296e3d8e4912dec558c243.php 第 219 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010513s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010608s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000273s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000361s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000531s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000671s ]
+
+[ 2016-11-15T15:14:51+08:00 ] 127.0.0.1 /index.php/ProClass/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000294s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000401s ]
+SQL: SHOW COLUMNS FROM `tp_menu_admin` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `tp_menu_admin` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `tp_admin` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tp_pro_class` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `tp_pro_class` [ RunTime:0.0019s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_pro_class` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tp_pro_class` ORDER BY id ASC LIMIT 0,10   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000219s ]
+NOTIC: [8] Undefined variable: not_found D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\1050d7806eeaabc012748010cd6f61e1.php 第 245 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012104s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012202s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000371s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000528s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000641s ]
+
+[ 2016-11-15T15:14:53+08:00 ] 127.0.0.1 /index.php/Product/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000311s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000405s ]
+SQL: SHOW COLUMNS FROM `tp_product` [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `tp_product` [ RunTime:0.0025s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_product` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tp_product` ORDER BY id asc LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tp_pro_class` [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `tp_pro_class` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `tp_pro_class` WHERE `id` = 23 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tp_pro_class` WHERE `id` = 23 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tp_pro_class` WHERE `id` = 23 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tp_pro_class` WHERE `id` = 35 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000172s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000282s ]
+NOTIC: [8] Undefined variable: name D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\f158d891b6efe0f27faa477fc881521f.php 第 185 行.
+NOTIC: [8] Undefined variable: not_found D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\f158d891b6efe0f27faa477fc881521f.php 第 249 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012401s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000286s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000374s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000535s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000658s ]
+
+[ 2016-11-15T15:14:53+08:00 ] 127.0.0.1 /Uploads/2016-06-27/57708c23d9778.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000879s ]
+
+[ 2016-11-15T15:14:55+08:00 ] 127.0.0.1 /index.php/Product/proPhoto.html?id=12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000293s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000412s ]
+SQL: SHOW COLUMNS FROM `tp_product` [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `tp_product` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `tp_product` WHERE `id` = 12 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tp_pro_img` [ RunTime:0.0023s ]
+SQL: SELECT `id`,`p_id`,`url` FROM `tp_pro_img` WHERE `p_id` = 12 AND `status` = 1 ORDER BY sort asc  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000138s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000253s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016669s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016775s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000385s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000531s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000666s ]
+
+[ 2016-11-15T15:14:55+08:00 ] 127.0.0.1 /Uploads/2016-06-27/57708bf471357.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000524s ]
+
+[ 2016-11-15T15:14:55+08:00 ] 127.0.0.1 /Uploads/2016-06-27/57708bf7a78a1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000486s ]
+
+[ 2016-11-15T15:14:55+08:00 ] 127.0.0.1 /Uploads/2016-06-27/57708bee84735.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000648s ]
+
+[ 2016-11-15T15:14:55+08:00 ] 127.0.0.1 /Uploads/2016-06-27/57708bfa9016c.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000480s ]
+
+[ 2016-11-15T15:15:22+08:00 ] 127.0.0.1 /index.php/Product/imgUpload?pid=12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000491s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000857s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001084s ]
+SQL: SHOW COLUMNS FROM `tp_product` [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `tp_product` [ RunTime:0.0027s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\Core\Library\Think\Upload.class.php 第 171 行.
+SQL: SHOW COLUMNS FROM `tp_pro_img` [ RunTime:0.0039s ]
+SQL: INSERT INTO `tp_pro_img` (`p_id`,`date`,`url`) VALUES ('12','1479194122','/Uploads/2016-11-15/582ab60a6365e.jpg') [ RunTime:0.0002s ]
+
+[ 2016-11-15T15:15:26+08:00 ] 127.0.0.1 /index.php/Product/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000486s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000843s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000952s ]
+SQL: SHOW COLUMNS FROM `tp_product` [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `tp_product` [ RunTime:0.0027s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_product` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tp_product` ORDER BY id asc LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tp_pro_class` [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `tp_pro_class` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `tp_pro_class` WHERE `id` = 23 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tp_pro_class` WHERE `id` = 23 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tp_pro_class` WHERE `id` = 23 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tp_pro_class` WHERE `id` = 35 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000118s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000222s ]
+NOTIC: [8] Undefined variable: name D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\f158d891b6efe0f27faa477fc881521f.php 第 185 行.
+NOTIC: [8] Undefined variable: not_found D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\f158d891b6efe0f27faa477fc881521f.php 第 249 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014151s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000746s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000835s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001171s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001286s ]
+
+[ 2016-11-15T15:15:26+08:00 ] 127.0.0.1 /Uploads/2016-06-27/57708c23d9778.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000754s ]
+
+[ 2016-11-15T15:15:26+08:00 ] 127.0.0.1 /Uploads/2016-06-27/57708c23d9778.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000497s ]
+
+[ 2016-11-15T15:15:28+08:00 ] 127.0.0.1 /index.php/Product/proPhoto.html?id=12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000432s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000828s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000933s ]
+SQL: SHOW COLUMNS FROM `tp_product` [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `tp_product` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `tp_product` WHERE `id` = 12 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tp_pro_img` [ RunTime:0.0021s ]
+SQL: SELECT `id`,`p_id`,`url` FROM `tp_pro_img` WHERE `p_id` = 12 AND `status` = 1 ORDER BY sort asc  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000128s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000233s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018981s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019087s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000747s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000837s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001151s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001259s ]
+
+[ 2016-11-15T15:15:28+08:00 ] 127.0.0.1 /Uploads/2016-06-27/57708bfa9016c.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000495s ]
+
+[ 2016-11-15T15:15:28+08:00 ] 127.0.0.1 /Uploads/2016-06-27/57708bee84735.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000472s ]
+
+[ 2016-11-15T15:15:28+08:00 ] 127.0.0.1 /Uploads/2016-06-27/57708bf471357.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000804s ]
+
+[ 2016-11-15T15:15:28+08:00 ] 127.0.0.1 /Uploads/2016-06-27/57708bf7a78a1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000509s ]
+
+[ 2016-11-15T15:15:29+08:00 ] 127.0.0.1 /index.php/Product/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000297s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000404s ]
+SQL: SHOW COLUMNS FROM `tp_product` [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `tp_product` [ RunTime:0.0021s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_product` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tp_product` ORDER BY id asc LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tp_pro_class` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `tp_pro_class` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `tp_pro_class` WHERE `id` = 23 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tp_pro_class` WHERE `id` = 23 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tp_pro_class` WHERE `id` = 23 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tp_pro_class` WHERE `id` = 35 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000119s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000223s ]
+NOTIC: [8] Undefined variable: name D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\f158d891b6efe0f27faa477fc881521f.php 第 185 行.
+NOTIC: [8] Undefined variable: not_found D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\f158d891b6efe0f27faa477fc881521f.php 第 249 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011670s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011773s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000401s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000847s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001024s ]
+
+[ 2016-11-15T15:15:29+08:00 ] 127.0.0.1 /Uploads/2016-06-27/57708c23d9778.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000586s ]
+
+[ 2016-11-15T15:15:33+08:00 ] 127.0.0.1 /index.php/Product/edit_pro.html?id=12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000315s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000412s ]
+SQL: SHOW COLUMNS FROM `tp_product` [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `tp_product` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `tp_product` WHERE `id` = 12 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tp_pro_class` [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `tp_pro_class` [ RunTime:0.0019s ]
+NOTIC: [8] Undefined offset: 0 D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\Core\Library\Think\Model.class.php 第 222 行.
+NOTIC: [8] Undefined variable: page D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Common\Model\ProClassModel.class.php 第 30 行.
+SQL: SELECT * FROM `tp_pro_class` LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tp_pro_img` [ RunTime:0.0025s ]
+SQL: SELECT `id`,`p_id`,`url` FROM `tp_pro_img` WHERE `p_id` = 12 AND `status` = 1 ORDER BY sort asc  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: other_img D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Admin\Controller\ProductController.class.php 第 186 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000132s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000245s ]
+NOTIC: [8] Undefined variable: UserGrade D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\0ebbeb3c5f52c513c0423fb1553da511.php 第 250 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017803s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017905s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000384s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000626s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000758s ]
+
+[ 2016-11-15T15:15:33+08:00 ] 127.0.0.1 /Uploads/2016-06-27/57708c23d9778.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000473s ]
+
+[ 2016-11-15T15:15:33+08:00 ] 127.0.0.1 /Uploads/2016-06-27/57708bf471357.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000473s ]
+
+[ 2016-11-15T15:15:33+08:00 ] 127.0.0.1 /Uploads/2016-06-27/57708bee84735.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000506s ]
+
+[ 2016-11-15T15:15:33+08:00 ] 127.0.0.1 /Uploads/2016-06-27/57708bfa9016c.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000469s ]
+
+[ 2016-11-15T15:15:33+08:00 ] 127.0.0.1 /Uploads/2016-06-27/57708bf7a78a1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000521s ]
+
+[ 2016-11-15T15:15:49+08:00 ] 127.0.0.1 /index.php/Product/imgDel?pid=170
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000304s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000386s ]
+SQL: SHOW COLUMNS FROM `tp_product` [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `tp_product` [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `tp_pro_img` [ RunTime:0.0021s ]
+SQL: DELETE FROM `tp_pro_img` WHERE `id` = 170 [ RunTime:0.0214s ]
+
+[ 2016-11-15T15:15:52+08:00 ] 127.0.0.1 /index.php/Product/edit_pro.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000441s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000427s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000599s ]
+SQL: SHOW COLUMNS FROM `tp_product` [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `tp_product` [ RunTime:0.0035s ]
+NOTIC: [2] finfo_file(): Empty filename or path D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\Core\Library\Think\Upload.class.php 第 153 行.
+NOTIC: [2] finfo_file(): Empty filename or path D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\Core\Library\Think\Upload.class.php 第 153 行.
+SQL: UPDATE `tp_product` SET `name`='NIKE耐克2016年新款男子AS NIKE',`text`='<p>						</p><p><br/></p><p><br/></p><p><br/></p><p>对方给大哥大哥大范甘迪发鬼地方个地方<br/></p><p><img src=\"/ueditor/php/upload/image/20160603/1464930486662517.png\" title=\"1464930486662517.png\" alt=\"QQ截图20160601151947.png\"/></p><p>发斯蒂芬是否好搜你的废话手动阀胡搜的话费送</p><p>收到货佛is的活佛圣地</p><h2 style=\"margin: 0px; padding: 0px; border: 0px; font-family: 微软雅黑; font-size: 14px;\">提示和注释</h2><p class=\"tip\" style=\"margin-top: 12px; margin-bottom: 0px; padding: 0px; border: 0px; line-height: 18px;\"><span style=\"margin: 0px; padding: 0px; border: 0px; font-weight: bold; color: rgb(255, 153, 85);\">提示：</span>如果 elements[] 数组具有名称（input 标签的 id 或 name 属性），那么该元素的名称就是 formObject 的一个属性，因此可以使用名称而不是数字来引用 input 对象。</p><p style=\"margin-top: 12px; margin-bottom: 0px; padding: 0px; border: 0px; line-height: 18px;\">举例，假设 x 是一个 form 对象，其中的一个 input 对象的名称是 fname，则可以使用 x.fname 来引用该对象。</p><h2 style=\"margin: 0px; padding: 0px; border: 0px; font-family: 微软雅黑; font-size: 14px;\">实例</h2><p style=\"margin-top: 12px; margin-bottom: 0px; padding: 0px; border: 0px; line-height: 18px;\">下面的例子输出了所有表单元素的值和类型：</p><p><br/></p><p><br/></p><p><br/></p><p><br/></p><p><br/></p><p><br/></p><p><br/></p><p>						</p>',`goods_total`='33',`shop_price`='12',`sort`='222',`intro`='1212',`class`='23',`date`='1479194152' WHERE `id` = 12 [ RunTime:0.0008s ]
+
+[ 2016-11-15T15:15:53+08:00 ] 127.0.0.1 /index.php/Product/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000491s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001014s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001136s ]
+SQL: SHOW COLUMNS FROM `tp_product` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `tp_product` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_product` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tp_product` ORDER BY id asc LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tp_pro_class` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `tp_pro_class` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `tp_pro_class` WHERE `id` = 23 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tp_pro_class` WHERE `id` = 23 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tp_pro_class` WHERE `id` = 23 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tp_pro_class` WHERE `id` = 35 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000120s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000227s ]
+NOTIC: [8] Undefined variable: name D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\f158d891b6efe0f27faa477fc881521f.php 第 185 行.
+NOTIC: [8] Undefined variable: not_found D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\f158d891b6efe0f27faa477fc881521f.php 第 249 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015271s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015473s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000753s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000843s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001458s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001577s ]
+
+[ 2016-11-15T15:15:53+08:00 ] 127.0.0.1 /Uploads/2016-06-27/57708c23d9778.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000514s ]
+
+[ 2016-11-15T15:15:54+08:00 ] 127.0.0.1 /index.php/Product/proPhoto.html?id=12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000444s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000848s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000959s ]
+SQL: SHOW COLUMNS FROM `tp_product` [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `tp_product` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `tp_product` WHERE `id` = 12 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tp_pro_img` [ RunTime:0.0021s ]
+SQL: SELECT `id`,`p_id`,`url` FROM `tp_pro_img` WHERE `p_id` = 12 AND `status` = 1 ORDER BY sort asc  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000128s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000229s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018548s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018654s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000869s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000969s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001455s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001594s ]
+
+[ 2016-11-15T15:15:54+08:00 ] 127.0.0.1 /Uploads/2016-06-27/57708bee84735.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000499s ]
+
+[ 2016-11-15T15:15:54+08:00 ] 127.0.0.1 /Uploads/2016-06-27/57708bf7a78a1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000568s ]
+
+[ 2016-11-15T15:15:54+08:00 ] 127.0.0.1 /Uploads/2016-06-27/57708bf471357.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000519s ]
+
+[ 2016-11-15T15:15:57+08:00 ] 127.0.0.1 /index.php/Product/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000433s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000829s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000933s ]
+SQL: SHOW COLUMNS FROM `tp_product` [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `tp_product` [ RunTime:0.0026s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_product` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tp_product` ORDER BY id asc LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tp_pro_class` [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `tp_pro_class` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `tp_pro_class` WHERE `id` = 23 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tp_pro_class` WHERE `id` = 23 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tp_pro_class` WHERE `id` = 23 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tp_pro_class` WHERE `id` = 35 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000119s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000222s ]
+NOTIC: [8] Undefined variable: name D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\f158d891b6efe0f27faa477fc881521f.php 第 185 行.
+NOTIC: [8] Undefined variable: not_found D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\f158d891b6efe0f27faa477fc881521f.php 第 249 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014501s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014607s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000891s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000983s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001666s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001826s ]
+
+[ 2016-11-15T15:15:57+08:00 ] 127.0.0.1 /Uploads/2016-06-27/57708c23d9778.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000536s ]
+
+[ 2016-11-15T15:16:23+08:00 ] 127.0.0.1 /index.php/Company/gindex.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000440s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000836s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000944s ]
+SQL: SHOW COLUMNS FROM `tp_menu_admin` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `tp_menu_admin` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `tp_admin` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tp_company` [ RunTime:0.0022s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_company` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tp_company` ORDER BY sort desc LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000120s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000219s ]
+NOTIC: [8] Undefined variable: not_found D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\87a5662ab23a3a0bb836db0c938edbcc.php 第 251 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015549s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015650s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000743s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000834s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001185s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001295s ]
+
+[ 2016-11-15T15:16:23+08:00 ] 127.0.0.1 /ueditor/php/upload/image/20160823/1471922747586635.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000525s ]
+
+[ 2016-11-15T15:16:23+08:00 ] 127.0.0.1 /ueditor/php/upload/image/20160809/1470725883617127.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000768s ]
+
+[ 2016-11-15T15:16:23+08:00 ] 127.0.0.1 /ueditor/php/upload/image/20160809/1470725971527276.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000701s ]
+
+[ 2016-11-15T15:16:25+08:00 ] 127.0.0.1 /index.php/Company/gindex.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000442s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000832s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000943s ]
+SQL: SHOW COLUMNS FROM `tp_menu_admin` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `tp_menu_admin` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `tp_admin` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tp_company` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_company` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tp_company` ORDER BY sort desc LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000123s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000226s ]
+NOTIC: [8] Undefined variable: not_found D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\87a5662ab23a3a0bb836db0c938edbcc.php 第 251 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015914s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016021s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001107s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001205s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001496s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001646s ]
+
+[ 2016-11-15T15:16:25+08:00 ] 127.0.0.1 /ueditor/php/upload/image/20160823/1471922747586635.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000543s ]
+
+[ 2016-11-15T15:16:25+08:00 ] 127.0.0.1 /ueditor/php/upload/image/20160809/1470725971527276.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000456s ]
+
+[ 2016-11-15T15:16:25+08:00 ] 127.0.0.1 /ueditor/php/upload/image/20160809/1470725883617127.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-15T15:16:27+08:00 ] 127.0.0.1 /index.php/Learning/gindex.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000461s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000885s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000992s ]
+SQL: SHOW COLUMNS FROM `tp_menu_admin` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `tp_menu_admin` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `tp_admin` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tp_learning` [ RunTime:0.0022s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_learning` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tp_learning` ORDER BY id asc LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000121s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000223s ]
+NOTIC: [8] Undefined variable: controller D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\e1ab29b43cbd12ef65834acf13141d80.php 第 197 行.
+NOTIC: [8] Undefined variable: not_found D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\e1ab29b43cbd12ef65834acf13141d80.php 第 256 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015924s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016030s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000763s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000858s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001519s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001709s ]
+
+[ 2016-11-15T15:17:57+08:00 ] 127.0.0.1 /index.php/Learning/gadd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000320s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000597s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000738s ]
+SQL: SHOW COLUMNS FROM `tp_menu_admin` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `tp_menu_admin` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `tp_admin` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tp_learning` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `tp_company_class` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `tp_company_class` WHERE ( status = 1 ) ORDER BY sort asc  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000105s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000208s ]
+NOTIC: [8] Undefined variable: list D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\c4d6deeb021ff6d9380af04c6631de90.php 第 192 行.
+NOTIC: [8] Undefined variable: list D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\c4d6deeb021ff6d9380af04c6631de90.php 第 207 行.
+NOTIC: [8] Undefined variable: list D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\c4d6deeb021ff6d9380af04c6631de90.php 第 217 行.
+NOTIC: [8] Undefined variable: list D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\c4d6deeb021ff6d9380af04c6631de90.php 第 227 行.
+NOTIC: [8] Undefined variable: list D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\c4d6deeb021ff6d9380af04c6631de90.php 第 228 行.
+NOTIC: [8] Undefined variable: list D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\c4d6deeb021ff6d9380af04c6631de90.php 第 266 行.
+NOTIC: [8] Undefined variable: list D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\c4d6deeb021ff6d9380af04c6631de90.php 第 268 行.
+NOTIC: [8] Undefined variable: list D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\c4d6deeb021ff6d9380af04c6631de90.php 第 277 行.
+NOTIC: [8] Undefined variable: list D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\c4d6deeb021ff6d9380af04c6631de90.php 第 293 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029202s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029320s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000585s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000703s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000866s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001011s ]
+
+[ 2016-11-15T15:17:57+08:00 ] 127.0.0.1 /index.php/Learning/gindex.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000323s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000481s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000589s ]
+SQL: SHOW COLUMNS FROM `tp_menu_admin` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `tp_menu_admin` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `tp_admin` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tp_learning` [ RunTime:0.0019s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_learning` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tp_learning` ORDER BY id asc LIMIT 0,10   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000175s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000347s ]
+NOTIC: [8] Undefined variable: controller D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\e1ab29b43cbd12ef65834acf13141d80.php 第 197 行.
+NOTIC: [8] Undefined variable: not_found D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\e1ab29b43cbd12ef65834acf13141d80.php 第 256 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014908s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015024s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000854s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001078s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001141s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001423s ]
+
+[ 2016-11-15T15:17:59+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000325s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000469s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000574s ]
+SQL: SHOW COLUMNS FROM `tp_menu_admin` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `tp_menu_admin` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `tp_admin` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000186s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017730s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017858s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000370s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000464s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000737s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000885s ]
+
+[ 2016-11-15T15:17:59+08:00 ] 127.0.0.1 /Uploads/2016-01-06/568ccc4c2d725.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000553s ]
+
+[ 2016-11-15T15:17:59+08:00 ] 127.0.0.1 /index.php/index/content.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000363s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000586s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000725s ]
+SQL: SHOW COLUMNS FROM `tp_menu_admin` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `tp_menu_admin` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `tp_admin` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000159s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000284s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007280s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007388s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000393s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000494s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000741s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000880s ]
+
+[ 2016-11-15T15:18:01+08:00 ] 127.0.0.1 /index.php/Login/loginOut.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000362s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000480s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000590s ]
+SQL: SHOW COLUMNS FROM `tp_admin_login_log` [ RunTime:0.0027s ]
+SQL: INSERT INTO `tp_admin_login_log` (`user_id`,`login_time`,`status`,`login_ip`) VALUES ('21','1479194281','用户退出','127.0.0.1') [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000169s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015742s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015848s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000353s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000442s ]
+
+[ 2016-11-15T15:18:01+08:00 ] 127.0.0.1 /index.php/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000341s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000467s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000573s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000180s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006602s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006703s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000356s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000445s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000823s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000961s ]
+
+[ 2016-11-15T15:18:41+08:00 ] 127.0.0.1 /index.php/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000748s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000788s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000190s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000430s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012922s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013132s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000525s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000712s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001077s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001360s ]
+
+[ 2016-11-15T15:18:42+08:00 ] 127.0.0.1 /index.php/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000633s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000770s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000980s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000145s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000332s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012138s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012344s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000637s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000811s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001020s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001214s ]
+
+[ 2016-11-15T15:18:42+08:00 ] 127.0.0.1 /index.php/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000319s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000370s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000484s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000179s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005929s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006027s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000287s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000380s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000823s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001032s ]
+
+[ 2016-11-15T15:18:42+08:00 ] 127.0.0.1 /index.php/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000402s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000205s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006316s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006417s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000389s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000743s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000879s ]
+
+[ 2016-11-15T15:18:42+08:00 ] 127.0.0.1 /index.php/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000555s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000466s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000181s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005861s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005963s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000267s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000358s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000566s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000701s ]
+
+[ 2016-11-15T15:18:43+08:00 ] 127.0.0.1 /index.php/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000294s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000407s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000204s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006137s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006245s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000348s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000457s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000905s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001113s ]
+
+[ 2016-11-15T15:20:13+08:00 ] 127.0.0.1 /index.php/Login/loginCheck.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000360s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000463s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000555s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `tp_admin` WHERE `account` = 'admin' AND `password` = 'c3284d0f94606de1fd2af172aba15bf3' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tp_admin_login_log` [ RunTime:0.0037s ]
+SQL: INSERT INTO `tp_admin_login_log` (`user_id`,`status`,`login_time`,`login_ip`) VALUES ('21','用户登录','1479194413','127.0.0.1') [ RunTime:0.0002s ]
+
+[ 2016-11-15T15:20:13+08:00 ] 127.0.0.1 /index.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000349s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000477s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000585s ]
+SQL: SHOW COLUMNS FROM `tp_menu_admin` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tp_menu_admin` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `tp_admin` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000104s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000247s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018812s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018924s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000388s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000482s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000612s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000746s ]
+
+[ 2016-11-15T15:20:13+08:00 ] 127.0.0.1 /Uploads/2016-01-06/568ccc4c2d725.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000560s ]
+
+[ 2016-11-15T15:20:13+08:00 ] 127.0.0.1 /index.php/index/content.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000574s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000349s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000465s ]
+SQL: SHOW COLUMNS FROM `tp_menu_admin` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `tp_menu_admin` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `tp_admin` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000227s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006334s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006440s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000191s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000281s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000420s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000536s ]
+
+[ 2016-11-15T15:22:49+08:00 ] 127.0.0.1 /index.php/Menu/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000317s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000391s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000504s ]
+SQL: SHOW COLUMNS FROM `tp_menu_admin` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `tp_menu_admin` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `tp_admin` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `tp_menu_admin` ORDER BY sort asc  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000151s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000254s ]
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027774s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027874s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000247s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000337s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000617s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000737s ]
+
+[ 2016-11-15T15:22:50+08:00 ] 127.0.0.1 /index.php/Setting/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000296s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000407s ]
+SQL: SHOW COLUMNS FROM `tp_menu_admin` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `tp_menu_admin` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `tp_admin` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `tp_admin`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000162s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000302s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013176s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013278s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000186s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000368s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000483s ]
+
+[ 2016-11-15T15:22:50+08:00 ] 127.0.0.1 /Uploads/2016-01-06/568ccc4c2d725.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000479s ]
+
+[ 2016-11-15T15:22:50+08:00 ] 127.0.0.1 /Uploads/2016-01-07/568e1ac899c6c.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000550s ]
+
+[ 2016-11-15T15:22:50+08:00 ] 127.0.0.1 /Uploads/2016-08-09/57a9834502d0b.JPG
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000536s ]
+
+[ 2016-11-15T15:22:51+08:00 ] 127.0.0.1 /index.php/Menu/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000310s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000381s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000485s ]
+SQL: SHOW COLUMNS FROM `tp_menu_admin` [ RunTime:0.1153s ]
+SQL: SELECT * FROM `tp_menu_admin` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `tp_admin` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tp_menu_admin` ORDER BY sort asc  [ RunTime:0.0019s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000261s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000437s ]
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+NOTIC: [8] Undefined variable: menusub1 D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\0e9f775b14f17306a9f43d2a7cc0537c.php 第 310 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047088s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047357s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000533s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000696s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000732s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000904s ]
+
+[ 2016-11-15T15:23:03+08:00 ] 127.0.0.1 /index.php/Setting/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000293s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000479s ]
+SQL: SHOW COLUMNS FROM `tp_menu_admin` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `tp_menu_admin` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `tp_admin` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `tp_admin`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000216s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013394s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013502s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000287s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000382s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000577s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000723s ]
+
+[ 2016-11-15T15:23:03+08:00 ] 127.0.0.1 /Uploads/2016-01-06/568ccc4c2d725.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000475s ]
+
+[ 2016-11-15T15:23:03+08:00 ] 127.0.0.1 /Uploads/2016-08-09/57a9834502d0b.JPG
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000451s ]
+
+[ 2016-11-15T15:23:03+08:00 ] 127.0.0.1 /Uploads/2016-01-07/568e1ac899c6c.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000375s ]
+
+[ 2016-11-15T15:23:10+08:00 ] 127.0.0.1 /index.php/Setting/deladmin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000373s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000490s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000583s ]
+SQL: SHOW COLUMNS FROM `tp_menu_admin` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `tp_menu_admin` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `tp_admin` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `tp_admin` WHERE `id` = 32 LIMIT 1   [ RunTime:0.0002s ]
+SQL: DELETE FROM `tp_admin` WHERE `id` = 32 [ RunTime:0.0003s ]
+
+[ 2016-11-15T15:23:11+08:00 ] 127.0.0.1 /index.php/Setting/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000370s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000495s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000603s ]
+SQL: SHOW COLUMNS FROM `tp_menu_admin` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `tp_menu_admin` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `tp_admin` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `tp_admin`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000217s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013878s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013988s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000374s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000467s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000684s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000829s ]
+
+[ 2016-11-15T15:23:12+08:00 ] 127.0.0.1 /Uploads/2016-01-06/568ccc4c2d725.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000712s ]
+
+[ 2016-11-15T15:23:12+08:00 ] 127.0.0.1 /Uploads/2016-01-07/568e1ac899c6c.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000418s ]
+
+[ 2016-11-15T15:23:13+08:00 ] 127.0.0.1 /index.php/Setting/deladmin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000447s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000514s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000635s ]
+SQL: SHOW COLUMNS FROM `tp_menu_admin` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `tp_menu_admin` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `tp_admin` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `tp_admin` WHERE `id` = 31 LIMIT 1   [ RunTime:0.0002s ]
+SQL: DELETE FROM `tp_admin` WHERE `id` = 31 [ RunTime:0.0002s ]
+
+[ 2016-11-15T15:23:14+08:00 ] 127.0.0.1 /index.php/Setting/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000351s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000499s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000606s ]
+SQL: SHOW COLUMNS FROM `tp_menu_admin` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `tp_menu_admin` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `tp_admin` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `tp_admin`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000219s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014371s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014481s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000380s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000546s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000843s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000978s ]
+
+[ 2016-11-15T15:23:14+08:00 ] 127.0.0.1 /Uploads/2016-01-06/568ccc4c2d725.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000393s ]
+
+[ 2016-11-15T15:23:14+08:00 ] 127.0.0.1 /Uploads/2016-01-07/568e1ac899c6c.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000475s ]
+
+[ 2016-11-15T15:23:15+08:00 ] 127.0.0.1 /index.php/Setting/deladmin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000678s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000503s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000662s ]
+SQL: SHOW COLUMNS FROM `tp_menu_admin` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `tp_menu_admin` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `tp_admin` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `tp_admin` WHERE `id` = 30 LIMIT 1   [ RunTime:0.0002s ]
+SQL: DELETE FROM `tp_admin` WHERE `id` = 30 [ RunTime:0.0002s ]
+
+[ 2016-11-15T15:23:16+08:00 ] 127.0.0.1 /index.php/Setting/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000458s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000770s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001045s ]
+SQL: SHOW COLUMNS FROM `tp_menu_admin` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `tp_menu_admin` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `tp_admin` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `tp_admin`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000115s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000256s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012103s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012205s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000400s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000490s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000654s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000792s ]
+
+[ 2016-11-15T15:23:16+08:00 ] 127.0.0.1 /Uploads/2016-01-06/568ccc4c2d725.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000533s ]
+
+[ 2016-11-15T15:23:16+08:00 ] 127.0.0.1 /Uploads/2016-01-07/568e1ac899c6c.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000596s ]
+
+[ 2016-11-15T15:23:17+08:00 ] 127.0.0.1 /index.php/Setting/deladmin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000556s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000591s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000706s ]
+SQL: SHOW COLUMNS FROM `tp_menu_admin` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `tp_menu_admin` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `tp_admin` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `tp_admin` WHERE `id` = 29 LIMIT 1   [ RunTime:0.0002s ]
+SQL: DELETE FROM `tp_admin` WHERE `id` = 29 [ RunTime:0.0002s ]
+
+[ 2016-11-15T15:23:18+08:00 ] 127.0.0.1 /index.php/Setting/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000366s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000482s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000593s ]
+SQL: SHOW COLUMNS FROM `tp_menu_admin` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `tp_menu_admin` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `tp_admin` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `tp_admin`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000135s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000294s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012798s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012904s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000379s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000476s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000670s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000806s ]
+
+[ 2016-11-15T15:23:18+08:00 ] 127.0.0.1 /Uploads/2016-01-06/568ccc4c2d725.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000454s ]
+
+[ 2016-11-15T15:23:18+08:00 ] 127.0.0.1 /Uploads/2016-01-07/568e1ac899c6c.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000386s ]
+
+[ 2016-11-15T15:23:19+08:00 ] 127.0.0.1 /index.php/Setting/deladmin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000406s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000727s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000905s ]
+SQL: SHOW COLUMNS FROM `tp_menu_admin` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `tp_menu_admin` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `tp_admin` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `tp_admin` WHERE `id` = 28 LIMIT 1   [ RunTime:0.0003s ]
+SQL: DELETE FROM `tp_admin` WHERE `id` = 28 [ RunTime:0.0002s ]
+
+[ 2016-11-15T15:23:20+08:00 ] 127.0.0.1 /index.php/Setting/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000322s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000461s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000595s ]
+SQL: SHOW COLUMNS FROM `tp_menu_admin` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `tp_menu_admin` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `tp_admin` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `tp_admin`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000235s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011614s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011724s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000384s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000547s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000718s ]
+
+[ 2016-11-15T15:23:20+08:00 ] 127.0.0.1 /Uploads/2016-01-06/568ccc4c2d725.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000354s ]
+
+[ 2016-11-15T15:23:20+08:00 ] 127.0.0.1 /Uploads/2016-01-07/568e1ac899c6c.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000341s ]
+
+[ 2016-11-15T15:23:23+08:00 ] 127.0.0.1 /index.php/Setting/deladmin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000383s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000730s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000917s ]
+SQL: SHOW COLUMNS FROM `tp_menu_admin` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `tp_menu_admin` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `tp_admin` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `tp_admin` WHERE `id` = 22 LIMIT 1   [ RunTime:0.0002s ]
+SQL: DELETE FROM `tp_admin` WHERE `id` = 22 [ RunTime:0.0002s ]
+
+[ 2016-11-15T15:23:24+08:00 ] 127.0.0.1 /index.php/Setting/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000408s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000511s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000627s ]
+SQL: SHOW COLUMNS FROM `tp_menu_admin` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `tp_menu_admin` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `tp_admin` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `tp_admin`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000118s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000226s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012365s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012473s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000407s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000498s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000705s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000841s ]
+
+[ 2016-11-15T15:23:24+08:00 ] 127.0.0.1 /Uploads/2016-01-06/568ccc4c2d725.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000466s ]
+
+[ 2016-11-15T15:23:25+08:00 ] 127.0.0.1 /index.php/Setting/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000292s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000405s ]
+SQL: SHOW COLUMNS FROM `tp_menu_admin` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `tp_menu_admin` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `tp_admin` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0021s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000105s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000210s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025270s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025384s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000345s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000434s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000514s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000636s ]
+
+[ 2016-11-15T15:23:39+08:00 ] 127.0.0.1 /index.php/Setting/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000635s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000431s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000569s ]
+SQL: SHOW COLUMNS FROM `tp_menu_admin` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `tp_menu_admin` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `tp_admin` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `tp_admin` WHERE `account` = 'yxfceshi'  [ RunTime:0.0002s ]
+SQL: INSERT INTO `tp_admin` (`account`,`real_name`,`status`,`password`) VALUES ('yxfceshi','闫晓飞','1','14e1b600b1fd579f47433b88e8d85291') [ RunTime:0.0003s ]
+
+[ 2016-11-15T15:23:40+08:00 ] 127.0.0.1 /index.php/Setting/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000636s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000594s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000774s ]
+SQL: SHOW COLUMNS FROM `tp_menu_admin` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `tp_menu_admin` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `tp_admin` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `tp_admin`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000212s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011953s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012066s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000421s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000514s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000562s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000675s ]
+
+[ 2016-11-15T15:23:40+08:00 ] 127.0.0.1 /Uploads/2016-01-06/568ccc4c2d725.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000309s ]
+
+[ 2016-11-15T15:23:42+08:00 ] 127.0.0.1 /index.php/Setting/edit.html?id=34
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000292s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000466s ]
+SQL: SHOW COLUMNS FROM `tp_menu_admin` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `tp_menu_admin` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `tp_admin` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `tp_admin` WHERE `id` = 34 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000222s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009845s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000396s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000630s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000740s ]
+
+[ 2016-11-15T15:23:48+08:00 ] 127.0.0.1 /index.php/Setting/edit.html?id=34
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000359s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000578s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000770s ]
+SQL: SHOW COLUMNS FROM `tp_menu_admin` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `tp_menu_admin` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `tp_admin` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0035s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\Core\Library\Think\Upload.class.php 第 171 行.
+SQL: UPDATE `tp_admin` SET `head`='/Uploads/2016-11-15/582ab803f066c.jpg',`real_name`='闫晓飞',`account`='yxfceshi',`status`='1' WHERE `id` = 34 [ RunTime:0.0169s ]
+
+[ 2016-11-15T15:23:49+08:00 ] 127.0.0.1 /index.php/Setting/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000429s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000762s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000869s ]
+SQL: SHOW COLUMNS FROM `tp_menu_admin` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `tp_menu_admin` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `tp_admin` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `tp_admin`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000214s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013691s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013825s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000672s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000761s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001124s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001261s ]
+
+[ 2016-11-15T15:23:49+08:00 ] 127.0.0.1 /Uploads/2016-01-06/568ccc4c2d725.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000478s ]
+
+[ 2016-11-15T15:23:54+08:00 ] 127.0.0.1 /index.php/Setting/setpower.html?id=34
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000340s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000473s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000582s ]
+SQL: SHOW COLUMNS FROM `tp_menu_admin` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `tp_menu_admin` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `tp_admin` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `tp_admin` WHERE `id` = 34 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tp_menu_admin`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000124s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000233s ]
+NOTIC: [8] Undefined variable: menusub3 D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\714ef9127b78104bf610da617aca326b.php 第 222 行.
+NOTIC: [8] Undefined variable: system_module D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\714ef9127b78104bf610da617aca326b.php 第 234 行.
+NOTIC: [8] Undefined variable: system_module D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\714ef9127b78104bf610da617aca326b.php 第 234 行.
+NOTIC: [8] Undefined variable: system_module D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\714ef9127b78104bf610da617aca326b.php 第 234 行.
+NOTIC: [8] Undefined variable: system_module D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\714ef9127b78104bf610da617aca326b.php 第 234 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021697s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021841s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000624s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000733s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000770s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000918s ]
+
+[ 2016-11-15T15:23:57+08:00 ] 127.0.0.1 /index.php/Setting/save_data
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000337s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000467s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000568s ]
+SQL: SHOW COLUMNS FROM `tp_menu_admin` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `tp_menu_admin` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `tp_admin` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0023s ]
+SQL: UPDATE `tp_admin` SET `nav`='67,68,94,71,78,109,97,111,112,107,76,108,110,79,96,87,80,81,89,90,93,92,95,98,134,149,104,105,106,131,132,133,113,114,115,116,117,119,120,121,122,123,126,127,128,143,144,124,125,129,135,136,137,138,139,140,141,142,147,148,145,146' WHERE `id` = 34 [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000324s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007580s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007727s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000506s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000659s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000518s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000612s ]
+
+[ 2016-11-15T15:23:58+08:00 ] 127.0.0.1 /index.php/Setting/setpower.html?id=34
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000711s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000917s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001123s ]
+SQL: SHOW COLUMNS FROM `tp_menu_admin` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `tp_menu_admin` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `tp_admin` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `tp_admin` WHERE `id` = 34 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tp_menu_admin`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000125s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000235s ]
+NOTIC: [8] Undefined variable: menusub3 D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\714ef9127b78104bf610da617aca326b.php 第 222 行.
+NOTIC: [8] Undefined variable: system_module D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\714ef9127b78104bf610da617aca326b.php 第 234 行.
+NOTIC: [8] Undefined variable: system_module D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\714ef9127b78104bf610da617aca326b.php 第 234 行.
+NOTIC: [8] Undefined variable: system_module D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\714ef9127b78104bf610da617aca326b.php 第 234 行.
+NOTIC: [8] Undefined variable: system_module D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\714ef9127b78104bf610da617aca326b.php 第 234 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018256s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018357s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000372s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000462s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000731s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000870s ]
+
+[ 2016-11-15T15:24:02+08:00 ] 127.0.0.1 /index.php/Setting/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000335s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000471s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000578s ]
+SQL: SHOW COLUMNS FROM `tp_menu_admin` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `tp_menu_admin` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `tp_admin` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `tp_admin`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000212s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012175s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012311s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000390s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000481s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000665s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000805s ]
+
+[ 2016-11-15T15:24:02+08:00 ] 127.0.0.1 /Uploads/2016-01-06/568ccc4c2d725.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000345s ]
+
+[ 2016-11-15T15:24:05+08:00 ] 127.0.0.1 /index.php/Company/gindex.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000336s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000467s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000573s ]
+SQL: SHOW COLUMNS FROM `tp_menu_admin` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `tp_menu_admin` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `tp_admin` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tp_company` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_company` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tp_company` ORDER BY sort desc LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000121s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000227s ]
+NOTIC: [8] Undefined variable: not_found D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\87a5662ab23a3a0bb836db0c938edbcc.php 第 251 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014362s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014468s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000372s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000464s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000710s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000841s ]
+
+[ 2016-11-15T15:24:05+08:00 ] 127.0.0.1 /ueditor/php/upload/image/20160823/1471922747586635.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000471s ]
+
+[ 2016-11-15T15:24:05+08:00 ] 127.0.0.1 /ueditor/php/upload/image/20160809/1470725971527276.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000512s ]
+
+[ 2016-11-15T15:24:05+08:00 ] 127.0.0.1 /ueditor/php/upload/image/20160809/1470725883617127.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000700s ]
+
+[ 2016-11-15T15:56:37+08:00 ] 127.0.0.1 /index.php/Company/gindex.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000409s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000408s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000519s ]
+SQL: SHOW COLUMNS FROM `tp_menu_admin` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `tp_menu_admin` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `tp_admin` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tp_company` [ RunTime:0.0022s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_company` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `tp_company` ORDER BY sort desc LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000128s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000230s ]
+NOTIC: [8] Undefined variable: not_found D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\87a5662ab23a3a0bb836db0c938edbcc.php 第 251 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014621s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014723s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000400s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000621s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000801s ]
+
+[ 2016-11-15T15:56:37+08:00 ] 127.0.0.1 /ueditor/php/upload/image/20160809/1470725971527276.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000481s ]
+
+[ 2016-11-15T15:56:37+08:00 ] 127.0.0.1 /ueditor/php/upload/image/20160823/1471922747586635.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000496s ]
+
+[ 2016-11-15T15:56:37+08:00 ] 127.0.0.1 /ueditor/php/upload/image/20160809/1470725883617127.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000372s ]
+
+[ 2016-11-15T15:57:08+08:00 ] 127.0.0.1 /index.php/Company/gadd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000468s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000572s ]
+SQL: SHOW COLUMNS FROM `tp_menu_admin` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `tp_menu_admin` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `tp_admin` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tp_company` [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `tp_company_class` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `tp_company_class` WHERE ( status = 1 ) ORDER BY sort asc  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000102s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000225s ]
+NOTIC: [8] Undefined variable: list D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\b52fed3d2d70e06c81ede7dfae2530ba.php 第 192 行.
+NOTIC: [8] Undefined variable: list D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\b52fed3d2d70e06c81ede7dfae2530ba.php 第 207 行.
+NOTIC: [8] Undefined variable: list D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\b52fed3d2d70e06c81ede7dfae2530ba.php 第 217 行.
+NOTIC: [8] Undefined variable: list D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\b52fed3d2d70e06c81ede7dfae2530ba.php 第 227 行.
+NOTIC: [8] Undefined variable: list D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\b52fed3d2d70e06c81ede7dfae2530ba.php 第 228 行.
+NOTIC: [8] Undefined variable: list D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\b52fed3d2d70e06c81ede7dfae2530ba.php 第 266 行.
+NOTIC: [8] Undefined variable: list D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\b52fed3d2d70e06c81ede7dfae2530ba.php 第 268 行.
+NOTIC: [8] Undefined variable: list D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\b52fed3d2d70e06c81ede7dfae2530ba.php 第 277 行.
+NOTIC: [8] Undefined variable: list D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\b52fed3d2d70e06c81ede7dfae2530ba.php 第 293 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035482s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035587s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000380s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000470s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000702s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000842s ]
+
+[ 2016-11-15T16:06:33+08:00 ] 127.0.0.1 /index.php/Company/gindex.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000342s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000480s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000591s ]
+SQL: SHOW COLUMNS FROM `tp_menu_admin` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `tp_menu_admin` WHERE `status` = 1 ORDER BY sort asc  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `tp_admin` WHERE `account` = 'admin' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `tp_company` [ RunTime:0.0029s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_company` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `tp_company` ORDER BY sort desc LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000138s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000313s ]
+NOTIC: [8] Undefined variable: not_found D:\diguo_warmpserver-2.5\exe\wamp\www\xumuapp\App\Runtime\Cache\Admin\87a5662ab23a3a0bb836db0c938edbcc.php 第 251 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014519s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014624s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000388s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000480s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000688s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000830s ]
+
+[ 2016-11-15T16:06:33+08:00 ] 127.0.0.1 /ueditor/php/upload/image/20160809/1470725971527276.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000627s ]
+
+[ 2016-11-15T16:06:33+08:00 ] 127.0.0.1 /ueditor/php/upload/image/20160809/1470725883617127.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000574s ]
+
+[ 2016-11-15T16:06:33+08:00 ] 127.0.0.1 /ueditor/php/upload/image/20160823/1471922747586635.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000544s ]
+

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!-- saved from url=(0041)http://fc.vhot119.com/home/fuli/role.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>部门列表</title><link href="__PUBLIC__/Home/agree/css.css" rel="stylesheet"><script src="__PUBLIC__/Home/agree/hm.js"></script><script src="__PUBLIC__/Home/agree/jquery-2.0.3.min.js"></script><style>
+            .nr{text-align: center;width:45%;margin-left:3%;float:left;}
+            .nr a{ margin:  3vw;display: inline-block;}
+        </style></head><body bgcolor="#f3efef">
+<form>
+    <a href="JavaScript:history.go(-1)" id="back"></a>
+    <div id="bt"><span>部门列表</span></div>
+
+    <div id="nr"><div id="younz">
+        <volist name="list" id="vo">
+        <div class="nr"><a href="{:u(CONTROLLER_NAME.'/info',array('id'=>$vo['id'],'username'=>$_GET['username'],'encry'=>$_GET['encry']))}">{$vo['name']}</a></div>
+            </volist>
+    </div></div></form><div id="xiaotishi"></div><div id="xiaotishihua"><div class="xiaotishi"><span class="bot"></span><span class="top"></span>
+	与财务报单时，一定要把自己的名字一字不错的报备，比如XXX微生活，爱生活，微热点，微社区，错一个字都会打给别人哦    </div></div><script>
+    $(document).ready(function () {
+	$('#xiaotishi').click(function () {
+	    $('#xiaotishihua').show();
+	});
+	$('#xiaotishihua').click(function () {
+	    $('#xiaotishihua').hide();
+	});
+    });
+</script><div class="linian">诚信　创新　忠诚　共赢</div><div style="display: none"><script>
+                var _hmt = _hmt || [];
+                (function () {
+                    var hm = document.createElement("script");
+                    hm.src = "//hm.baidu.com/hm.js?2866d184a661820df35879dc03c43cff";
+                    var s = document.getElementsByTagName("script")[0];
+                    s.parentNode.insertBefore(hm, s);
+                })();
+            </script></div></body></html>

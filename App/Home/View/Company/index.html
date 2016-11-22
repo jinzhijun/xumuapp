@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!-- saved from url=(0086)http://101.200.200.71:8081/weishijiao/index.php?s=/addon/News/News/show/orgid/81000003 -->
+<html class=" -webkit-"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Home/company/font-awesome.css" media="all">
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/Home/company/mobile_module.css" media="all">
+    <script type="text/javascript" src="__PUBLIC__/Home/company/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/Home/company/prefixfree.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/Home/company/dialog.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/Home/company/flipsnap.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/Home/company/mobile_module.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/Home/company/admin_common.js"></script>
+	<title>九万</title>
+    
+	<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+    
+    <meta content="no-cache,must-revalidate" http-equiv="Cache-Control">
+    <meta content="no-cache" http-equiv="pragma">
+    <meta content="0" http-equiv="expires">
+    <meta content="telephone=no, address=no" name="format-detection">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="shortcut icon" href="http://101.200.200.71:8081/weishijiao/favicon.ico">
+<style type="text/css">
+.banner{ width:100%; overflow:hidden; position:relative;}
+.banner ul{ position:absolute; left:0; top:0; z-index:10; -webkit-animation:}
+.banner ul li{ float:left; display:table-cell; position:relative}
+.banner li a{ width:100%; height:100%; display:block;}
+.banner li .title{background-color:RGBA(0,0,0,.5); height:30px; color:#fff; line-height:30px; padding-left:10px; position:absolute; left:0; bottom:0; width:100%; z-index:1000;}
+.identify{text-align:right; position:absolute; bottom:0; right:0; z-index:100; height:30px;}
+.identify em{ display:inline-block; margin:10px 5px;-webkit-border-radius: 6px;-moz-border-radius: 6px;
+border-radius: 6px;margin-left: 5px;width: 12px;height: 12px;background: #fff;}
+.identify em.cur{ background-color:#090}
+.small_pic_list li{ border-top:1px solid #fff; border-bottom:1px solid #ccc; height:80px; overflow:hidden}
+.small_pic_list li a{ display:block; padding:10px 10px 10px 80px; position:relative; min-height:60px; color:#333}
+.small_pic_list li a:active{ background-color:#CCC}
+.small_pic_list li a img{ position:absolute; left:10px; top:10px; width:60px; height:60px;}
+.small_pic_list li a h6{ font-size:18px; font-weight:bold; overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
+.small_pic_list li a p{ color:#999; font-size:13px; line-height:22px;}
+</style></head>	
+
+<body id="weisite">
+<div class="container">
+    <ul class="small_pic_list">
+        <volist name="list" id="vo">
+    <li>
+        	<a href="{:u(CONTROLLER_NAME.'/info',array('id'=>$vo['id'],'username'=>$_GET['username'],'encry'=>$_GET['encry']))}">
+            	<img src="{$vo['main_img']}">                <h6>{$vo['title']}</h6>
+                <p></p>
+                <span class="colorless">{$vo.date|date="Y-m-d
+                                    H:i:s",###}</span>
+            </a>
+        </li>
+            </volist>
+            <h4 id="loadmore" class="text-muted um-text-center" hidden="true"><span id="loading">玩命加载中</span><i class="icon-spinner icon-spin"></i></h4>
+
+    </ul>
+<!-- 底部导航 -->
+<!-- 统计代码 -->
+<script type="text/javascript">
+$(function(){
+	//$.WeiPHP.initBanner(true,5000);
+    $.loadMore = function(url) {
+
+        $.get(url, function(data, statu) {
+
+            //console.log(statu, data);
+
+            if (statu==="success") {
+                $('#loadmore').before(data);
+            }
+            $('#loadmore').hide();
+        });
+    };
+   $(window).scroll(function() {
+        // When scroll at bottom, invoked getData() function.
+        if ($(window).scrollTop() + $(window).height() >= $(document).height()) {
+            if($('#loadmore').is(":visible") === true) {
+                return;
+            }
+            var pages=$('.pages').text();
+            var current=$('.current').text();
+
+            if(current!=pages)
+            {
+                var href=$(".next").attr('href');
+             //.   href= href.replace("show","extend");
+                $('.page').remove();
+
+                $.loadMore(href);
+                //彩蛋
+                var egg=Math.random();
+                var loading = "玩命加载中";
+                if(egg<0.1) {
+                    loading = "加载加载加载(重说三)";
+                }else if(egg<0.2) {
+                    loading = "加载数据，马上回来";
+                }else if(egg<0.3) {
+                    loading = "刷新越多，加载越慢";
+                }else if(egg<0.4) {
+                    loading = "造成数据加载缓慢的工程师阿东已被开除！";
+                }
+
+                $('#loading').text(loading);
+                $('#loadmore').show();
+
+            }
+
+        }
+    });
+})
+
+</script>
+</body></html>

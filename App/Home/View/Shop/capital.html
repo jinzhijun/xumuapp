@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!-- saved from url=(0072)http://jf.vhot119.com/mobile/index.php?m=default&c=user&a=account_detail -->
+<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="Keywords" content="九万内部积分商城">
+<meta name="Description" content="九万内部积分商城">
+<title>九万内部积分商城 触屏版</title>
+<link rel="stylesheet" href="__PUBLIC__/Home/shop/bootstrap.min.css">
+<link rel="stylesheet" href="__PUBLIC__/Home/shop/font-awesome.min.css">
+<link rel="stylesheet" href="__PUBLIC__/Home/shop/ectouch_red.css">
+<link rel="stylesheet" href="__PUBLIC__/Home/shop/user.css">
+<link rel="stylesheet" href="__PUBLIC__/Home/shop/photoswipe.css">
+<link rel="stylesheet" href="__PUBLIC__/Font-Awesome-3.2.1/css/font-awesome.css">
+<link rel="stylesheet" href="http://cdn.bootcss.com/twitter-bootstrap/3.0.3/css/bootstrap.min.css">
+</head>
+
+<body  style="margin: auto">
+<div class="con">
+    <div class="ect-bg">
+        <header class="ect-header ect-margin-tb ect-margin-lr text-center ect-bg icon-write"> <a href="javascript:history.go(-1)" class="pull-left ect-icon ect-icon1 ect-icon-history"></a> <span>资金管理</span> <a href="javascript:;" onclick="openMune()" class="pull-right ect-icon ect-icon1 ect-icon-mune"></a></header>
+        <nav class="ect-nav ect-nav-list" style="display:none;">
+            <ul class="ect-diaplay-box text-center">
+                <li class="ect-box-flex"><a href="{:u(CONTROLLER_NAME.'/index',array('username'=>$_GET['username'],'encry'=>$_GET['encry']))}"><i class="ect-icon ect-icon-home"></i>首页</a></li>
+                <li class="ect-box-flex"><a href="{:u(CONTROLLER_NAME.'/exchange',array('username'=>$_GET['username'],'encry'=>$_GET['encry']))}"><i class="glyphicon glyphicon-gift" style="font-size:1.9em;width:100%;"></i><span style="margin-top:-1.9em;display: block;">积分兑换</span></a></li>
+                <li class="ect-box-flex"><a href="{:u(CONTROLLER_NAME.'/capital',array('username'=>$_GET['username'],'encry'=>$_GET['encry']))}"><i class="glyphicon glyphicon-usd" style="font-size:1.9em;width:100%;"></i><span style="margin-top:-1.9em;display: block;">资金管理</span></a></li>
+                <li class="ect-box-flex"><a href="{:u(CONTROLLER_NAME.'/order_list',array('username'=>$_GET['username'],'encry'=>$_GET['encry']))}"><i class="" style="font-size:1.9em;width:100%;"><img src="__PUBLIC__/Home/shop/nav_1.png" style="width:1em;margin-top:-0.5em;"></i><span style="margin-top:-1.9em;display: block;">我的订单</span></a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+<ul class="nav nav-tabs" role="tablist">
+    <li class="active"><a href="{:u(CONTROLLER_NAME.'/capital',array('username'=>$_GET['username'],'encry'=>$_GET['encry']))}">查看帐户明细</a></li>
+    <li><a href="{:u(CONTROLLER_NAME.'/account_log',array('username'=>$_GET['username'],'encry'=>$_GET['encry']))}">查看申请记录</a></li>
+    <li ><a href="{:u(CONTROLLER_NAME.'/account_deposit',array('username'=>$_GET['username'],'encry'=>$_GET['encry']))}">充值</a></li>
+    <li><a href="{:u(CONTROLLER_NAME.'/account_raply',array('username'=>$_GET['username'],'encry'=>$_GET['encry']))}">提现</a></li>
+  </ul>
+  
+ <div class="user-account-detail">
+  	<ul class=" ect-bg-colorf">
+         </ul>
+    <p class="pull-right11 count" style="background-color: bisque;float: left;font-size: 20px">您当前的可用资金为：<b class="ect-colory"><?php echo round($list['total_money'],2)  ?>    元</b></p>
+  </div>
+</div>
+<style>
+#scrollUp {
+	border-radius:100%;
+	background-color: #777;
+	color: #eee;
+	font-size: 40px;
+	line-height: 1;text-align: center;text-decoration: none;bottom: 1em;right: 10px;overflow: hidden;width: 46px;
+	height: 46px;
+	border: none;
+	opacity: 0.6;
+}
+</style>
+<script src="__PUBLIC__/Home/shop/hm.js"></script><script type="text/javascript" src="__PUBLIC__/Home/shop/jquery.min.js"></script> 
+<script type="text/javascript" src="__PUBLIC__/Home/shop/jquery.json.js"></script> 
+<script type="text/javascript" src="__PUBLIC__/Home/shop/common.js"></script> 
+<script type="text/javascript" src="__PUBLIC__/Home/shop/jquery.more.js"></script> 
+<script type="text/javascript" src="__PUBLIC__/Home/shop/utils.js"></script> 
+<script src="__PUBLIC__/Home/shop/TouchSlide.1.1.js"></script> 
+<script src="__PUBLIC__/Home/shop/ectouch.js"></script> 
+<script src="__PUBLIC__/Home/shop/simple-inheritance.min.js"></script> 
+<script src="__PUBLIC__/Home/shop/code-photoswipe-1.0.11.min.js"></script> 
+<script src="__PUBLIC__/Home/shop/bootstrap.min.js"></script> 
+<script src="__PUBLIC__/Home/shop/jquery.scrollUp.min.js"></script> 
+<script type="text/javascript" src="__PUBLIC__/Home/shop/validform.js"></script> 
+<script language="javascript">
+	/*banner滚动图片*/
+		TouchSlide({
+			slideCell : "#focus",
+			titCell : ".hd ul", // 开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+			mainCell : ".bd ul",
+			effect : "left",
+			autoPlay : true, // 自动播放
+			autoPage : true, // 自动分页
+			delayTime: 200, // 毫秒；切换效果持续时间（执行一次效果用多少毫秒）
+			interTime: 2500, // 毫秒；自动运行间隔（隔多少毫秒后执行下一个效果）
+			switchLoad : "_src" // 切换加载，真实图片路径为"_src"
+		});
+	/*弹出评论层并隐藏其他层*/
+	function openSearch(){
+		if($(".con").is(":visible")){
+			$(".con").hide();	
+			$(".search").show();
+		}
+	}
+	function closeSearch(){
+		if($(".con").is(":hidden")){
+			$(".con").show();	
+			$(".search").hide();
+		}
+	}
+</script> 
+<div style="display:none"><script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?61e7518cb8f77449a17a841ececaea9f";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</div>
+
+</body></html>

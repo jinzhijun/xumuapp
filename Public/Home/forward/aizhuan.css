@@ -1,0 +1,33 @@
+.nr{border: 0px solid #999;}
+#nr #top{background-color: #00BAFF;color: #fff;padding-top: 10px;}
+#tongji{padding-top: 3vw;text-align: center;}
+#tongji div{display: inline-block;}
+#tongji .left{width: 38%}
+#tongji .zhong{width: 38%}
+#tongji .you{width: 20%}
+#tongji .btn{display:block;width: 20vw;line-height: 10vw;color: #fff;border-radius: 1vw;background-color: #1f9dc8;text-align: center;text-decoration: none;}
+#tongji .dis{display:block;width: 20vw;line-height: 10vw;color: #fff;border-radius: 1vw;background-color: #ccc;text-align: center;text-decoration: none;}
+.nr{margin-top: 10px;margin-bottom: 10px;}
+.nr .left ul{list-style: none;}
+.nr .left{width: 15%;}
+.nr .zhong{width: 58%;text-align: left;}
+.nr .zhong a{color: #F75360;}
+.nr .you{width: 26%;height: 12vw;display: inline-block;text-align: left;background: url("danjia.png") no-repeat top left;background-size: auto 100%;}
+#tishi{margin: 1%;margin-top: 20px;margin-bottom: 10px;}
+#tishi .left{width:20%;float: left;font-size: 3vw;margin-top: 10px;}
+#tishi .right{width:78%;float: left;font-size: 3vw;margin-top: 10px;}
+.clear{clear: both;}
+#tongji #tixian{width: 18vw;line-height: 8vw;}
+#gonggao{background-color: #DCF5F9;padding: 10px 1%;color: #444;}
+#gonggao .left{width: 10%;float: left;margin-left: 10%;}
+#gonggao .right{width: 79%;float: left;}
+.lianjie{color: #aaa;font-size: 2vw;margin: 10px auto ;}
+.xian{border-bottom: 1px solid #ccc;width: 95%;margin: 5px auto ;}
+.huang{color: #fff;}
+.jiner{margin-top: 6vw;display: inline-block;font-size: 4vw;}
+.qian{display: inline-block;margin-top: 5vw;margin-right: 5vw;font-size: 1vw;}
+.logodiwen{background: url("logodiwen.png") #E6EBEF !important;background-size: 23% !important;}
+
+#tixianlist{height: 22vw;overflow: hidden;}
+#tixianlist li{list-style: none;margin-left: -1vw;}
+.dingxiang{display: inline-block;background-color: #900;color: #fff;margin: 1px;}

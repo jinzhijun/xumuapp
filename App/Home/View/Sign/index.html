@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!-- saved from url=(0044)http://fc.vhot119.com/home/fuli/faqtype.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>积分记录</title><link href="__PUBLIC__/Home/basic/css.css" rel="stylesheet"><script src="__PUBLIC__/Home/basic/hm.js"></script><script src="__PUBLIC__/Home/basic/jquery-2.0.3.min.js"></script><style>
+            .nr a{ margin:  3vw;display: inline-block;}
+        </style></head>
+<body bgcolor="#f3efef">
+<form>
+    <a href="JavaScript:history.go(-1)" id="back">
+
+    </a><div id="bt"><span>积分记录</span></div>
+    <div id="nr"><div id="younz">
+
+        <volist name="list" id="vo">
+            <div class="nr"><div class="left" style="font-size: x-large"><if condition="$vo['type'] eq 1"> 手动添加 <elseif condition="$vo['type'] eq 3"/>大转盘<elseif condition="$vo['type'] eq 4"/>资金兑换<else/>签到</if></div><div class="zhong"><span class="qian huang qian">*</span><span class="jiner hong">{$vo['sign']}</span></div><div class="right">{$vo.date|date="Y-m-d
+                H:i:s",###}</div><div class="clear"></div></div>
+        </volist>
+</div></form><div id="xiaotishi"></div><div id="xiaotishihua"><div class="xiaotishi">
+    <span class="bot"></span><span class="top"></span>
+	广告优惠政策是统一的，其他小伙伴做了6万，8万的都是同等待遇    </div></div><script>
+    $(document).ready(function () {
+	$('#xiaotishi').click(function () {
+	    $('#xiaotishihua').show();
+	});
+	$('#xiaotishihua').click(function () {
+	    $('#xiaotishihua').hide();
+	});
+    });
+</script><div class="linian">诚信　创新　忠诚　共赢</div><div style="display: none"><script>
+		var _hmt = _hmt || [];
+		(function () {
+		    var hm = document.createElement("script");
+		    hm.src = "//hm.baidu.com/hm.js?2866d184a661820df35879dc03c43cff";
+		    var s = document.getElementsByTagName("script")[0];
+		    s.parentNode.insertBefore(hm, s);
+		})();
+            </script></div></body></html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)http://fc.vhot119.com/home/beian/xieyi.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>广告协议</title><link href="__PUBLIC__/Home/record/xieyi/css.css" rel="stylesheet"><script src="__PUBLIC__/Home/record/xieyi/hm.js"></script><script src="__PUBLIC__/Home/record/xieyi/jquery-2.0.3.min.js"></script><style>
+            .success{background-color: #ccffcc}
+            .error{background-color: #ffcccc}
+        </style><script>
+            function back() {
+                history.go(-1);
+            }
+        </script></head><body bgcolor="#f3efef"><div class="loading" style="display: none;"></div><div id="bt"><span>广告协议</span></div><div id="nr"><div id="younz"><style type="text/css"><!--
+                    .input {
+                        width: 100%;
+                        margin: 3px;
+                    }
+                    --></style><p><br></p><p><br></p><div class="Section1"><p class="MsoNormal" align="center" style="text-align:center;">
+    {$info.text|htmlspecialchars_decode}
+</div></div><div class="linian">诚信　创新　忠诚　共赢</div><div style="display: none"><script>
+                var _hmt = _hmt || [];
+                (function () {
+                    var hm = document.createElement("script");
+                    hm.src = "//hm.baidu.com/hm.js?2866d184a661820df35879dc03c43cff";
+                    var s = document.getElementsByTagName("script")[0];
+                    s.parentNode.insertBefore(hm, s);
+                })();
+                function tiui() {
+                    var returnvalue = true;
+                    $('.input').each(function () {
+                        if (!$(this).val() && $(this).attr('required')) {
+                            alert('请检查必填项');
+                            returnvalue = false;
+                            return returnvalue;
+                        }
+                    });
+                    if (!returnvalue) {
+                        return returnvalue;
+                    }
+                    if (!confirm('提交后不能修改，确认都正确填写了？'))
+                    {
+                        returnvalue = false;
+                    } else {
+                        var scrollTop = Math.max(document.documentElement.scrollTop, document.body.scrollTop);
+                        $('body').css('overflow', 'hidden');
+                        $('.loading').css('top', scrollTop).show();
+                        setTimeout('clickloading()', 2000);
+                    }
+                    return returnvalue;
+                }
+                function clickloading() {
+                    $('.loading').click(function () {
+                        $('body').css('overflow', 'auto');
+                        $('.loading').hide();
+                    });
+                }
+                $(document).ready(function () {
+                    $('.loading').hide();
+                });
+            </script></div></body></html>

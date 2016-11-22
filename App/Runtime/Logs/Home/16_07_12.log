@@ -1,0 +1,40 @@
+[ 2016-07-12T16:48:45+08:00 ] 192.168.0.66 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000299s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000430s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000565s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `tp_user` WHERE `name` = '' AND `encry` = '' LIMIT 1   [ RunTime:0.0391s ]
+
+[ 2016-07-12T16:48:45+08:00 ] 192.168.0.66 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000593s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000526s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000679s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `tp_user` WHERE `name` = '' AND `encry` = '' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2016-07-12T16:48:46+08:00 ] 192.168.0.66 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000329s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000419s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `tp_user` WHERE `name` = '' AND `encry` = '' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2016-07-12T16:48:49+08:00 ] 192.168.0.66 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000301s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000410s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `tp_user` WHERE `name` = '' AND `encry` = '' LIMIT 1   [ RunTime:0.0003s ]
+

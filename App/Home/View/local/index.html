@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!-- saved from url=(0046)http://fc.vhot119.com/home/trade/guanggao.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>本地免费广告</title><link href="__PUBLIC__/Home/local/css.css" rel="stylesheet"><style>
+    .hong{color: #f00;}
+    .lv{color:#5ece50;}
+    .nr .left{width: 33%;}
+    .nr .zhong{width: 15%;}
+    .nr .right{width: 45%;}
+    .nr .left {text-align: center;display: inline-block;font-size: 4vw;line-height: 10vw;vertical-align: text-bottom;margin-left: 3%;}
+    .nr .zhong {text-align: center;display: inline-block;font-size: 4vw;line-height: 10vw;vertical-align: text-bottom;}
+    .nr .right {text-align: center;display: inline-block;font-size: 4vw;line-height: 10vw;vertical-align: text-bottom;}
+</style>
+    <script src="__PUBLIC__/Home/local/hm.js"></script>
+    <script src="__PUBLIC__/Home/local/jquery-2.0.3.min.js"></script>
+</head>
+<body bgcolor="#f3efef">
+<form><a href="javascript:back();" id="back"></a>
+    <div id="bt"><span>本地免费广告</span></div>
+    <div id="nr"><div id="younz">
+        <p style="text-align:center;line-height:8vw;font-size:5vw;"><a href="{:u('Local/update',array('username'=>$_GET['username'],'encry'=>$_GET['encry']))}">添加新的本地免费广告</a></p>
+
+        <volist name="list" id="vo">
+        <div class="nr"><div class="left">{$vo['username']}</div><div class="zhong">新添加</div><div class="right">{$vo.edit_date|date="Y-m-d
+            H:i:s",###}</div><div class="clear"></div><div style="text-align:center;margin-bottom: 1vw;word-break:break-all;">链接地址: </div></div>
+        </volist>
+        <div></div></div></div>
+</form>
+<div id="xiaotishi"></div><div id="xiaotishihua"><div class="xiaotishi"><span class="bot"></span><span class="top"></span>
+    与财务报单时，一定要把自己的名字一字不错的报备，比如XXX微生活，爱生活，微热点，微社区，错一个字都会打给别人哦    </div></div><script>
+    $(document).ready(function () {
+        $('#xiaotishi').click(function () {
+            $('#xiaotishihua').show();
+        });
+        $('#xiaotishihua').click(function () {
+            $('#xiaotishihua').hide();
+        });
+    });
+</script><div class="linian">友爱　执着　分享　感恩</div><div style="display: none"><script>
+    var _hmt = _hmt || [];
+    (function () {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?2866d184a661820df35879dc03c43cff";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+    $(document).ready(function () {
+        $('.jiner').each(function () {
+            if (parseInt($(this).html()) < 0) {
+                $(this).removeClass('lv').addClass('hong');
+            }
+        });
+    });
+</script></div></body></html>

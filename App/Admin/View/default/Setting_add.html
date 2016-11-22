@@ -1,0 +1,167 @@
+<include file="common:header" />
+<body>
+
+ 
+<div class="main-container" id="main-container">
+  <div class="main-container-inner"> <a class="menu-toggler" id="menu-toggler" href="#"> <span
+				class="menu-text"></span> </a>  
+    <div class="main-content">
+      <div class="page-content">
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="widget-box transparent" id="recent-box">
+              <div class="widget-header">
+                <div class="widget-toolbar no-border">
+                  <ul class="nav nav-tabs" id="recent-tab">
+                   
+                    <li><a href="{:U(CONTROLLER_NAME . '/index')}">管理员列表</a></li>
+                    <li class="active"><a href="{:U(CONTROLLER_NAME.'/add')}">添加</a> </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <br>
+            <div class="main-container" id="main-container"> 
+              <script type="text/javascript">
+				try{ace.settings.check('main-container' , 'fixed')}catch(e){}
+			</script>
+            <div style="width:500px;margin:0 ;">
+           
+            <form  id="form1">
+			<div class="form-horizontal">
+
+				<div class="control-group">
+					<label class="control-label">姓名</label>
+					<div class="controls">
+						<input type="text" class="fl dpb form-control width250" id="real_name" name="real_name"
+							placeholder="姓名" maxlength="20"> <span class="colorf00 dpb fl lh30 margin010">*必填 </span>
+							 <div class="clb"></div>  
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">账号</label>
+					<div class="controls">
+						<input type="text" class="fl dpb form-control width250" id="account" name="account"
+							placeholder="登录账号" maxlength="20"> <span class="colorf00 dpb fl lh30 margin010">*必填 </span>
+							 <div class="clb"></div>  
+					</div>
+				</div>
+
+				<div class="control-group">
+					<label class="control-label">密码</label>
+					<div class="controls">
+						<input type="password" class="fl dpb form-control width250" id="password" name="password"
+							placeholder="登录密码" maxlength="20">  <span class="colorf00 dpb fl lh30 margin010">*必填 </span>
+							 <div class="clb"></div>  
+					</div>
+				</div>
+				
+				<div class="control-group">
+					<label class="control-label">状态</label>
+					<div class="controls">
+						<select name="status" id="status" class="fl dpb form-control width250">
+
+							<option value="1">正常</option>
+							<option value="2">冻结</option>
+							<option value="3">删除</option>
+						</select> <span class="colorf00 dpb fl lh30 margin010">*必填 </span>
+							 <div class="clb"></div>  
+					</div>
+				</div>
+			</div>
+
+			<div class="tool_area">
+				<div class="tool_bar  ">
+				<br>
+				<button id="js_submit_role" class="btn btn-secondary">
+						 保存</button>
+						 <a href="javascript:history.go(-1)" class="btn btn-pink">取消</a>
+				
+
+
+
+					 
+					 
+				</div>
+
+			</div><script type="text/javascript">
+		 $(document).ready(function(){
+			 
+			 $("#js_submit_role").click(function(){
+				 if($("#real_name").val() ==  "")
+				 {
+					 alert("姓名不能为空");
+					 $("#real_name").focus();
+					 return false;
+				 }
+				 
+				 if($("#account").val() ==  "")
+				 {
+					 alert("账号不能为空");
+					 $("#account").focus();
+					 return false;
+				 }
+				 
+				 if($("#password").val() ==  "")
+				 {
+					 alert("密码不能为空");
+					 $("#password").focus();
+					 return false;
+				 }
+				  
+				 var data ="real_name="+$("#real_name").val()+
+				 			"&account="+$("#account").val()+
+				 			"&password="+$("#password").val()+
+				 			"&role_id="+$("#role_id").val()+
+				 			"&status="+$("#status").val();
+				 
+				   	
+				 $.ajax({
+					 url:"{:u(CONTROLLER_NAME . '/add')}",
+					 type:"POST",
+					 dataType:"json",
+					 data:data,
+					 success:function(res){
+						 if(res.resultr == 'error'){
+							 alert('已存在的账户，请重新输入');
+							 return false;
+						 }
+						 if(res.result == 'success2'){
+							 alert("保存成功");
+							 location.href="{:u(CONTROLLER_NAME . '/index')}";
+						 }else{
+							 alert("保存失败")
+						 }
+					}
+				 });
+				 
+				 return false;
+			 });
+		 });
+		 
+		 </script>
+			</form>
+              <!-- /.main-container-inner --> 
+              </div>
+            </div>
+            <!-- /.main-container --> 
+          </div>
+        </div>
+        <!-- /.row --> 
+      </div>
+      <!-- /.page-content --> 
+    </div>
+    <!-- /.main-content --> 
+    
+  </div>
+  <!-- /.main-container-inner --> 
+  
+  <a href="#" id="btn-scroll-up"
+			class="btn-scroll-up btn btn-sm btn-inverse"> <i
+			class="icon-double-angle-up icon-only bigger-110"></i> </a> </div>
+<include file="common:footer" />
+
+
+ 
+
+

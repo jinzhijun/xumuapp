@@ -1,0 +1,304 @@
+
+<include file="common:header"/>
+<body>
+
+<include file="common:fileinput"/>
+
+<div class="main-container" id="main-container">
+    <script type="text/javascript">
+        try{ace.settings.check('main-container' , 'fixed')}catch(e){}
+    </script>
+
+    <div class="main-container-inner">
+        <a class="menu-toggler" id="menu-toggler" href="#">
+            <span class="menu-text"></span>
+        </a>
+
+
+
+        <div class="main-content">
+
+            <style>
+                .widget-toolbar {
+                    display: inline-block;
+                    padding: 0 10px;
+                    line-height: 37px;
+                    float: none;
+                    position: relative;
+                }
+            </style>
+            <div class="page-content">
+                <div class="row">
+
+                    <div class="col-xs-12">
+
+                        <div class="widget-box transparent" id="recent-box">
+                            <div class="widget-header">
+
+
+                                <div class="widget-toolbar no-border">
+                                    <ul class="nav nav-tabs" id="recent-tab">
+
+                                        <li>
+                                            <a  href="{:U(CONTROLLER_NAME . '/index')}">列表</a>
+                                        </li>
+                                        <if condition="$list.id eq '' ">
+                                            <li class="active">
+                                                <a href="{:U(CONTROLLER_NAME . '/add')}">添加</a>
+                                            </li>
+                                            <else />
+                                            <li class="active">
+                                                <a href="#">修改</a>
+                                            </li>
+                                        </if>
+
+
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                        <br>
+                        <if condition="$list.id neq '' ">
+                            <form role="form" id="form1" method="post" enctype="multipart/form-data" action="{:U(CONTROLLER_NAME . '/edit_pro')}">
+                                <else />
+                                <form role="form" id="form1" method="post" enctype="multipart/form-data" action="">
+                        </if>
+                        <input type="hidden" name="id" id="id" value="{$list.id}" />
+                        <if condition="$statu eq 3">
+                        <div class="form-group">
+                            <label class="tar col-sm-3 control-label no-padding-right" for="form-field-1">产品名称</label>
+
+                            <div class="col-sm-9">
+                                <input value="{$list.name}" type="text" id="name" placeholder="" name="name" class="col-xs-10 col-sm-5" />
+                            </div>
+                            <div style="clear:both;"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="tar col-sm-3 control-label no-padding-right" for="form-field-1">商品总价</label>
+
+                            <div class="col-sm-9">
+                                <input value="{$list.goods_total}" type="text" id="goods_total" placeholder="" name="goods_total" class="col-xs-10 col-sm-5" />
+                            </div>
+                            <div style="clear:both;"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="tar col-sm-3 control-label no-padding-right" for="form-field-1">本店售价</label>
+
+                            <div class="col-sm-9">
+                                <input value="{$list.shop_price}" type="text" id="shop_price" placeholder="" name="shop_price" class="col-xs-10 col-sm-5" />
+                            </div>
+                            <div style="clear:both;"></div>
+                        </div>
+                            <!--<div class="form-group">-->
+                                <!--<input type="hidden" value="1" name="change" id="change" />-->
+                                <!--<label style="text-align:right" class="col-sm-3 control-label no-padding-right" for="form-field-1">此级别查看</label>-->
+                                <!--<input type="hidden" name="id" id="id" value="{$list.id}" />-->
+                                <!--<div class="col-sm-9">-->
+                                    <!--<select name="UserGrade">-->
+                                        <!--<volist name="UserGrade" id="n_v">-->
+                                            <!--<option <if condition="$n_v['id'] eq $list['grade_id']">selected = selected</if> value="{$n_v.id}">{$n_v.name}</option>-->
+                                        <!--</volist>-->
+
+                                    <!--</select>-->
+                                <!--</div>  <div style="clear: both;"></div>-->
+                            <!--</div>-->
+                        <div class="form-group">
+                            <label class="tar col-sm-3 control-label no-padding-right" for="form-field-1">产品简介</label>
+
+                            <div class="col-sm-9">
+                                <textarea style="padding:5px;" class="col-xs-10 col-sm-5" id="intro"  name="intro" rows="3"> {$list.intro}</textarea>
+
+                            </div>
+                            <div style="clear:both;"></div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label no-padding-right" for="form-field-1" style=" text-align: right;">产品分类</label>
+
+                            <div class="col-sm-9">
+                                <select name="news_class">
+                                    <volist name="class" id="n_v">
+                                        <option <if condition="$n_v['id'] eq $list['class']">selected = selected</if> value="{$n_v.id}">{$n_v.name}</option>
+                                    </volist>
+
+                                </select>
+                            </div>  <div style="clear: both;"></div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label no-padding-right" for="form-field-1" style=" text-align: right;">产品封面</label>
+                            <div class="col-sm-7" >
+                                <div style="float: left;width:200px;margin:0 10px 10px 0;">
+                                    <img src="{$list.main_img}" id="img01"   width="200" height="150"><br>
+                                    <input type="hidden" name="file011" id="file011" <if condition="$list.main_img neq '' ">value="0"<else/>value="1"</if> />
+                                    <input type="file" name="file01" id="file01" multiple="multiple" style="border:none"/>
+                                </div>
+                                <script>
+                                    $("#file01").change(function(){
+                                        var objUrl = getObjectURL(this.files[0]) ;
+                                        console.log("objUrl = "+objUrl) ;
+                                        if (objUrl) {
+                                            $("#file011").attr('value','2');
+                                            $("#img01").attr("src", objUrl) ;
+                                        }
+                                    }) ;
+                                    //建立一個可存取到該file的url
+                                    function getObjectURL(file) {
+                                        var url = null ;
+                                        if (window.createObjectURL!=undefined) { // basic
+                                            url = window.createObjectURL(file) ;
+                                        } else if (window.URL!=undefined) { // mozilla(firefox)
+                                            url = window.URL.createObjectURL(file) ;
+                                        } else if (window.webkitURL!=undefined) { // webkit or chrome
+                                            url = window.webkitURL.createObjectURL(file) ;
+                                        }
+                                        return url ;
+                                    }
+                                </script>
+                                <!--<input class="input-5" name="input0" value="" type="file" multiple class="file-loading">
+                                <p style="color:red;">最多可上传1张图片，文件格式为"jpg", "png", "gif"</p>
+                                <script>
+
+                                    $(document).on('ready', function() {
+                                        $(".input-5").fileinput({
+                                            initialPreview: [
+                                                "<img src='{$list.main_img}' class='file-preview-image' />",
+
+                                            ],
+                                            language: "zh",
+                                            showCaption: false,
+                                            showUpload: false
+                                        });
+                                    });
+
+                                </script>-->
+                            </div>
+
+
+                        </div>
+                        </if>
+                        <if condition="$list.id neq ''">
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label no-padding-right" for="form-field-1" style=" text-align: right;">产品图片</label>
+                            <div class="col-sm-7" >
+                                <input id="input-dim-1" name="file" type="file" multiple class="file-loading" accept="image/*">
+                                <p style="color:red;">可上传多张图片，文件格式为"jpg", "png", "gif"</p>
+                                <script>
+                                    var id = $("#id").val();
+
+                                    $("#input-dim-1").fileinput({
+
+                                        uploadUrl: "imgUpload?pid="+id,
+                                        maxFileCount: false,
+                                        language: "zh",
+                                        showRemove: false,
+                                        validateInitialCount: true,
+                                        overwriteInitial: false,
+                                        initialPreview: [
+                                        <volist name='pic' id='pic_v'> "<img class='a' data-img='{$pic_v.id}' style='height:160px' src='{$pic_v.url}'>",</volist>
+
+                                        ],
+                                        initialPreviewConfig: [
+                                        <volist name='pic' id='pic_v'>   {caption: "", width: "", url: "imgDel?pid={$pic_v.id}", id: {$pic_v.id}},</volist>
+
+                                        ],
+                                        allowedFileExtensions: ["jpg", "png", "gif"]
+                                    });
+                                </script>
+                                <!--
+
+                                        initialPreview: [
+                                            "<volist name='pic' id='pic_v'><img src='{$pic_v.url}' class='file-preview-image' /></volist>",
+
+                                        ],
+                                -->
+                               <style>
+    .file-drop-zone {
+        border: 1px dashed #aaa;
+        border-radius: 4px;
+     height:inherit;
+        text-align: center;
+        vertical-align: middle;
+        margin: 12px 15px 12px 12px;
+        padding: 5px;
+    }
+</style>
+  </div>  <div style="clear: both;"></div>
+  </div>
+                            <else />
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label no-padding-right" for="form-field-1" style=" text-align: right;">产品图片</label>
+                                <div class="col-sm-7" >
+                                    产品添加完成后，请去产品相册管理
+                                </div> <div style="clear: both;"></div>
+                            </div>
+                            </if>
+                        <if condition="$statu eq 3">
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label no-padding-right" for="form-field-1" style=" text-align: right;">内容</label>
+                            <div class="col-sm-9"> <script type="text/javascript">
+                                var editor = UE.getEditor('editor_notice',{
+                                    initialFrameWidth : 760,
+                                    initialFrameHeight : 460
+                                });
+                            </script>
+
+						 <textarea id="editor_notice" name="editor_notice">
+						 {$list.text}
+						 </textarea>
+                            </div>   <div style="clear: both;"></div> </div>
+                        <div class="form-group">
+                            <label class="tar col-sm-3 control-label no-padding-right" for="form-field-1">排序</label>
+
+                            <div class="col-sm-9">
+                                <input  value="{$list.sort}" type="text" id="sort" placeholder="" name="sort" class="col-xs-10 col-sm-5" />
+                                <p class="col-xs-10 col-sm-12" style="padding:0;color:#999;"><span style="color:#f00;">*</span>数字越小越靠前</p>
+                            </div><div style="clear:both;"></div>
+                        </div>
+
+
+
+                        <div class="clearfix form-actions">
+                            <div class="col-md-offset-3 col-md-9">
+
+                                <if condition="$list.id eq '' ">
+                                    <a class="sub_f btn btn-info" href="javascript:$('form').submit()" name="on"><i class="icon-ok bigger-110" ></i>提交</a>
+                                    <else />
+                                    <a class="sub_f btn btn-info" href="javascript:$('form').submit()" name="on"><i class="icon-ok bigger-110" ></i>修改</a>
+                                </if>
+
+
+                                <if condition="$list.id eq '' ">
+                                    &nbsp; &nbsp; &nbsp;
+                                    <button class="btn" type="reset">
+                                        <i class="icon-undo bigger-110"></i>
+                                        重置
+                                    </button>	 </if>
+                            </div><div style="clear:both;"></div>
+                        </div>
+                        </if>
+                        </form>
+                    </div>
+
+
+                </div><!-- /.row -->
+            </div><!-- /.page-content -->
+        </div><!-- /.main-content -->
+
+
+    </div><!-- /.main-container-inner -->
+
+    <a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse">
+        <i class="icon-double-angle-up icon-only bigger-110"></i>
+    </a>
+</div>
+
+
+
+<!-- <![endif]-->
+
+<!--[if IE]>
+
+</body>
+</html>
